@@ -1,0 +1,1180 @@
+{
+ "_about": "Curated source list for LAMPLIGHT. Hand-edited. scripts/build-catalogue.mjs resolves each entry against archive.org (MP3 URL, duration, reader) and writes data/catalogue.json. 'match' is a case-insensitive regex tested against the archive.org file title; several matching files play in order as one story.",
+ "entries": [
+  {
+   "key": "chekhov-darling",
+   "ia": "tales_chekhov_vol01_0906_librivox",
+   "match": "^01 - The Darling",
+   "title": "The Darling",
+   "author": "Anton Chekhov",
+   "origLang": "ru",
+   "place": "Moscow",
+   "country": "Russia",
+   "lat": 55.7558,
+   "lon": 37.6173,
+   "tz": "Europe/Moscow",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "wistful",
+    "funny"
+   ],
+   "hook": "Olenka loves whoever is nearest, and adopts his opinions on timber, theatre and veterinary science."
+  },
+  {
+   "key": "chekhov-bet",
+   "ia": "thebet_1708_librivox",
+   "match": "The Bet",
+   "title": "The Bet",
+   "author": "Anton Chekhov",
+   "origLang": "ru",
+   "place": "Taganrog",
+   "country": "Russia",
+   "lat": 47.2362,
+   "lon": 38.8969,
+   "tz": "Europe/Moscow",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "Fifteen years of voluntary solitude, two million roubles, and a banker who would rather not pay."
+  },
+  {
+   "key": "tolstoy-three-questions",
+   "ia": "what_men_live_by_librivox",
+   "match": "Three Questions",
+   "title": "Three Questions",
+   "author": "Leo Tolstoy",
+   "origLang": "ru",
+   "place": "Tula",
+   "country": "Russia",
+   "lat": 54.1931,
+   "lon": 37.6177,
+   "tz": "Europe/Moscow",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "calm"
+   ],
+   "hook": "A king wants three answers and gets them from a hermit who is busy digging."
+  },
+  {
+   "key": "turgenev-tryst",
+   "ia": "sportsmans_sketches_1511_librivox",
+   "match": "THE TRYST",
+   "title": "The Tryst",
+   "author": "Ivan Turgenev",
+   "origLang": "ru",
+   "place": "Oryol",
+   "country": "Russia",
+   "lat": 52.9703,
+   "lon": 36.0635,
+   "tz": "Europe/Moscow",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "A birch wood in autumn, a hunter hidden in it, and a valet who is leaving for good."
+  },
+  {
+   "key": "maupassant-moonlight",
+   "ia": "completeoriginalshortstories_2103_librivox",
+   "match": "^118 - Moonlight",
+   "title": "Moonlight",
+   "author": "Guy de Maupassant",
+   "origLang": "fr",
+   "place": "Rouen",
+   "country": "France",
+   "lat": 49.4431,
+   "lon": 1.0993,
+   "tz": "Europe/Paris",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "calm",
+    "wistful"
+   ],
+   "hook": "A priest who distrusts women goes out with a stick to catch his niece, and is undone by the night."
+  },
+  {
+   "key": "maupassant-uncle-jules",
+   "ia": "completeoriginalshortstories_2103_librivox",
+   "match": "^103 - My Uncle Jules",
+   "title": "My Uncle Jules",
+   "author": "Guy de Maupassant",
+   "origLang": "fr",
+   "place": "Le Havre",
+   "country": "France",
+   "lat": 49.4944,
+   "lon": 0.1079,
+   "tz": "Europe/Paris",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "A family waits on the Le Havre jetty every Sunday for a rich relative, then meets him selling oysters."
+  },
+  {
+   "key": "maupassant-umbrella",
+   "ia": "completeoriginalshortstories_2103_librivox",
+   "match": "^143 - The Umbrella",
+   "title": "The Umbrella",
+   "author": "Guy de Maupassant",
+   "origLang": "fr",
+   "place": "Paris",
+   "country": "France",
+   "lat": 48.8566,
+   "lon": 2.3522,
+   "tz": "Europe/Paris",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "funny"
+   ],
+   "hook": "Madame Oreille cannot bear to spend money, so she makes an insurance company pay for an umbrella."
+  },
+  {
+   "key": "daudet-three-low-masses",
+   "ia": "christmas_stories_from_french_and_spanish_writers_1501_librivox",
+   "match": "The Three Low Masses",
+   "title": "The Three Low Masses",
+   "author": "Alphonse Daudet",
+   "origLang": "fr",
+   "place": "Nîmes",
+   "country": "France",
+   "lat": 43.8367,
+   "lon": 4.3601,
+   "tz": "Europe/Paris",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "funny",
+    "eerie-but-soft"
+   ],
+   "hook": "A chaplain gallops through three Christmas masses because the turkeys are already roasting."
+  },
+  {
+   "key": "coppee-louis-dor",
+   "ia": "christmas_stories_from_french_and_spanish_writers_1501_librivox",
+   "match": "The Louis d'or",
+   "title": "The Louis d'Or",
+   "author": "François Coppée",
+   "origLang": "fr",
+   "place": "Paris",
+   "country": "France",
+   "lat": 48.8566,
+   "lon": 2.3522,
+   "tz": "Europe/Paris",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "calm",
+    "wistful"
+   ],
+   "hook": "A ruined young man in Paris, a gold coin, and Christmas Eve."
+  },
+  {
+   "key": "theuriet-christmas-forest",
+   "ia": "christmas_stories_from_french_and_spanish_writers_1501_librivox",
+   "match": "A Christmas in the Forest",
+   "title": "A Christmas in the Forest",
+   "author": "André Theuriet",
+   "origLang": "fr",
+   "place": "Bar-le-Duc",
+   "country": "France",
+   "lat": 48.7726,
+   "lon": 5.1606,
+   "tz": "Europe/Paris",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "calm"
+   ],
+   "hook": "A short Christmas piece from the forest country of Lorraine. Nine minutes."
+  },
+  {
+   "key": "alarcon-poets-christmas",
+   "ia": "christmas_stories_from_french_and_spanish_writers_1501_librivox",
+   "match": "The Poet's Christmas Eve",
+   "title": "The Poet's Christmas Eve",
+   "author": "Pedro Antonio de Alarcón",
+   "origLang": "es",
+   "place": "Guadix",
+   "country": "Spain",
+   "lat": 37.2999,
+   "lon": -3.1369,
+   "tz": "Europe/Madrid",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "Alarcón, away from Andalusia, remembers Christmas Eve at home."
+  },
+  {
+   "key": "becquer-maese-perez",
+   "ia": "christmas_stories_from_french_and_spanish_writers_1501_librivox",
+   "match": "Maese P",
+   "title": "Maese Pérez the Organist",
+   "author": "Gustavo Adolfo Bécquer",
+   "origLang": "es",
+   "place": "Seville",
+   "country": "Spain",
+   "lat": 37.3891,
+   "lon": -5.9845,
+   "tz": "Europe/Madrid",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "eerie-but-soft"
+   ],
+   "hook": "Seville's best organist dies, and the organ at midnight mass goes on playing anyway."
+  },
+  {
+   "key": "alarcon-captain-veneno",
+   "ia": "firstlove_2408_librivox",
+   "match": "Captain Veneno",
+   "title": "Captain Veneno's Proposal of Marriage",
+   "author": "Pedro Antonio de Alarcón",
+   "origLang": "es",
+   "place": "Madrid",
+   "country": "Spain",
+   "lat": 40.4168,
+   "lon": -3.7038,
+   "tz": "Europe/Madrid",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "funny"
+   ],
+   "hook": "A famously bad-tempered captain proposes in the most insulting way he can manage."
+  },
+  {
+   "key": "irving-rose-alhambra",
+   "ia": "alhambra_dw_librivox",
+   "match": "Legend Of The Rose Of The Alhambra",
+   "title": "Legend of the Rose of the Alhambra",
+   "author": "Washington Irving",
+   "origLang": "en",
+   "place": "Granada",
+   "country": "Spain",
+   "lat": 37.1761,
+   "lon": -3.5881,
+   "tz": "Europe/Madrid",
+   "link": "story is set here",
+   "genre": "legend",
+   "mood": [
+    "calm",
+    "eerie-but-soft"
+   ],
+   "hook": "A page chasing a falcon finds a girl in a locked tower, and an old lute that will only play for her."
+  },
+  {
+   "key": "andersen-ugly-duckling",
+   "ia": "emperorsnewclothes_1311_librivox",
+   "match": "The Ugly Duckling",
+   "title": "The Ugly Duckling",
+   "author": "Hans Christian Andersen",
+   "origLang": "da",
+   "place": "Odense",
+   "country": "Denmark",
+   "lat": 55.4038,
+   "lon": 10.4024,
+   "tz": "Europe/Copenhagen",
+   "link": "author's home city",
+   "genre": "fairy tale",
+   "mood": [
+    "calm",
+    "wistful"
+   ],
+   "hook": "You know how it ends. Andersen takes his time getting there, and the duck yard is funnier than you remember."
+  },
+  {
+   "key": "andersen-swineherd",
+   "ia": "thelittlematchgirl_1311_librivox",
+   "match": "The Swineherd",
+   "title": "The Swineherd",
+   "author": "Hans Christian Andersen",
+   "origLang": "da",
+   "place": "Copenhagen",
+   "country": "Denmark",
+   "lat": 55.6761,
+   "lon": 12.5683,
+   "tz": "Europe/Copenhagen",
+   "link": "author's home city",
+   "genre": "fairy tale",
+   "mood": [
+    "funny"
+   ],
+   "hook": "A prince in disguise sells a princess a musical saucepan for a hundred kisses."
+  },
+  {
+   "key": "swedish-lasse",
+   "ia": "theswedishfairybook_2607_librivox",
+   "match": "Lasse, My Thrall",
+   "title": "Lasse, My Thrall!",
+   "author": "Swedish folk tale (ed. Clara Stroebe)",
+   "origLang": "sv",
+   "place": "Stockholm",
+   "country": "Sweden",
+   "lat": 59.3293,
+   "lon": 18.0686,
+   "tz": "Europe/Stockholm",
+   "link": "tale from here",
+   "genre": "folk tale",
+   "mood": [
+    "funny"
+   ],
+   "hook": "A poor boy inherits an invisible servant who does anything asked of him and would quite like a day off."
+  },
+  {
+   "key": "asgard-thors-journey",
+   "ia": "asgardstories_2110_librivox",
+   "match": "Thor's Wonderful Journey",
+   "title": "Thor's Wonderful Journey",
+   "author": "Mary H. Foster & Mabel H. Cummings (retelling)",
+   "origLang": "en",
+   "place": "Reykholt",
+   "country": "Iceland",
+   "lat": 64.6647,
+   "lon": -21.2917,
+   "tz": "Atlantic/Reykjavik",
+   "link": "tale from here",
+   "genre": "myth",
+   "mood": [
+    "funny"
+   ],
+   "hook": "Thor loses a drinking contest, a race and a wrestling match, all to things that are not quite what they look like."
+  },
+  {
+   "key": "brinker-holland",
+   "ia": "hans_brinker_mfs_librivox",
+   "match": "^02 - Holland",
+   "title": "Holland (from Hans Brinker)",
+   "author": "Mary Mapes Dodge",
+   "origLang": "en",
+   "place": "Amsterdam",
+   "country": "Netherlands",
+   "lat": 52.3676,
+   "lon": 4.9041,
+   "tz": "Europe/Amsterdam",
+   "link": "story is set here",
+   "genre": "chapter",
+   "mood": [
+    "calm"
+   ],
+   "hook": "An American's tour of a country held together by dykes, windmills and very careful housekeeping."
+  },
+  {
+   "key": "joyce-araby",
+   "ia": "dubliners_1302_librivox",
+   "match": "^03 - Araby",
+   "title": "Araby",
+   "author": "James Joyce",
+   "origLang": "en",
+   "place": "Dublin",
+   "country": "Ireland",
+   "lat": 53.3498,
+   "lon": -6.2603,
+   "tz": "Europe/Dublin",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "A boy promises to bring a girl something from the bazaar, and his uncle comes home late."
+  },
+  {
+   "key": "joyce-clay",
+   "ia": "dubliners_1302_librivox",
+   "match": "^10 - Clay",
+   "title": "Clay",
+   "author": "James Joyce",
+   "origLang": "en",
+   "place": "Dublin",
+   "country": "Ireland",
+   "lat": 53.3498,
+   "lon": -6.2603,
+   "tz": "Europe/Dublin",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "Maria crosses Dublin on Halloween with plumcake, and nobody tells her she sang the wrong verse."
+  },
+  {
+   "key": "wilde-selfish-giant",
+   "ia": "thehappyprinceandothertales_1411_librivox",
+   "match": "The Selfish Giant",
+   "title": "The Selfish Giant",
+   "author": "Oscar Wilde",
+   "origLang": "en",
+   "place": "Dublin",
+   "country": "Ireland",
+   "lat": 53.3498,
+   "lon": -6.2603,
+   "tz": "Europe/Dublin",
+   "link": "author's home city",
+   "genre": "fairy tale",
+   "mood": [
+    "calm",
+    "wistful"
+   ],
+   "hook": "A giant walls off his garden from children, and spring declines to come in either."
+  },
+  {
+   "key": "grahame-jasper",
+   "ia": "dream_days_librivox",
+   "match": "Its Walls Were as of Jasper",
+   "title": "Its Walls Were as of Jasper",
+   "author": "Kenneth Grahame",
+   "origLang": "en",
+   "place": "Cookham Dean",
+   "country": "United Kingdom",
+   "lat": 51.5487,
+   "lon": -0.7451,
+   "tz": "Europe/London",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "calm",
+    "wistful"
+   ],
+   "hook": "A small boy on a dull visit finds an illuminated book and walks into the walled city in its pictures."
+  },
+  {
+   "key": "scottish-habetrot",
+   "ia": "the_scottish_fairy_book_1812_librivox",
+   "match": "Habetrot the Spinstress",
+   "title": "Habetrot the Spinstress",
+   "author": "Scottish folk tale (ed. Elizabeth W. Grierson)",
+   "origLang": "en",
+   "place": "Selkirk",
+   "country": "United Kingdom",
+   "lat": 55.5486,
+   "lon": -2.8399,
+   "tz": "Europe/London",
+   "link": "tale from here",
+   "genre": "folk tale",
+   "mood": [
+    "funny"
+   ],
+   "hook": "A lazy girl, seven heads of lint, and a fairy spinster whose lips are worn flat from the thread."
+  },
+  {
+   "key": "scottish-seal-catcher",
+   "ia": "the_scottish_fairy_book_1812_librivox",
+   "match": "The Seal Catcher and the Merman",
+   "title": "The Seal Catcher and the Merman",
+   "author": "Scottish folk tale (ed. Elizabeth W. Grierson)",
+   "origLang": "en",
+   "place": "John o' Groats",
+   "country": "United Kingdom",
+   "lat": 58.6373,
+   "lon": -3.0689,
+   "tz": "Europe/London",
+   "link": "tale from here",
+   "genre": "folk tale",
+   "mood": [
+    "calm",
+    "eerie-but-soft"
+   ],
+   "hook": "A seal hunter on the far north coast is taken under the sea to meet the seal he wounded."
+  },
+  {
+   "key": "mowatt-bridges-florence",
+   "ia": "italian_life_and_legends_2008_librivox",
+   "match": "Bridges of Florence",
+   "title": "The Bridges of Florence",
+   "author": "Anna Cora Mowatt",
+   "origLang": "en",
+   "place": "Florence",
+   "country": "Italy",
+   "lat": 43.7696,
+   "lon": 11.2558,
+   "tz": "Europe/Rome",
+   "link": "story is set here",
+   "genre": "sketch",
+   "mood": [
+    "calm"
+   ],
+   "hook": "An American actress walks the bridges of Florence in the 1850s and tells their histories."
+  },
+  {
+   "key": "egypt-shipwrecked-sailor",
+   "ia": "egyptian_tales_one_0904_librivox",
+   "match": "The Shipwrecked Sailor",
+   "title": "The Shipwrecked Sailor",
+   "author": "Ancient Egyptian tale (tr. W. M. Flinders Petrie)",
+   "origLang": "egy",
+   "place": "Luxor",
+   "country": "Egypt",
+   "lat": 25.6872,
+   "lon": 32.6396,
+   "tz": "Africa/Cairo",
+   "link": "tale from here",
+   "genre": "folk tale",
+   "mood": [
+    "calm"
+   ],
+   "hook": "Four thousand years old: a sailor washed up on an island ruled by a kindly, very large golden serpent."
+  },
+  {
+   "key": "johnson-rasselas",
+   "ia": "rasselas_prince_abyssinia_0909_librivox",
+   "match": "Chapters I-IV",
+   "title": "Rasselas, Chapters I–IV: The Happy Valley",
+   "author": "Samuel Johnson",
+   "origLang": "en",
+   "place": "Gondar",
+   "country": "Ethiopia",
+   "lat": 12.603,
+   "lon": 37.4521,
+   "tz": "Africa/Addis_Ababa",
+   "link": "story is set here",
+   "genre": "chapter",
+   "mood": [
+    "calm"
+   ],
+   "hook": "A prince lives in a valley where every wish is met, and finds that this is the problem."
+  },
+  {
+   "key": "schreiner-lost-joy",
+   "ia": "dreams_1809_librivox",
+   "match": "The Lost Joy",
+   "title": "The Lost Joy",
+   "author": "Olive Schreiner",
+   "origLang": "en",
+   "place": "Cradock",
+   "country": "South Africa",
+   "lat": -32.1643,
+   "lon": 25.6192,
+   "tz": "Africa/Johannesburg",
+   "link": "author's home city",
+   "genre": "allegory",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "Ten minutes of allegory about Love, Joy and what comes after them, written on a Karoo farm."
+  },
+  {
+   "key": "outakarel-jakhals",
+   "ia": "outa_karels_stories_1809_librivox",
+   "match": "How Jakhals Fed Oom Leeuw",
+   "title": "How Jakhals Fed Oom Leeuw",
+   "author": "Sanni Metelerkamp",
+   "origLang": "en",
+   "place": "Beaufort West",
+   "country": "South Africa",
+   "lat": -32.3567,
+   "lon": 22.583,
+   "tz": "Africa/Johannesburg",
+   "link": "tale from here",
+   "genre": "folk tale",
+   "mood": [
+    "funny"
+   ],
+   "hook": "Jackal and Uncle Lion, as told by Outa Karel on a Karoo farm."
+  },
+  {
+   "key": "kipling-elephants-child",
+   "ia": "just_so_stories_1004_librivox",
+   "match": "The Elephant's Child",
+   "title": "The Elephant's Child",
+   "author": "Rudyard Kipling",
+   "origLang": "en",
+   "place": "Musina, on the Limpopo",
+   "country": "South Africa",
+   "lat": -22.3488,
+   "lon": 30.041,
+   "tz": "Africa/Johannesburg",
+   "link": "story is set here",
+   "genre": "fable",
+   "mood": [
+    "funny"
+   ],
+   "hook": "An elephant with satiable curtiosity goes to the great grey-green, greasy Limpopo River to ask what the Crocodile has for dinner."
+  },
+  {
+   "key": "gibran-coming-ship",
+   "ia": "the_prophet_2109_librivox",
+   "match": "The Coming of the Ship",
+   "title": "The Coming of the Ship",
+   "author": "Kahlil Gibran",
+   "origLang": "en",
+   "place": "Bsharri",
+   "country": "Lebanon",
+   "lat": 34.2508,
+   "lon": 36.0109,
+   "tz": "Asia/Beirut",
+   "link": "author's home city",
+   "genre": "prose poem",
+   "mood": [
+    "calm"
+   ],
+   "hook": "The opening of The Prophet: twelve years waiting, then a ship in the harbour and a town that does not want him to go."
+  },
+  {
+   "key": "tagore-cabuliwallah",
+   "ia": "stories_from_tagore_1911_librivox",
+   "match": "CABULIWALLAH",
+   "title": "The Cabuliwallah",
+   "author": "Rabindranath Tagore",
+   "origLang": "bn",
+   "place": "Kolkata",
+   "country": "India",
+   "lat": 22.5726,
+   "lon": 88.3639,
+   "tz": "Asia/Kolkata",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "A five-year-old in Calcutta befriends an Afghan fruit-seller with a bag of raisins and a daughter at home."
+  },
+  {
+   "key": "kipling-camel",
+   "ia": "just_so_stories_1004_librivox",
+   "match": "How the Camel got his Hump",
+   "title": "How the Camel Got His Hump",
+   "author": "Rudyard Kipling",
+   "origLang": "en",
+   "place": "Mumbai",
+   "country": "India",
+   "lat": 19.076,
+   "lon": 72.8777,
+   "tz": "Asia/Kolkata",
+   "link": "author's home city",
+   "genre": "fable",
+   "mood": [
+    "funny"
+   ],
+   "hook": "The Camel says 'Humph' once too often, and a Djinn has had enough."
+  },
+  {
+   "key": "carpenter-bangkok",
+   "ia": "frombangkoktobombay_2102_librivox",
+   "match": "In Bangkok",
+   "title": "In Bangkok",
+   "author": "Frank G. Carpenter",
+   "origLang": "en",
+   "place": "Bangkok",
+   "country": "Thailand",
+   "lat": 13.7563,
+   "lon": 100.5018,
+   "tz": "Asia/Bangkok",
+   "link": "story is set here",
+   "genre": "travel",
+   "mood": [
+    "calm"
+   ],
+   "hook": "A 1920s American travel writer's first impressions of Bangkok. Period attitudes included."
+  },
+  {
+   "key": "carpenter-golden-pagoda",
+   "ia": "frombangkoktobombay_2102_librivox",
+   "match": "The Golden Pagoda",
+   "title": "The Golden Pagoda",
+   "author": "Frank G. Carpenter",
+   "origLang": "en",
+   "place": "Yangon",
+   "country": "Myanmar",
+   "lat": 16.8661,
+   "lon": 96.1951,
+   "tz": "Asia/Yangon",
+   "link": "story is set here",
+   "genre": "travel",
+   "mood": [
+    "calm"
+   ],
+   "hook": "The Shwedagon in Rangoon, described by a 1920s American visitor."
+  },
+  {
+   "key": "carpenter-baguio",
+   "ia": "throughthephilippines_2505_librivox",
+   "match": "Baguio",
+   "title": "Baguio",
+   "author": "Frank G. Carpenter",
+   "origLang": "en",
+   "place": "Baguio",
+   "country": "Philippines",
+   "lat": 16.4023,
+   "lon": 120.596,
+   "tz": "Asia/Manila",
+   "link": "story is set here",
+   "genre": "travel",
+   "mood": [
+    "calm"
+   ],
+   "hook": "The pine-covered hill station above Manila, seen by a 1920s American visitor, with the attitudes of his time."
+  },
+  {
+   "key": "giles-chinese-new-year",
+   "ia": "chinesesketches_1507_librivox",
+   "match": "Celebration of the New Year",
+   "title": "Celebration of the New Year",
+   "author": "Herbert A. Giles",
+   "origLang": "en",
+   "place": "Beijing",
+   "country": "China",
+   "lat": 39.9042,
+   "lon": 116.4074,
+   "tz": "Asia/Shanghai",
+   "link": "story is set here",
+   "genre": "sketch",
+   "mood": [
+    "calm"
+   ],
+   "hook": "A British consul's short 1870s notes on how China saw in the New Year."
+  },
+  {
+   "key": "korea-sky-bridge",
+   "ia": "koreanfairytales_1906_librivox",
+   "match": "The Sky Bridge of Birds",
+   "title": "The Sky Bridge of Birds",
+   "author": "Korean folk tale (ed. William Elliot Griffis)",
+   "origLang": "ko",
+   "place": "Seoul",
+   "country": "South Korea",
+   "lat": 37.5665,
+   "lon": 126.978,
+   "tz": "Asia/Seoul",
+   "link": "tale from here",
+   "genre": "folk tale",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "A herdsman and a weaver in the sky, kept apart by a river of stars, meet once a year on a bridge of magpies."
+  },
+  {
+   "key": "korea-woodman-fairies",
+   "ia": "koreanfairytales_1906_librivox",
+   "match": "The Woodman and the Mountain Fairies",
+   "title": "The Woodman and the Mountain Fairies",
+   "author": "Korean folk tale (ed. William Elliot Griffis)",
+   "origLang": "ko",
+   "place": "Seoul",
+   "country": "South Korea",
+   "lat": 37.5665,
+   "lon": 126.978,
+   "tz": "Asia/Seoul",
+   "link": "tale from here",
+   "genre": "folk tale",
+   "mood": [
+    "calm",
+    "eerie-but-soft"
+   ],
+   "hook": "A woodcutter wanders into the mountains and meets the fairies who live there."
+  },
+  {
+   "key": "hearn-bon-odori",
+   "ia": "unfamiliar_japan_2009_librivox",
+   "match": "Bon Odori",
+   "title": "Bon-Odori",
+   "author": "Lafcadio Hearn",
+   "origLang": "en",
+   "place": "Tottori",
+   "country": "Japan",
+   "lat": 35.5011,
+   "lon": 134.2351,
+   "tz": "Asia/Tokyo",
+   "link": "story is set here",
+   "genre": "travel",
+   "mood": [
+    "calm",
+    "eerie-but-soft"
+   ],
+   "hook": "Hearn rides into a village in summer and watches the dance for the returning dead go on by lantern light until very late."
+  },
+  {
+   "key": "ogai-pier",
+   "ia": "paulownia_1410_librivox",
+   "match": "The pier",
+   "title": "The Pier",
+   "author": "Mori Ōgai",
+   "origLang": "ja",
+   "place": "Yokohama",
+   "country": "Japan",
+   "lat": 35.4437,
+   "lon": 139.638,
+   "tz": "Asia/Tokyo",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "A young wife on the Yokohama pier, seeing her husband off."
+  },
+  {
+   "key": "kafu-ukiyoe",
+   "ia": "paulownia_1410_librivox",
+   "match": "Ukiyoe",
+   "title": "Ukiyoe",
+   "author": "Nagai Kafū",
+   "origLang": "ja",
+   "place": "Tokyo",
+   "country": "Japan",
+   "lat": 35.6762,
+   "lon": 139.6503,
+   "tz": "Asia/Tokyo",
+   "link": "author's home city",
+   "genre": "essay",
+   "mood": [
+    "calm",
+    "wistful"
+   ],
+   "hook": "Kafū on old woodblock prints of Edo and the city they recorded."
+  },
+  {
+   "key": "japan-tea-kettle",
+   "ia": "japanese_fairy_world_2008_librivox",
+   "match": "The Wonderful Tea-Kettle",
+   "title": "The Wonderful Tea-Kettle",
+   "author": "Japanese folk tale (ed. William Elliot Griffis)",
+   "origLang": "ja",
+   "place": "Tatebayashi",
+   "country": "Japan",
+   "lat": 36.2449,
+   "lon": 139.542,
+   "tz": "Asia/Tokyo",
+   "link": "tale from here",
+   "genre": "folk tale",
+   "mood": [
+    "funny"
+   ],
+   "hook": "A priest's kettle grows a badger's tail when it is put on the fire, and turns out to have a stage career in it."
+  },
+  {
+   "key": "mansfield-voyage",
+   "ia": "garden_party_2308_librivox",
+   "match": "The Voyage",
+   "title": "The Voyage",
+   "author": "Katherine Mansfield",
+   "origLang": "en",
+   "place": "Picton",
+   "country": "New Zealand",
+   "lat": -41.2906,
+   "lon": 174.001,
+   "tz": "Pacific/Auckland",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "calm",
+    "wistful"
+   ],
+   "hook": "A girl and her grandmother take the night ferry from Wellington to Picton. Swan umbrella, cabin, and a cup of tea."
+  },
+  {
+   "key": "mansfield-first-ball",
+   "ia": "garden_party_2308_librivox",
+   "match": "Her First Ball",
+   "title": "Her First Ball",
+   "author": "Katherine Mansfield",
+   "origLang": "en",
+   "place": "Wellington",
+   "country": "New Zealand",
+   "lat": -41.2865,
+   "lon": 174.7762,
+   "tz": "Pacific/Auckland",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "Leila's first dance card, and one fat old partner who tells her exactly how this will end."
+  },
+  {
+   "key": "maori-little-people",
+   "ia": "maorifolktales_2512_librivox",
+   "match": "Hills of Faery",
+   "title": "Hills of Faery: The Little People of the Mist",
+   "author": "James Cowan",
+   "origLang": "en",
+   "place": "Christchurch",
+   "country": "New Zealand",
+   "lat": -43.5321,
+   "lon": 172.6362,
+   "tz": "Pacific/Auckland",
+   "link": "tale from here",
+   "genre": "folk tale",
+   "mood": [
+    "eerie-but-soft"
+   ],
+   "hook": "The patupaiarehe, the fairy people said to live in the mist on the Port Hills above Christchurch."
+  },
+  {
+   "key": "lawson-bush-undertaker",
+   "ia": "short_stories_prose_verse_2202_librivox",
+   "match": "The Bush Undertaker",
+   "title": "The Bush Undertaker",
+   "author": "Henry Lawson",
+   "origLang": "en",
+   "place": "Sydney",
+   "country": "Australia",
+   "lat": -33.8688,
+   "lon": 151.2093,
+   "tz": "Australia/Sydney",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "funny",
+    "eerie-but-soft"
+   ],
+   "hook": "An old shepherd alone with his dog on Christmas Day finds an old mate and gives him a ceremony. Dry, odd and a little macabre: vet this one."
+  },
+  {
+   "key": "twain-hawaii-lodging",
+   "ia": "lettersfromhawaii_2202_librivox",
+   "match": "BOARD AND LODGING",
+   "title": "Letter #5: Board and Lodging Secured",
+   "author": "Mark Twain",
+   "origLang": "en",
+   "place": "Honolulu",
+   "country": "United States",
+   "lat": 21.3069,
+   "lon": -157.8583,
+   "tz": "Pacific/Honolulu",
+   "link": "story is set here",
+   "genre": "travel letter",
+   "mood": [
+    "funny"
+   ],
+   "hook": "Twain, 1866, settles into lodgings in Honolulu and files his report to a Sacramento paper."
+  },
+  {
+   "key": "twain-jumping-frog",
+   "ia": "sketches_newandold_0912_librivox",
+   "match": "The Jumping Frog",
+   "title": "The Jumping Frog",
+   "author": "Mark Twain",
+   "origLang": "en",
+   "place": "Angels Camp",
+   "country": "United States",
+   "lat": 38.068,
+   "lon": -120.5396,
+   "tz": "America/Los_Angeles",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "funny"
+   ],
+   "hook": "The frog story, then a French translation of it, then Twain translating the French back into English."
+  },
+  {
+   "key": "ohenry-ransom-red-chief",
+   "ia": "whirligigs_1405_librivox",
+   "match": "The Ransom of Red Chief",
+   "title": "The Ransom of Red Chief",
+   "author": "O. Henry",
+   "origLang": "en",
+   "place": "Northern Alabama",
+   "country": "United States",
+   "lat": 33.9465,
+   "lon": -86.4728,
+   "tz": "America/Chicago",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "funny"
+   ],
+   "hook": "Two kidnappers take a ten-year-old and then try to pay his father to take him back."
+  },
+  {
+   "key": "ohenry-gift-magi",
+   "ia": "fourmillion_2603_librivox",
+   "match": "The Gift of the Magi",
+   "title": "The Gift of the Magi",
+   "author": "O. Henry",
+   "origLang": "en",
+   "place": "New York",
+   "country": "United States",
+   "lat": 40.7128,
+   "lon": -74.006,
+   "tz": "America/New_York",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "One dollar and eighty-seven cents in an eight-dollar flat, the day before Christmas."
+  },
+  {
+   "key": "jewett-green-island",
+   "ia": "countryofpointedfirs_2312_librivox",
+   "match": "Green Island",
+   "title": "Green Island",
+   "author": "Sarah Orne Jewett",
+   "origLang": "en",
+   "place": "Tenants Harbor, Maine",
+   "country": "United States",
+   "lat": 43.9645,
+   "lon": -69.2156,
+   "tz": "America/New_York",
+   "link": "story is set here",
+   "genre": "chapter",
+   "mood": [
+    "calm"
+   ],
+   "hook": "Mrs Todd rows the narrator out to the island where her mother lives."
+  },
+  {
+   "key": "leacock-whirlwind",
+   "ia": "sunshinesketches_2101_librivox",
+   "match": "The Whirlwind Campaign in Mariposa",
+   "title": "The Whirlwind Campaign in Mariposa",
+   "author": "Stephen Leacock",
+   "origLang": "en",
+   "place": "Orillia",
+   "country": "Canada",
+   "lat": 44.6082,
+   "lon": -79.4197,
+   "tz": "America/Toronto",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "funny"
+   ],
+   "hook": "Mariposa tries to raise money for the church in one week of organised enthusiasm."
+  },
+  {
+   "key": "leacock-train-mariposa",
+   "ia": "sunshinesketches_2101_librivox",
+   "match": "L'Envoi",
+   "title": "L'Envoi: The Train to Mariposa",
+   "author": "Stephen Leacock",
+   "origLang": "en",
+   "place": "Montreal",
+   "country": "Canada",
+   "lat": 45.5017,
+   "lon": -73.5673,
+   "tz": "America/Toronto",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "Rich men in a city club, and the evening train that would take them back to the small town they came from."
+  },
+  {
+   "key": "montgomery-ludovic",
+   "ia": "chronicles_of_avonlea_librivox",
+   "match": "Hurrying Ludovic",
+   "title": "Hurrying Ludovic",
+   "author": "L. M. Montgomery",
+   "origLang": "en",
+   "place": "Cavendish, Prince Edward Island",
+   "country": "Canada",
+   "lat": 46.4923,
+   "lon": -63.3815,
+   "tz": "America/Halifax",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "funny"
+   ],
+   "hook": "Ludovic Speed has been courting Theodora Dix for years. Anne decides it is time he got on with it."
+  },
+  {
+   "key": "bly-floating-gardens",
+   "ia": "sixmonthsinmexico_1605_librivox",
+   "match": "The Floating Gardens",
+   "title": "The Floating Gardens",
+   "author": "Nellie Bly",
+   "origLang": "en",
+   "place": "Mexico City",
+   "country": "Mexico",
+   "lat": 19.4326,
+   "lon": -99.1332,
+   "tz": "America/Mexico_City",
+   "link": "story is set here",
+   "genre": "travel",
+   "mood": [
+    "calm"
+   ],
+   "hook": "Nellie Bly, 1886, out on the canals at the edge of Mexico City."
+  },
+  {
+   "key": "hudson-buenos-ayres",
+   "ia": "farawayandlongagover2_2402_librivox",
+   "match": "My First Visit to Buenos Ayres",
+   "title": "My First Visit to Buenos Ayres",
+   "author": "W. H. Hudson",
+   "origLang": "en",
+   "place": "Buenos Aires",
+   "country": "Argentina",
+   "lat": -34.6037,
+   "lon": -58.3816,
+   "tz": "America/Argentina/Buenos_Aires",
+   "link": "story is set here",
+   "genre": "memoir",
+   "mood": [
+    "calm",
+    "wistful"
+   ],
+   "hook": "A boy from the pampas sees Buenos Aires for the first time."
+  },
+  {
+   "key": "hudson-aspects-plain",
+   "ia": "farawayandlongagover2_2402_librivox",
+   "match": "Aspects of the Plain",
+   "title": "Aspects of the Plain",
+   "author": "W. H. Hudson",
+   "origLang": "en",
+   "place": "Quilmes",
+   "country": "Argentina",
+   "lat": -34.7206,
+   "lon": -58.2546,
+   "tz": "America/Argentina/Buenos_Aires",
+   "link": "author's home city",
+   "genre": "memoir",
+   "mood": [
+    "calm"
+   ],
+   "hook": "The flat grass country of Hudson's childhood, and the sky above it."
+  },
+  {
+   "key": "machado-life",
+   "ia": "brazilian_tales_0812_librivox",
+   "match": "^3 - Life",
+   "title": "Life!",
+   "author": "Machado de Assis",
+   "origLang": "pt",
+   "place": "Rio de Janeiro",
+   "country": "Brazil",
+   "lat": -22.9068,
+   "lon": -43.1729,
+   "tz": "America/Sao_Paulo",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "calm"
+   ],
+   "hook": "At the end of time the Wandering Jew talks with Prometheus about whether he would do it all again."
+  },
+  {
+   "key": "fraser-babylon",
+   "ia": "bydesertwaystobaghdad_2506_librivox",
+   "match": "^19 - Babylon",
+   "title": "Babylon",
+   "author": "Louisa Jebb",
+   "origLang": "en",
+   "place": "Hillah",
+   "country": "Iraq",
+   "lat": 32.4637,
+   "lon": 44.4196,
+   "tz": "Asia/Baghdad",
+   "link": "story is set here",
+   "genre": "travel",
+   "mood": [
+    "calm",
+    "wistful"
+   ],
+   "hook": "Two Englishwomen reach the ruins of Babylon in 1908."
+  }
+ ]
+}

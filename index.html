@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lamplight</title>
+<meta name="description" content="Public-domain short stories read aloud, from a different city each night.">
+<meta name="theme-color" content="#0b0907">
+<meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Lamplight">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="manifest" href="manifest.webmanifest">
+<style>
+@font-face{font-family:"Cormorant";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/cormorant-garamond-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Cormorant";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/cormorant-garamond-latin-ext-500-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Cormorant";font-style:italic;font-weight:500;font-display:swap;src:url(fonts/cormorant-garamond-latin-500-italic.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Cormorant";font-style:italic;font-weight:500;font-display:swap;src:url(fonts/cormorant-garamond-latin-ext-500-italic.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Garamond";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/eb-garamond-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Garamond";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/eb-garamond-latin-ext-400-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Garamond";font-style:italic;font-weight:400;font-display:swap;src:url(fonts/eb-garamond-latin-400-italic.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Garamond";font-style:italic;font-weight:400;font-display:swap;src:url(fonts/eb-garamond-latin-ext-400-italic.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+
+:root{
+  --ink:#0b0907; --ink-2:#120f0b; --line:#2a2117;
+  --amber:#c8924a; --amber-dim:#9c7140; --amber-faint:#5e4528;
+  --text:#b99a72; --text-dim:#85704f; --text-faint:#5a4b36;
+  --serif-display:"Cormorant",Georgia,"Times New Roman",serif;
+  --serif:"Garamond",Georgia,"Times New Roman",serif;
+  --sat:env(safe-area-inset-top,0px); --sab:env(safe-area-inset-bottom,0px);
+  --sal:env(safe-area-inset-left,0px); --sar:env(safe-area-inset-right,0px);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;background:var(--ink);color:var(--text);font-family:var(--serif);font-size:18px;line-height:1.5;-webkit-font-smoothing:antialiased}
+body{overflow-x:hidden}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+a{color:var(--amber-dim);text-decoration:none;border-bottom:1px solid var(--amber-faint)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:1px solid var(--amber-dim);outline-offset:3px}
+
+/* ambient sky */
+#sky{position:fixed;inset:-12%;z-index:0;opacity:.55;transition:background 20s linear;animation:drift 240s ease-in-out infinite alternate;will-change:transform}
+#stars{position:fixed;inset:-6%;z-index:0;pointer-events:none;animation:drift2 420s linear infinite alternate;transition:opacity 20s linear}
+@keyframes drift{from{transform:translate3d(-1.5%,0,0) scale(1.02)}to{transform:translate3d(1.5%,-1%,0) scale(1.05)}}
+@keyframes drift2{from{transform:translate3d(0,0,0)}to{transform:translate3d(-2%,1%,0)}}
+#vignette{position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(120% 90% at 50% 38%,rgba(11,9,7,0) 0%,rgba(11,9,7,.55) 60%,rgba(11,9,7,.92) 100%)}
+
+/* layout */
+#app{position:relative;z-index:1;min-height:100%;display:flex;flex-direction:column;padding:calc(var(--sat) + 14px) calc(var(--sar) + 22px) calc(var(--sab) + 18px) calc(var(--sal) + 22px);max-width:640px;margin:0 auto}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.wordmark{font-family:var(--serif-display);letter-spacing:.32em;font-size:.82rem;color:var(--text-faint);text-transform:uppercase}
+.iconbtn{min-width:48px;min-height:48px;display:inline-flex;align-items:center;justify-content:center;border-radius:24px;color:var(--text-dim)}
+.iconbtn:active{background:rgba(200,146,74,.06)}
+main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:4vh 0 2vh}
+.place{font-family:var(--serif-display);font-style:italic;font-size:clamp(1.9rem,8vw,2.6rem);line-height:1.1;color:var(--amber);margin:0}
+.place .time{font-style:normal;color:var(--amber-dim);font-variant-numeric:tabular-nums}
+.placesub{color:var(--text-faint);font-size:.9rem;margin:.35rem 0 0;letter-spacing:.02em}
+.rule{width:44px;height:1px;background:var(--amber-faint);margin:2.2rem 0 1.6rem}
+.title{font-family:var(--serif-display);font-weight:500;font-size:clamp(1.7rem,7vw,2.25rem);line-height:1.15;margin:0;color:var(--text)}
+.byline{margin:.5rem 0 0;color:var(--text-dim);font-size:1rem}
+.byline em{font-style:italic}
+.hook{font-style:italic;color:var(--text-dim);margin:1.1rem 0 0;font-size:1.06rem;max-width:34em}
+.meta{margin:.9rem 0 0;color:var(--text-faint);font-size:.85rem;letter-spacing:.02em}
+.badge{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 .5em;margin-left:.4em;font-size:.75rem;color:var(--text-faint)}
+
+/* controls */
+.controls{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;margin:2.4rem 0 .6rem;gap:8px}
+.ctl{min-height:64px;min-width:64px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--text-dim);border-radius:32px;font-size:.78rem;letter-spacing:.06em}
+.ctl svg{width:30px;height:30px;margin-bottom:2px}
+.ctl:active{background:rgba(200,146,74,.06)}
+#play{width:96px;height:96px;border-radius:50%;border:1px solid var(--amber-faint);display:flex;align-items:center;justify-content:center;color:var(--amber);background:radial-gradient(circle at 50% 50%,rgba(200,146,74,.07),rgba(200,146,74,0) 70%)}
+#play svg{width:40px;height:40px}
+#play:active{background:rgba(200,146,74,.1)}
+.progress{margin:1.1rem 0 0;display:flex;align-items:center;gap:12px;color:var(--text-faint);font-size:.8rem;font-variant-numeric:tabular-nums}
+.bar{flex:1;height:3px;background:var(--line);border-radius:2px;position:relative;overflow:hidden}
+.bar i{position:absolute;inset:0 auto 0 0;width:0;background:var(--amber-faint)}
+.volume{display:flex;align-items:center;gap:12px;margin:1.2rem 0 0;color:var(--text-faint);font-size:.8rem}
+input[type=range]{-webkit-appearance:none;appearance:none;flex:1;height:44px;background:transparent}
+input[type=range]::-webkit-slider-runnable-track{height:3px;background:var(--line);border-radius:2px}
+input[type=range]::-moz-range-track{height:3px;background:var(--line);border-radius:2px}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:var(--amber-faint);border:1px solid var(--amber-dim);margin-top:-10px}
+input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--amber-faint);border:1px solid var(--amber-dim)}
+.actions{display:flex;gap:10px;margin:1.6rem 0 0;flex-wrap:wrap}
+.pill{min-height:48px;padding:0 1.1rem;border:1px solid var(--line);border-radius:24px;color:var(--text-dim);font-size:.95rem}
+.pill:active{background:rgba(200,146,74,.06)}
+.pill.on{border-color:var(--amber-faint);color:var(--amber-dim)}
+#resume{display:none;margin:0 0 1.6rem;padding:.8rem 1rem;border:1px solid var(--amber-faint);border-radius:14px;color:var(--amber-dim);text-align:left;width:100%;min-height:56px}
+#resume small{display:block;color:var(--text-faint);font-size:.82rem}
+.status{color:var(--text-faint);font-size:.85rem;min-height:1.3em;margin:.8rem 0 0}
+footer{color:var(--text-faint);font-size:.8rem;line-height:1.45;padding-top:1rem;border-top:1px solid rgba(42,33,23,.6)}
+footer a{color:var(--text-dim);border-color:var(--line)}
+
+/* sheets */
+.sheet{position:fixed;inset:0;z-index:20;display:none;background:rgba(6,5,4,.78);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+.sheet.open{display:block}
+.sheet .panel{position:absolute;left:0;right:0;bottom:0;max-height:86vh;overflow:auto;background:var(--ink-2);border-top:1px solid var(--line);border-radius:18px 18px 0 0;padding:18px calc(var(--sar) + 22px) calc(var(--sab) + 24px) calc(var(--sal) + 22px);max-width:640px;margin:0 auto}
+.panel h2{font-family:var(--serif-display);font-weight:500;font-size:1.5rem;margin:.2rem 0 1rem;color:var(--text)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;border-bottom:1px solid rgba(42,33,23,.6)}
+.row p{margin:0}.row small{display:block;color:var(--text-faint);font-size:.82rem;line-height:1.35}
+.toggle{width:52px;height:30px;border-radius:15px;border:1px solid var(--line);position:relative;flex:none}
+.toggle::after{content:"";position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:var(--text-faint);transition:transform .2s}
+.toggle[aria-checked=true]{border-color:var(--amber-faint)}
+.toggle[aria-checked=true]::after{transform:translateX(22px);background:var(--amber-dim)}
+.seg{display:flex;border:1px solid var(--line);border-radius:20px;overflow:hidden;flex:none}
+.seg button{min-height:40px;padding:0 .9rem;font-size:.85rem;color:var(--text-faint)}
+.seg button[aria-pressed=true]{background:rgba(200,146,74,.1);color:var(--amber-dim)}
+.citylist{list-style:none;margin:0;padding:0}
+.citylist li button{width:100%;text-align:left;min-height:54px;display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid rgba(42,33,23,.6);padding:.3rem 0}
+.citylist .c{font-family:var(--serif-display);font-size:1.2rem;color:var(--text)}
+.citylist .t{color:var(--text-faint);font-variant-numeric:tabular-nums;font-size:.9rem;white-space:nowrap}
+.citylist .n{color:var(--text-faint);font-size:.8rem;display:block}
+
+/* dim mode */
+#dim{position:fixed;inset:0;z-index:30;background:#000;opacity:0;pointer-events:none;transition:opacity 4s ease}
+body.dimmed #dim{opacity:.93;pointer-events:auto}
+
+/* review mode */
+body.review #sky,body.review #stars{display:none}
+.rv h1{font-family:var(--serif-display);font-weight:500;font-size:1.8rem;margin:.3rem 0 .2rem}
+.rv .filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin:1rem 0}
+.rv select,.rv input[type=text]{background:var(--ink-2);color:var(--text);border:1px solid var(--line);border-radius:10px;min-height:44px;padding:0 .6rem;font:inherit;font-size:.9rem;width:100%}
+.rv .card{border:1px solid var(--line);border-radius:14px;padding:.9rem 1rem;margin:0 0 .8rem;background:rgba(18,15,11,.7)}
+.rv .card h3{font-family:var(--serif-display);font-weight:500;font-size:1.3rem;margin:0}
+.rv .card p{margin:.25rem 0;font-size:.9rem;color:var(--text-dim)}
+.rv .card .k{color:var(--text-faint);font-size:.8rem}
+.rv .btns{display:flex;flex-wrap:wrap;gap:6px;margin-top:.6rem}
+.rv .btns button{min-height:44px;padding:0 .9rem;border:1px solid var(--line);border-radius:22px;font-size:.88rem;color:var(--text-dim)}
+.rv .btns button[aria-pressed=true]{border-color:var(--amber-dim);color:var(--amber)}
+.rv .cov{display:grid;grid-template-columns:repeat(12,1fr);gap:3px;margin:.6rem 0 1rem}
+.rv .cov span{font-size:.7rem;text-align:center;padding:.3rem 0;border-radius:4px;background:rgba(200,146,74,.06);color:var(--text-faint)}
+.rv .cov span.low{background:rgba(160,60,40,.15)}
+.hidden{display:none!important}
+@media (prefers-reduced-motion:reduce){#sky,#stars{animation:none}}
+@media (min-width:900px){html,body{font-size:19px}}
+</style>
+</head>
+<body>
+<div id="sky"></div>
+<canvas id="stars"></canvas>
+<div id="vignette"></div>
+
+<div id="app">
+  <header>
+    <span class="wordmark">Lamplight</span>
+    <span>
+      <button class="iconbtn" id="btnTravel" aria-label="Travel to a city">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></svg>
+      </button>
+      <button class="iconbtn" id="btnSettings" aria-label="Settings">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>
+      </button>
+    </span>
+  </header>
+
+  <main id="main">
+    <button id="resume"></button>
+    <p class="place" id="place">&nbsp;</p>
+    <p class="placesub" id="placesub">&nbsp;</p>
+    <div class="rule"></div>
+    <h1 class="title" id="title">Finding tonight's city…</h1>
+    <p class="byline" id="byline"></p>
+    <p class="hook" id="hook"></p>
+    <p class="meta" id="meta"></p>
+
+    <div class="controls">
+      <button class="ctl" id="btnBack" aria-label="Back 30 seconds">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3"/><path d="M4 3.5v4h4"/></svg>30s
+      </button>
+      <button id="play" aria-label="Play">
+        <svg id="icoPlay" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l10.5-6.5z"/></svg>
+        <svg id="icoPause" class="hidden" viewBox="0 0 24 24" fill="currentColor"><rect x="7" y="5.5" width="3.2" height="13" rx="1"/><rect x="13.8" y="5.5" width="3.2" height="13" rx="1"/></svg>
+      </button>
+      <button class="ctl" id="btnTimer" aria-label="Sleep timer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M19 14.5A8 8 0 1 1 9.5 5a6.5 6.5 0 0 0 9.5 9.5z"/></svg><span id="timerLabel">Timer off</span>
+      </button>
+    </div>
+    <div class="progress"><span id="tCur">0:00</span><div class="bar"><i id="barFill"></i></div><span id="tDur">0:00</span></div>
+    <div class="volume" id="volRow">
+      <span>Vol</span><input type="range" id="vol" min="0" max="1" step="0.01" value="0.8" aria-label="Volume">
+    </div>
+    <div class="actions">
+      <button class="pill" id="btnAnother">Another story</button>
+      <button class="pill" id="btnContinue" aria-pressed="false">Continue the night</button>
+    </div>
+    <p class="status" id="status"></p>
+  </main>
+
+  <footer id="credit">&nbsp;</footer>
+</div>
+
+<!-- Settings -->
+<div class="sheet" id="sheetSettings" role="dialog" aria-label="Settings"><div class="panel">
+  <h2>Settings</h2>
+  <div class="row"><p>Language<small>Original-language recordings are not in the catalogue yet; English plays meanwhile.</small></p>
+    <div class="seg" id="segLang"><button data-v="en" aria-pressed="true">English</button><button data-v="orig" aria-pressed="false">Original</button></div></div>
+  <div class="row"><p>Include unvetted stories<small id="unvettedNote">Stories you haven't marked Keep in review.</small></p><button class="toggle" id="tgUnvetted" role="switch" aria-checked="false" aria-label="Include unvetted"></button></div>
+  <div class="row"><p>Continue the night<small>When a story ends, the next follows the evening west, until the sleep timer.</small></p><button class="toggle" id="tgContinue" role="switch" aria-checked="false" aria-label="Continue the night"></button></div>
+  <div class="row"><p>Dim the screen<small>Fades to near-black after 20 seconds untouched. Tap to bring it back.</small></p><button class="toggle" id="tgDim" role="switch" aria-checked="true" aria-label="Dim mode"></button></div>
+  <div class="row" id="rowFade"><p>Smooth fade on iPhone<small>Uses Web Audio so the sleep timer can fade and the volume slider works. If a story goes silent when you lock the phone, turn this off: it will then simply pause at the timer.</small></p><button class="toggle" id="tgFade" role="switch" aria-checked="false" aria-label="Smooth fade on iPhone"></button></div>
+  <div class="row"><p>Review stories<small>Play, then mark Keep, Drop or Fix.</small></p><a href="?review" class="pill" style="display:inline-flex;align-items:center;border-bottom:1px solid var(--line)">Open</a></div>
+  <div class="row"><p>Forget play history<small>Lets recently heard stories come round again.</small></p><button class="pill" id="btnForget">Clear</button></div>
+  <p class="status" id="audioPath"></p>
+  <div class="actions"><button class="pill" data-close>Done</button></div>
+</div></div>
+
+<!-- Travel -->
+<div class="sheet" id="sheetTravel" role="dialog" aria-label="Travel"><div class="panel">
+  <h2>Travel</h2>
+  <p class="status" style="margin-top:-.4rem">Pick a city. Its local time is on the right.</p>
+  <ul class="citylist" id="cityList"></ul>
+  <div class="actions"><button class="pill" data-close>Close</button></div>
+</div></div>
+
+<div id="dim" aria-hidden="true"></div>
+
+<audio id="audio" preload="none" playsinline></audio>
+
+<script>
+(() => {
+'use strict';
+
+/* ---------- storage (wrapped: Safari private mode and some embeds throw) ---------- */
+const store = {
+  get(k, d) { try { const v = localStorage.getItem('lamplight.' + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem('lamplight.' + k, JSON.stringify(v)); } catch {} },
+  del(k) { try { localStorage.removeItem('lamplight.' + k); } catch {} },
+};
+
+const $ = (id) => document.getElementById(id);
+const audio = $('audio');
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+const DAY = 86400000;
+const params = new URLSearchParams(location.search);
+const REVIEW = params.has('review');
+
+let CAT = null;         // catalogue
+let current = null;     // story
+let partIdx = 0;
+let settings = Object.assign({ lang: 'en', includeUnvetted: null, continue: false, dim: true, iosFade: false, volume: 0.8 }, store.get('settings', {}));
+const saveSettings = () => store.set('settings', settings);
+let history = store.get('history', {}); // id -> last played ms
+
+/* ---------- helpers ---------- */
+const fmt = (s) => { s = Math.max(0, Math.floor(s || 0)); const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = s % 60; return (h ? h + ':' + String(m).padStart(2, '0') : m) + ':' + String(x).padStart(2, '0'); };
+const mins = (s) => Math.round(s / 60) + ' min';
+const localTime = (tz, d = new Date()) => new Intl.DateTimeFormat('en-GB', { timeZone: tz, hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(d);
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const status = (t) => { const el = $('status') || $('rvMsg'); if (el) el.textContent = t || ''; };
+function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+const gcd = (a, b) => b ? gcd(b, a % b) : a;
+
+/* ---------- eligibility ---------- */
+function keepCount() { return CAT.stories.filter((s) => s.status === 'keep').length; }
+function includeUnvetted() { return settings.includeUnvetted == null ? keepCount() < 10 : settings.includeUnvetted; }
+function eligible() {
+  const unv = includeUnvetted();
+  return CAT.stories.filter((s) => s.status === 'keep' || (unv && (s.status === 'unvetted' || s.status === 'fix')));
+}
+const recentlyPlayed = (s) => history[s.id] && Date.now() - history[s.id] < 30 * DAY;
+
+/* ---------- nightly world rotation ----------
+   Countries are ordered west to east, then stepped through with a stride near 0.38 of the
+   list so consecutive nights land far apart. The night rolls over at 05:00 local time,
+   so a story at 1am still belongs to the previous evening. */
+function nightIndex(d = new Date()) {
+  const shifted = new Date(d.getTime() - 5 * 3600000);
+  const local = Date.UTC(shifted.getFullYear(), shifted.getMonth(), shifted.getDate());
+  return Math.floor(local / DAY);
+}
+function countryCycle(list) {
+  const by = {};
+  for (const s of list) (by[s.country] = by[s.country] || []).push(s.lon);
+  const countries = Object.keys(by).sort((a, b) => avg(by[a]) - avg(by[b]));
+  const n = countries.length; if (!n) return [];
+  let stride = Math.max(1, Math.round(n * 0.382));
+  while (gcd(stride, n) !== 1) stride++;
+  return countries.map((_, i) => countries[(i * stride) % n]);
+}
+const avg = (a) => a.reduce((x, y) => x + y, 0) / a.length;
+
+function pickFrom(pool, avoidIds = []) {
+  const fresh = pool.filter((s) => !avoidIds.includes(s.id) && !recentlyPlayed(s));
+  if (fresh.length) return shuffle(fresh)[0];
+  return null;
+}
+function tonightPick(avoid = []) {
+  const list = eligible(); if (!list.length) return null;
+  const cyc = countryCycle(list);
+  const start = nightIndex() % cyc.length;
+  // tonight's country first, then onward through the cycle
+  for (let k = 0; k < cyc.length; k++) {
+    const c = cyc[(start + k) % cyc.length];
+    const s = pickFrom(list.filter((x) => x.country === c), avoid);
+    if (s) return s;
+  }
+  // everything heard within 30 days: take the least recently played
+  return list.filter((s) => !avoid.includes(s.id)).sort((a, b) => (history[a.id] || 0) - (history[b.id] || 0))[0] || list[0];
+}
+function anotherPick() {
+  const list = eligible(); if (!current) return tonightPick();
+  const same = pickFrom(list.filter((s) => s.country === current.country), [current.id]);
+  if (same) return same;
+  // nearest neighbours by time-zone offset
+  const off = tzOffset(current.tz);
+  const near = list.filter((s) => s.id !== current.id && !recentlyPlayed(s)).sort((a, b) => Math.abs(tzOffset(a.tz) - off) - Math.abs(tzOffset(b.tz) - off));
+  return near[0] || tonightPick([current.id]);
+}
+function westwardPick() {
+  // the next place west of here (by longitude), wrapping across the Pacific
+  const list = eligible().filter((s) => s.id !== current.id && !recentlyPlayed(s));
+  if (!list.length) return null;
+  const west = (s) => { let d = current.lon - s.lon; if (d <= 0.5) d += 360; return d; };
+  return list.sort((a, b) => west(a) - west(b))[0];
+}
+function tzOffset(tz, d = new Date()) {
+  const p = new Intl.DateTimeFormat('en-US', { timeZone: tz, hourCycle: 'h23', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' }).formatToParts(d);
+  const g = (t) => +p.find((x) => x.type === t).value;
+  return (Date.UTC(g('year'), g('month') - 1, g('day'), g('hour'), g('minute')) - Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate(), d.getUTCHours(), d.getUTCMinutes())) / 60000;
+}
+
+/* ---------- audio path: element volume, or Web Audio gain on iPhone ---------- */
+let ctx = null, gainNode = null, webAudio = false;
+let master = settings.volume, fade = 1;
+function setupAudioPath() {
+  // Desktop browsers honour audio.volume, so Web Audio is only needed on iOS.
+  webAudio = isIOS && settings.iosFade;
+  if (webAudio) audio.crossOrigin = 'anonymous';
+  try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch {}
+  $('volRow').classList.toggle('hidden', isIOS && !webAudio);
+  $('rowFade').classList.toggle('hidden', !isIOS);
+  $('audioPath').textContent = isIOS
+    ? (webAudio ? 'Audio path: Web Audio (fade and volume on). archive.org sends CORS headers, so this can work.' : 'Audio path: plain audio. iOS ignores page volume, so use the side buttons; the timer pauses without a fade.')
+    : 'Audio path: standard. Volume and the 60-second fade use the audio element.';
+}
+function ensureCtx() {
+  if (!webAudio || ctx) return;
+  try {
+    ctx = new (window.AudioContext || window.webkitAudioContext)();
+    const src = ctx.createMediaElementSource(audio);
+    gainNode = ctx.createGain();
+    src.connect(gainNode).connect(ctx.destination);
+  } catch (e) { webAudio = false; ctx = null; }
+}
+function applyGain() {
+  const v = Math.max(0, Math.min(1, master * fade));
+  if (webAudio && gainNode) gainNode.gain.setTargetAtTime(v, ctx.currentTime, 0.05);
+  else if (!isIOS) audio.volume = v;
+}
+
+/* ---------- show / load a story ---------- */
+function renderStory(s) {
+  $('place').innerHTML = `${esc(s.place)}, <span class="time" id="ltime">${localTime(s.tz)}</span>`;
+  $('placesub').textContent = `${s.country} · ${s.link}`;
+  $('title').textContent = s.title;
+  $('byline').innerHTML = `${esc(s.author)} · <em>read by ${esc(s.reader)}</em>`;
+  $('hook').textContent = s.hook;
+  $('meta').innerHTML = `${mins(s.duration)} · ${esc((s.mood || []).join(', '))}${s.status !== 'keep' ? `<span class="badge">${esc(s.status)}</span>` : ''}`;
+  $('credit').innerHTML = `${esc(s.title)} by ${esc(s.author)}. Read by ${esc(s.reader)}. LibriVox, public domain. ` +
+    (s.librivox ? `<a href="${esc(s.librivox)}" target="_blank" rel="noopener">LibriVox project</a> · ` : '') +
+    `<a href="https://archive.org/details/${esc(s.ia)}" target="_blank" rel="noopener">archive.org</a>`;
+  $('tDur').textContent = fmt(s.duration);
+  paintSky(s);
+}
+function load(s, { part = 0, at = 0, autoplay = false } = {}) {
+  if (!s) { $('title').textContent = 'No stories to play'; $('hook').textContent = 'Turn on "Include unvetted stories" in Settings, or mark some Keep in review.'; return; }
+  current = s; partIdx = part; current._marked = false;
+  if (!REVIEW) renderStory(s); else { $('tDur').textContent = fmt(s.duration); }
+  audio.src = s.parts[partIdx].url;
+  audio.dataset.seek = at || 0;
+  fade = 1; applyGain();
+  setMediaSession(s);
+  if (!REVIEW) store.set('current', { id: s.id, night: nightIndex() });
+  if (autoplay) play();
+}
+function play() {
+  ensureCtx();
+  if (ctx && ctx.state === 'suspended') ctx.resume().catch(() => {});
+  const p = audio.play();
+  if (p && p.catch) p.catch((e) => status('Tap play to start (' + e.name + ').'));
+}
+audio.addEventListener('loadedmetadata', () => { const t = +audio.dataset.seek || 0; if (t > 0) { try { audio.currentTime = t; } catch {} } audio.dataset.seek = 0; });
+audio.addEventListener('play', () => { setPlaying(true); status(''); });
+audio.addEventListener('pause', () => { setPlaying(false); saveResume(); });
+audio.addEventListener('waiting', () => status('Loading…'));
+audio.addEventListener('playing', () => status(''));
+audio.addEventListener('error', () => { if (current) status('This recording would not load. Try "Another story".'); });
+audio.addEventListener('timeupdate', onTime);
+audio.addEventListener('ended', onEnded);
+
+function setPlaying(on) {
+  if (!REVIEW) { $('icoPlay').classList.toggle('hidden', on); $('icoPause').classList.toggle('hidden', !on); $('play').setAttribute('aria-label', on ? 'Pause' : 'Play'); }
+  if ('mediaSession' in navigator) navigator.mediaSession.playbackState = on ? 'playing' : 'paused';
+}
+const elapsedBefore = () => current ? current.parts.slice(0, partIdx).reduce((a, p) => a + p.dur, 0) : 0;
+let lastSave = 0, listened = 0, lastT = 0;
+function onTime() {
+  if (!current) return;
+  const t = elapsedBefore() + audio.currentTime;
+  $('tCur').textContent = fmt(t);
+  $('barFill').style.width = (100 * t / current.duration).toFixed(2) + '%';
+  // count real listening for play history
+  const dt = audio.currentTime - lastT; lastT = audio.currentTime;
+  if (dt > 0 && dt < 2) { listened += dt; if (!REVIEW && listened > 60 && !current._marked) { history[current.id] = Date.now(); store.set('history', history); current._marked = true; } }
+  if (Date.now() - lastSave > 5000) { saveResume(); lastSave = Date.now(); }
+  timerTick();
+  updatePosition();
+}
+function onEnded() {
+  if (current && partIdx < current.parts.length - 1) { partIdx++; audio.src = current.parts[partIdx].url; play(); return; }
+  store.del('resume');
+  if (timer.mode === 'end') { stopForSleep(); return; }
+  if (settings.continue && (timer.mode === 'off' || timer.deadline > Date.now() + 120000)) {
+    const next = westwardPick();
+    if (next) { listened = 0; lastT = 0; load(next, { autoplay: true }); status('Following the evening west.'); return; }
+  }
+  setPlaying(false);
+}
+
+/* ---------- resume ---------- */
+function saveResume() {
+  if (!current) return;
+  const t = audio.currentTime || 0;
+  if (t < 5 && partIdx === 0) return;
+  store.set('resume', { id: current.id, part: partIdx, t, at: Date.now() });
+}
+function offerResume() {
+  const r = store.get('resume', null);
+  if (!r) return false;
+  const s = CAT.stories.find((x) => x.id === r.id);
+  if (!s || Date.now() - r.at > 21 * DAY || (r.t < 20 && !r.part)) return false;
+  const btn = $('resume');
+  const pos = s.parts.slice(0, r.part).reduce((a, p) => a + p.dur, 0) + r.t;
+  btn.innerHTML = `Pick up where you drifted off<small>${esc(s.title)}, ${esc(s.place)} · ${fmt(pos)} in</small>`;
+  btn.style.display = 'block';
+  btn.onclick = () => { btn.style.display = 'none'; listened = 0; lastT = r.t; load(s, { part: r.part, at: Math.max(0, r.t - 15), autoplay: true }); };
+  return true;
+}
+
+/* ---------- sleep timer ---------- */
+const TIMER_STEPS = ['off', 15, 30, 45, 60, 'end'];
+const timer = { mode: 'off', deadline: 0 };
+function setTimerMode(m) {
+  timer.mode = m; timer.deadline = typeof m === 'number' ? Date.now() + m * 60000 : 0;
+  fade = 1; applyGain(); renderTimer();
+}
+function renderTimer() {
+  const l = $('timerLabel'); if (!l) return;
+  if (timer.mode === 'off') l.textContent = 'Timer off';
+  else if (timer.mode === 'end') l.textContent = 'End of story';
+  else l.textContent = fmt((timer.deadline - Date.now()) / 1000).replace(/:\d\d$/, '') + ' min';
+  $('btnTimer').classList.toggle('on', timer.mode !== 'off');
+}
+function timerRemaining() {
+  if (timer.mode === 'off') return Infinity;
+  if (timer.mode === 'end') return current ? current.duration - (elapsedBefore() + audio.currentTime) : Infinity;
+  return (timer.deadline - Date.now()) / 1000;
+}
+function timerTick() {
+  if (timer.mode === 'off') return;
+  const rem = timerRemaining();
+  if (typeof timer.mode === 'number') renderTimer();
+  const canFade = !isIOS || webAudio;
+  if (canFade && rem <= 60 && rem > 0) { fade = Math.max(0, rem / 60); applyGain(); }
+  if (rem <= 0 && timer.mode !== 'end') stopForSleep();
+}
+function stopForSleep() {
+  audio.pause(); saveResume();
+  timer.mode = 'off'; renderTimer();
+  setTimeout(() => { fade = 1; applyGain(); }, 400);
+  status('Goodnight.');
+}
+setInterval(() => { if (!audio.paused) timerTick(); else if (typeof timer.mode === 'number') { renderTimer(); if (timerRemaining() <= 0) { timer.mode = 'off'; renderTimer(); } } if (current && $('ltime')) $('ltime').textContent = localTime(current.tz); }, 1000);
+
+/* ---------- media session (lock screen) ---------- */
+function setMediaSession(s) {
+  if (!('mediaSession' in navigator)) return;
+  try {
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: s.title, artist: `${s.author} · read by ${s.reader}`, album: `${s.place} · Lamplight`,
+      artwork: [{ src: new URL('icons/icon-512.png', location.href).href, sizes: '512x512', type: 'image/png' }, { src: new URL('icons/icon-192.png', location.href).href, sizes: '192x192', type: 'image/png' }],
+    });
+    navigator.mediaSession.setActionHandler('play', () => play());
+    navigator.mediaSession.setActionHandler('pause', () => audio.pause());
+    navigator.mediaSession.setActionHandler('seekbackward', (d) => back((d && d.seekOffset) || 30));
+    try { navigator.mediaSession.setActionHandler('seekforward', null); } catch {}
+    try { navigator.mediaSession.setActionHandler('previoustrack', null); navigator.mediaSession.setActionHandler('nexttrack', null); } catch {}
+  } catch {}
+}
+function updatePosition() {
+  if (!('mediaSession' in navigator) || !navigator.mediaSession.setPositionState || !isFinite(audio.duration)) return;
+  try { navigator.mediaSession.setPositionState({ duration: audio.duration, position: Math.min(audio.currentTime, audio.duration), playbackRate: 1 }); } catch {}
+}
+function back(sec) { audio.currentTime = Math.max(0, audio.currentTime - sec); updatePosition(); }
+
+/* ---------- ambient sky ---------- */
+function sunAltitude(date, lat, lon) {
+  const rad = Math.PI / 180, d = date / DAY - 10957.5;
+  const g = (357.529 + 0.98560028 * d) * rad, q = 280.459 + 0.98564736 * d;
+  const L = (q + 1.915 * Math.sin(g) + 0.02 * Math.sin(2 * g)) * rad, e = (23.439 - 0.00000036 * d) * rad;
+  const ra = Math.atan2(Math.cos(e) * Math.sin(L), Math.cos(L)), dec = Math.asin(Math.sin(e) * Math.sin(L));
+  const gmst = ((18.697374558 + 24.06570982441908 * d) % 24) * 15 * rad;
+  const H = gmst + lon * rad - ra;
+  return Math.asin(Math.sin(lat * rad) * Math.sin(dec) + Math.cos(lat * rad) * Math.cos(dec) * Math.cos(H)) / rad;
+}
+const SKY = [ // [altitude, top, horizon]
+  [-90, [6, 7, 12], [12, 10, 16]], [-18, [7, 8, 15], [15, 12, 22]], [-10, [11, 13, 28], [32, 20, 34]],
+  [-4, [18, 22, 44], [70, 38, 40]], [2, [26, 36, 58], [96, 60, 40]], [12, [30, 46, 66], [60, 62, 62]], [90, [32, 50, 70], [54, 62, 70]],
+];
+const mix = (a, b, t) => a.map((v, i) => Math.round(v + (b[i] - v) * t));
+function skyColours(alt) {
+  for (let i = 0; i < SKY.length - 1; i++) if (alt <= SKY[i + 1][0]) { const t = (alt - SKY[i][0]) / (SKY[i + 1][0] - SKY[i][0]); return [mix(SKY[i][1], SKY[i + 1][1], t), mix(SKY[i][2], SKY[i + 1][2], t)]; }
+  return [SKY[SKY.length - 1][1], SKY[SKY.length - 1][2]];
+}
+function paintSky(s) {
+  const alt = sunAltitude(Date.now(), s.lat, s.lon);
+  const [top, hor] = skyColours(alt);
+  $('sky').style.background = `linear-gradient(180deg, rgb(${top}) 0%, rgb(${mix(top, hor, .55)}) 55%, rgb(${hor}) 82%, rgb(11,9,7) 100%)`;
+  $('stars').style.opacity = String(Math.max(0, Math.min(1, (-alt - 4) / 10)) * 0.7);
+}
+function drawStars() {
+  const c = $('stars'), w = c.width = innerWidth * 1.12, h = c.height = innerHeight * 1.12, g = c.getContext('2d');
+  let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  for (let i = 0; i < 140; i++) { const x = rnd() * w, y = rnd() * h * 0.7, r = rnd() * 0.9 + 0.2; g.fillStyle = `rgba(214,190,150,${(rnd() * 0.35 + 0.1).toFixed(2)})`; g.beginPath(); g.arc(x, y, r, 0, 7); g.fill(); }
+}
+setInterval(() => { if (current) paintSky(current); }, 60000);
+
+/* ---------- dim mode ---------- */
+let idleT = null;
+function poke() {
+  document.body.classList.remove('dimmed');
+  clearTimeout(idleT);
+  if (settings.dim && !document.body.classList.contains('review')) idleT = setTimeout(() => { if (!document.querySelector('.sheet.open')) document.body.classList.add('dimmed'); }, 20000);
+}
+$('dim').addEventListener('pointerdown', (e) => { e.preventDefault(); e.stopPropagation(); poke(); });
+['pointerdown', 'keydown', 'wheel'].forEach((t) => addEventListener(t, poke, { passive: true }));
+
+/* ---------- sheets ---------- */
+function openSheet(id) { $(id).classList.add('open'); poke(); }
+document.querySelectorAll('.sheet').forEach((sh) => sh.addEventListener('click', (e) => { if (e.target === sh || e.target.hasAttribute('data-close')) sh.classList.remove('open'); }));
+function bindToggle(id, key, after) {
+  const el = $(id);
+  const val = () => key === 'includeUnvetted' ? includeUnvetted() : !!settings[key];
+  el.setAttribute('aria-checked', String(val()));
+  el.onclick = () => { settings[key] = !val(); saveSettings(); el.setAttribute('aria-checked', String(val())); after && after(); };
+}
+
+/* ---------- travel ---------- */
+function renderTravel() {
+  const list = eligible();
+  const places = {};
+  for (const s of list) { const k = s.place + '|' + s.country; (places[k] = places[k] || []).push(s); }
+  const rows = Object.values(places).sort((a, b) => a[0].lon - b[0].lon);
+  $('cityList').innerHTML = rows.map((g, i) => `<li><button data-i="${i}"><span><span class="c">${esc(g[0].place)}</span><span class="n">${esc(g[0].country)} · ${g.length} ${g.length > 1 ? 'stories' : 'story'}</span></span><span class="t">${localTime(g[0].tz)}</span></button></li>`).join('');
+  $('cityList').querySelectorAll('button').forEach((b) => b.onclick = () => {
+    const g = rows[+b.dataset.i];
+    const s = g.find((x) => !recentlyPlayed(x) && x.id !== current?.id) || g[0];
+    $('sheetTravel').classList.remove('open'); listened = 0; lastT = 0; load(s, { autoplay: true });
+  });
+}
+
+/* ---------- main wiring ---------- */
+function wireMain() {
+  $('play').onclick = () => { if (!current) return; if (audio.paused) play(); else audio.pause(); };
+  $('btnBack').onclick = () => back(30);
+  $('btnTimer').onclick = () => { const i = TIMER_STEPS.indexOf(timer.mode); setTimerMode(TIMER_STEPS[(i + 1) % TIMER_STEPS.length]); };
+  $('btnAnother').onclick = () => { const wasPlaying = !audio.paused; listened = 0; lastT = 0; load(anotherPick(), { autoplay: wasPlaying }); };
+  const renderCont = () => { $('btnContinue').classList.toggle('on', settings.continue); $('btnContinue').setAttribute('aria-pressed', String(settings.continue)); $('tgContinue').setAttribute('aria-checked', String(settings.continue)); };
+  $('btnContinue').onclick = () => { settings.continue = !settings.continue; saveSettings(); renderCont(); };
+  renderCont();
+  $('vol').value = master;
+  $('vol').oninput = (e) => { master = +e.target.value; settings.volume = master; saveSettings(); applyGain(); };
+  $('btnSettings').onclick = () => openSheet('sheetSettings');
+  $('btnTravel').onclick = () => { renderTravel(); openSheet('sheetTravel'); };
+  bindToggle('tgUnvetted', 'includeUnvetted');
+  bindToggle('tgContinue', 'continue', renderCont);
+  bindToggle('tgDim', 'dim', poke);
+  bindToggle('tgFade', 'iosFade', () => { status('Reloading to switch the audio path…'); setTimeout(() => location.reload(), 600); });
+  $('unvettedNote').textContent = `Stories you haven't marked Keep in review. ${keepCount()} kept so far${settings.includeUnvetted == null ? '; on automatically until 10 are kept' : ''}.`;
+  $('segLang').querySelectorAll('button').forEach((b) => b.onclick = () => { settings.lang = b.dataset.v; saveSettings(); $('segLang').querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b))); });
+  $('segLang').querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.v === settings.lang)));
+  $('btnForget').onclick = () => { history = {}; store.set('history', history); status('Play history cleared.'); };
+}
+
+/* ---------- review mode (?review) ---------- */
+function reviewMode() {
+  document.body.classList.add('review');
+  const marks = store.get('review', {});
+  const saveMarks = () => store.set('review', marks);
+  const statusOf = (s) => (marks[s.id] && marks[s.id].status) || s.status;
+  const app = $('app');
+  const countries = [...new Set(CAT.stories.map((s) => s.country))].sort();
+  const langs = [...new Set(CAT.stories.map((s) => s.origLang))].sort();
+  const evening = (s, utcH) => { const t = new Date(); t.setUTCHours(utcH, 30, 0, 0); const h = +new Intl.DateTimeFormat('en-GB', { timeZone: s.tz, hour: '2-digit', hourCycle: 'h23' }).format(t); return h >= 21 && h <= 23; };
+  app.innerHTML = `<div class="rv">
+    <header><a href="./" class="wordmark" style="border:0">← Lamplight</a><span class="wordmark">Review</span></header>
+    <h1>Review</h1>
+    <p class="status" id="rvSummary"></p>
+    <div class="cov" id="rvCov"></div>
+    <div class="filters">
+      <select id="fStatus"><option value="">All statuses</option><option>unvetted</option><option>keep</option><option>fix</option><option>drop</option></select>
+      <select id="fLang"><option value="">All original languages</option>${langs.map((l) => `<option>${esc(l)}</option>`).join('')}</select>
+      <select id="fCountry"><option value="">All countries</option>${countries.map((c) => `<option>${esc(c)}</option>`).join('')}</select>
+      <select id="fHour"><option value="">Any hour</option>${Array.from({ length: 24 }, (_, h) => `<option value="${h}">Late evening at ${String(h).padStart(2, '0')}:30 UTC</option>`).join('')}</select>
+    </div>
+    <div class="actions" style="margin:0 0 1rem"><button class="pill" id="rvExport">Export patch</button><button class="pill" id="rvCopy">Copy patch</button><button class="pill" id="rvClear">Clear local marks</button></div>
+    <p class="status" id="rvMsg"></p>
+    <div id="rvList"></div>
+    <div class="progress" style="position:sticky;bottom:0;background:var(--ink);padding:.6rem 0 calc(var(--sab) + .6rem)"><button class="pill" id="rvPlay">Play</button><span id="tCur">0:00</span><div class="bar"><i id="barFill"></i></div><span id="tDur">0:00</span><button class="pill" id="rvBack">−30s</button></div>
+  </div>`;
+  const cov = Array.from({ length: 24 }, (_, h) => CAT.stories.filter((s) => statusOf(s) !== 'drop' && evening(s, h)).length);
+  $('rvCov').innerHTML = cov.map((n, h) => `<span class="${n < 2 ? 'low' : ''}" title="${n} stories in late evening at ${h}:30 UTC">${String(h).padStart(2, '0')}<br>${n}</span>`).join('');
+  const render = () => {
+    const fs = $('fStatus').value, fl = $('fLang').value, fc = $('fCountry').value, fh = $('fHour').value;
+    const list = CAT.stories.filter((s) => (!fs || statusOf(s) === fs) && (!fl || s.origLang === fl) && (!fc || s.country === fc) && (fh === '' || evening(s, +fh)));
+    const counts = {}; CAT.stories.forEach((s) => { const st = statusOf(s); counts[st] = (counts[st] || 0) + 1; });
+    $('rvSummary').textContent = `${CAT.stories.length} stories · ${Object.entries(counts).map(([k, v]) => `${v} ${k}`).join(' · ')} · showing ${list.length}. Coverage by UTC hour (stories in local late evening):`;
+    $('rvList').innerHTML = list.map((s) => { const st = statusOf(s), note = (marks[s.id] && marks[s.id].note) || s.note || ''; return `<div class="card" data-id="${esc(s.id)}">
+      <h3>${esc(s.title)}</h3>
+      <p>${esc(s.author)} · read by <b>${esc(s.reader)}</b> · ${mins(s.duration)} · ${esc(s.genre || '')}</p>
+      <p class="k">${esc(s.place)}, ${esc(s.country)} (${esc(s.link)}) · ${esc(s.tz)} · now ${localTime(s.tz)} · ${esc((s.mood || []).join(', '))} · orig. ${esc(s.origLang)}</p>
+      <p><i>${esc(s.hook)}</i></p>
+      <p class="k">${s.librivox ? `<a href="${esc(s.librivox)}" target="_blank" rel="noopener">LibriVox</a> · ` : ''}<a href="https://archive.org/details/${esc(s.ia)}" target="_blank" rel="noopener">${esc(s.ia)}</a></p>
+      <div class="btns"><button data-a="play">Play</button>${['keep', 'drop', 'fix'].map((a) => `<button data-a="${a}" aria-pressed="${st === a}">${a[0].toUpperCase() + a.slice(1)}</button>`).join('')}</div>
+      <input type="text" placeholder="Note (what to fix, why dropped)" value="${esc(note)}" data-a="note" style="margin-top:.5rem">
+    </div>`; }).join('');
+    $('rvList').querySelectorAll('.card').forEach((card) => {
+      const id = card.dataset.id, s = CAT.stories.find((x) => x.id === id);
+      card.querySelectorAll('button').forEach((b) => b.onclick = () => {
+        const a = b.dataset.a;
+        if (a === 'play') { listened = 0; lastT = 0; load(s, { autoplay: true }); $('rvMsg').textContent = `Playing: ${s.title} (${s.reader})`; return; }
+        marks[id] = Object.assign(marks[id] || {}, { status: a }); saveMarks(); render();
+      });
+      card.querySelector('input').onchange = (e) => { marks[id] = Object.assign(marks[id] || { status: statusOf(s) }, { note: e.target.value }); saveMarks(); };
+    });
+  };
+  ['fStatus', 'fLang', 'fCountry', 'fHour'].forEach((id) => $(id).onchange = render);
+  const patch = () => { const p = {}; for (const s of CAT.stories) { const m = marks[s.id]; if (m && (m.status !== s.status || (m.note || '') !== (s.note || ''))) p[s.id] = { status: m.status || s.status, note: m.note || s.note || '', reviewed: new Date().toISOString().slice(0, 10) }; } return p; };
+  $('rvExport').onclick = () => {
+    const p = patch(); const n = Object.keys(p).length;
+    if (!n) { $('rvMsg').textContent = 'Nothing new to export.'; return; }
+    const blob = new Blob([JSON.stringify(p, null, 1) + '\n'], { type: 'application/json' });
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `vetting-patch-${new Date().toISOString().slice(0, 10)}.json`; a.click();
+    $('rvMsg').textContent = `${n} changes exported. Commit it to data/vetting-patches/ and the Action merges it into data/vetting.json.`;
+  };
+  $('rvCopy').onclick = async () => { const t = JSON.stringify(patch(), null, 1); try { await navigator.clipboard.writeText(t); $('rvMsg').textContent = 'Patch copied.'; } catch { $('rvMsg').textContent = t; } };
+  $('rvClear').onclick = () => { for (const k in marks) delete marks[k]; saveMarks(); render(); };
+  $('rvPlay').onclick = () => { if (!current) return; if (audio.paused) play(); else audio.pause(); };
+  $('rvBack').onclick = () => back(30);
+  audio.addEventListener('play', () => $('rvPlay').textContent = 'Pause');
+  audio.addEventListener('pause', () => $('rvPlay').textContent = 'Play');
+  render();
+}
+
+/* ---------- boot ---------- */
+async function boot() {
+  setupAudioPath();
+  drawStars(); addEventListener('resize', drawStars);
+  try {
+    const r = await fetch('catalogue.json', { cache: 'no-cache' });
+    CAT = await r.json();
+  } catch (e) { $('title').textContent = 'The catalogue would not load.'; $('hook').textContent = String(e); return; }
+  if (REVIEW) { reviewMode(); return; }
+  wireMain();
+  const resumed = offerResume();
+  const prev = store.get('current', null);
+  let s = null;
+  if (prev && prev.night === nightIndex()) s = CAT.stories.find((x) => x.id === prev.id && eligible().includes(x));
+  load(s || tonightPick());
+  if (!resumed) status('Tonight: ' + (current ? current.place : '—') + '.');
+  renderTimer(); poke();
+}
+boot();
+})();
+</script>
+</body>
+</html>

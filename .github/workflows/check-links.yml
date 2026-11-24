@@ -1,0 +1,59 @@
+name: Weekly link check
+
+# Every Sunday morning, request the first bytes of every MP3 in catalogue.json.
+# Dead links open (or update) one issue labelled "dead-links", and a pull request
+# marks those stories "fix" so they stop playing until you look at them.
+on:
+  schedule:
+    - cron: '17 9 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check every MP3
+        id: check
+        run: |
+          set +e
+          node scripts/build-catalogue.mjs --check-links | tee link-check.txt
+          echo "code=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+      - name: Report dead links
+        if: steps.check.outputs.code == '2'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create dead-links --color B60205 --description "MP3s that stopped resolving" 2>/dev/null || true
+          {
+            echo "The weekly check found MP3s that no longer load ($(date -u +%Y-%m-%d))."
+            echo
+            node -e "const r=require('./data/link-report.json');for(const d of r.dead)console.log('- **'+d.title+'** ('+d.id+'): status '+d.status+' · '+d.url)"
+            echo
+            echo "A pull request marking these stories **fix** has been opened. Merge it to stop them playing, then replace the source or re-run *Build catalogue* with resolve ticked."
+          } > body.md
+          num=$(gh issue list --label dead-links --state open --json number -q '.[0].number')
+          if [ -n "$num" ]; then gh issue comment "$num" --body-file body.md; else gh issue create --title "Dead story links" --label dead-links --body-file body.md; fi
+
+          branch="dead-links-$(date -u +%Y%m%d)"
+          git config user.name "lamplight-bot"
+          git config user.email "lamplight-bot@users.noreply.github.com"
+          git checkout -b "$branch"
+          node -e "
+            const fs=require('fs');const r=require('./data/link-report.json');
+            const v=JSON.parse(fs.readFileSync('data/vetting.json','utf8'));
+            for(const d of r.dead){v[d.id]=Object.assign(v[d.id]||{}, {status:'fix', note:'Dead link '+r.checkedAt.slice(0,10)+': '+d.status});}
+            fs.writeFileSync('data/vetting.json', JSON.stringify(v,null,1)+'\n');"
+          node scripts/build-catalogue.mjs
+          git add data/vetting.json catalogue.json
+          git commit -m "Mark dead links as fix"
+          git push -u origin "$branch"
+          gh pr create --title "Mark dead story links as fix" --body-file body.md --base main --head "$branch"

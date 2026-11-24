@@ -1,0 +1,1976 @@
+{
+ "version": 1,
+ "generated": "2026-11-24T03:55:38.670Z",
+ "resolvedAt": "2026-11-24T04:10:00Z",
+ "count": 61,
+ "stories": [
+  {
+   "id": "chekhov-darling",
+   "title": "The Darling",
+   "author": "Anton Chekhov",
+   "origLang": "ru",
+   "recLang": "en",
+   "reader": "Kirsten Ferreri",
+   "librivox": "https://librivox.org/tales-of-chekhov-volume-1-by-anton-chekhov/",
+   "ia": "tales_chekhov_vol01_0906_librivox",
+   "iaTitle": "Tales of Chekhov, Vol. 01",
+   "parts": [
+    {
+     "url": "https://archive.org/download/tales_chekhov_vol01_0906_librivox/completechekhov01_01_garnett_64kb.mp3",
+     "dur": 1594
+    }
+   ],
+   "duration": 1594,
+   "place": "Moscow",
+   "country": "Russia",
+   "lat": 55.7558,
+   "lon": 37.6173,
+   "tz": "Europe/Moscow",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "wistful",
+    "funny"
+   ],
+   "hook": "Olenka loves whoever is nearest, and adopts his opinions on timber, theatre and veterinary science.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "chekhov-bet",
+   "title": "The Bet",
+   "author": "Anton Chekhov",
+   "origLang": "ru",
+   "recLang": "en",
+   "reader": "David Wales",
+   "librivox": "https://librivox.org/the-bet-by-anton-chekhov/",
+   "ia": "thebet_1708_librivox",
+   "iaTitle": "The Bet and Other Stories",
+   "parts": [
+    {
+     "url": "https://archive.org/download/thebet_1708_librivox/thebet_01_chekhov_64kb.mp3",
+     "dur": 1040
+    }
+   ],
+   "duration": 1040,
+   "place": "Taganrog",
+   "country": "Russia",
+   "lat": 47.2362,
+   "lon": 38.8969,
+   "tz": "Europe/Moscow",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "Fifteen years of voluntary solitude, two million roubles, and a banker who would rather not pay.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "tolstoy-three-questions",
+   "title": "Three Questions",
+   "author": "Leo Tolstoy",
+   "origLang": "ru",
+   "recLang": "en",
+   "reader": "David Barnes",
+   "librivox": "https://librivox.org/what-men-live-by-and-other-tales-by-leo-tolstoy/",
+   "ia": "what_men_live_by_librivox",
+   "iaTitle": "What Men Live By and Other Tales",
+   "parts": [
+    {
+     "url": "https://archive.org/download/what_men_live_by_librivox/whatmenliveby_2_tolstoy_64kb.mp3",
+     "dur": 667
+    }
+   ],
+   "duration": 667,
+   "place": "Tula",
+   "country": "Russia",
+   "lat": 54.1931,
+   "lon": 37.6177,
+   "tz": "Europe/Moscow",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "calm"
+   ],
+   "hook": "A king wants three answers and gets them from a hermit who is busy digging.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "turgenev-tryst",
+   "title": "The Tryst",
+   "author": "Ivan Turgenev",
+   "origLang": "ru",
+   "recLang": "en",
+   "reader": "tovarisch",
+   "librivox": "https://librivox.org/a-sportsmans-sketches-by-ivan-turgenev/",
+   "ia": "sportsmans_sketches_1511_librivox",
+   "iaTitle": "A Sportsman's Sketches",
+   "parts": [
+    {
+     "url": "https://archive.org/download/sportsmans_sketches_1511_librivox/sportsmans_sketches_19_turgenev_64kb.mp3",
+     "dur": 1512
+    }
+   ],
+   "duration": 1512,
+   "place": "Oryol",
+   "country": "Russia",
+   "lat": 52.9703,
+   "lon": 36.0635,
+   "tz": "Europe/Moscow",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "A birch wood in autumn, a hunter hidden in it, and a valet who is leaving for good.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "maupassant-moonlight",
+   "title": "Moonlight",
+   "author": "Guy de Maupassant",
+   "origLang": "fr",
+   "recLang": "en",
+   "reader": "Tatiana Chichilla",
+   "librivox": "https://librivox.org/complete-original-short-stories-of-guy-de-maupassant/",
+   "ia": "completeoriginalshortstories_2103_librivox",
+   "iaTitle": "Complete Original Short Stories of Guy de Maupassant",
+   "parts": [
+    {
+     "url": "https://archive.org/download/completeoriginalshortstories_2103_librivox/shortstoriesofmaupassant_118_maupassant_64kb.mp3",
+     "dur": 452
+    }
+   ],
+   "duration": 452,
+   "place": "Rouen",
+   "country": "France",
+   "lat": 49.4431,
+   "lon": 1.0993,
+   "tz": "Europe/Paris",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "calm",
+    "wistful"
+   ],
+   "hook": "A priest who distrusts women goes out with a stick to catch his niece, and is undone by the night.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "maupassant-uncle-jules",
+   "title": "My Uncle Jules",
+   "author": "Guy de Maupassant",
+   "origLang": "fr",
+   "recLang": "en",
+   "reader": "Tatiana Chichilla",
+   "librivox": "https://librivox.org/complete-original-short-stories-of-guy-de-maupassant/",
+   "ia": "completeoriginalshortstories_2103_librivox",
+   "iaTitle": "Complete Original Short Stories of Guy de Maupassant",
+   "parts": [
+    {
+     "url": "https://archive.org/download/completeoriginalshortstories_2103_librivox/shortstoriesofmaupassant_103_maupassant_64kb.mp3",
+     "dur": 728
+    }
+   ],
+   "duration": 728,
+   "place": "Le Havre",
+   "country": "France",
+   "lat": 49.4944,
+   "lon": 0.1079,
+   "tz": "Europe/Paris",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "A family waits on the Le Havre jetty every Sunday for a rich relative, then meets him selling oysters.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "maupassant-umbrella",
+   "title": "The Umbrella",
+   "author": "Guy de Maupassant",
+   "origLang": "fr",
+   "recLang": "en",
+   "reader": "Tatiana Chichilla",
+   "librivox": "https://librivox.org/complete-original-short-stories-of-guy-de-maupassant/",
+   "ia": "completeoriginalshortstories_2103_librivox",
+   "iaTitle": "Complete Original Short Stories of Guy de Maupassant",
+   "parts": [
+    {
+     "url": "https://archive.org/download/completeoriginalshortstories_2103_librivox/shortstoriesofmaupassant_143_maupassant_64kb.mp3",
+     "dur": 877
+    }
+   ],
+   "duration": 877,
+   "place": "Paris",
+   "country": "France",
+   "lat": 48.8566,
+   "lon": 2.3522,
+   "tz": "Europe/Paris",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "funny"
+   ],
+   "hook": "Madame Oreille cannot bear to spend money, so she makes an insurance company pay for an umbrella.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "daudet-three-low-masses",
+   "title": "The Three Low Masses",
+   "author": "Alphonse Daudet",
+   "origLang": "fr",
+   "recLang": "en",
+   "reader": "David Wales",
+   "librivox": "https://librivox.org/christmas-stories-from-french-and-spanish-writers-by-pedro-antonio-de-alarcon-y-ariza/",
+   "ia": "christmas_stories_from_french_and_spanish_writers_1501_librivox",
+   "iaTitle": "Christmas Stories from French and Spanish Writers",
+   "parts": [
+    {
+     "url": "https://archive.org/download/christmas_stories_from_french_and_spanish_writers_1501_librivox/christmasstories_07_ogden_64kb.mp3",
+     "dur": 1119
+    }
+   ],
+   "duration": 1119,
+   "place": "Nîmes",
+   "country": "France",
+   "lat": 43.8367,
+   "lon": 4.3601,
+   "tz": "Europe/Paris",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "funny",
+    "eerie-but-soft"
+   ],
+   "hook": "A chaplain gallops through three Christmas masses because the turkeys are already roasting.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "coppee-louis-dor",
+   "title": "The Louis d'Or",
+   "author": "François Coppée",
+   "origLang": "fr",
+   "recLang": "en",
+   "reader": "David Wales",
+   "librivox": "https://librivox.org/christmas-stories-from-french-and-spanish-writers-by-pedro-antonio-de-alarcon-y-ariza/",
+   "ia": "christmas_stories_from_french_and_spanish_writers_1501_librivox",
+   "iaTitle": "Christmas Stories from French and Spanish Writers",
+   "parts": [
+    {
+     "url": "https://archive.org/download/christmas_stories_from_french_and_spanish_writers_1501_librivox/christmasstories_03_ogden_64kb.mp3",
+     "dur": 697
+    }
+   ],
+   "duration": 697,
+   "place": "Paris",
+   "country": "France",
+   "lat": 48.8566,
+   "lon": 2.3522,
+   "tz": "Europe/Paris",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "calm",
+    "wistful"
+   ],
+   "hook": "A ruined young man in Paris, a gold coin, and Christmas Eve.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "theuriet-christmas-forest",
+   "title": "A Christmas in the Forest",
+   "author": "André Theuriet",
+   "origLang": "fr",
+   "recLang": "en",
+   "reader": "David Wales",
+   "librivox": "https://librivox.org/christmas-stories-from-french-and-spanish-writers-by-pedro-antonio-de-alarcon-y-ariza/",
+   "ia": "christmas_stories_from_french_and_spanish_writers_1501_librivox",
+   "iaTitle": "Christmas Stories from French and Spanish Writers",
+   "parts": [
+    {
+     "url": "https://archive.org/download/christmas_stories_from_french_and_spanish_writers_1501_librivox/christmasstories_02_ogden_64kb.mp3",
+     "dur": 523
+    }
+   ],
+   "duration": 523,
+   "place": "Bar-le-Duc",
+   "country": "France",
+   "lat": 48.7726,
+   "lon": 5.1606,
+   "tz": "Europe/Paris",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "calm"
+   ],
+   "hook": "A short Christmas piece from the forest country of Lorraine. Nine minutes.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "alarcon-poets-christmas",
+   "title": "The Poet's Christmas Eve",
+   "author": "Pedro Antonio de Alarcón",
+   "origLang": "es",
+   "recLang": "en",
+   "reader": "David Wales",
+   "librivox": "https://librivox.org/christmas-stories-from-french-and-spanish-writers-by-pedro-antonio-de-alarcon-y-ariza/",
+   "ia": "christmas_stories_from_french_and_spanish_writers_1501_librivox",
+   "iaTitle": "Christmas Stories from French and Spanish Writers",
+   "parts": [
+    {
+     "url": "https://archive.org/download/christmas_stories_from_french_and_spanish_writers_1501_librivox/christmasstories_08_ogden_64kb.mp3",
+     "dur": 1336
+    }
+   ],
+   "duration": 1336,
+   "place": "Guadix",
+   "country": "Spain",
+   "lat": 37.2999,
+   "lon": -3.1369,
+   "tz": "Europe/Madrid",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "Alarcón, away from Andalusia, remembers Christmas Eve at home.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "becquer-maese-perez",
+   "title": "Maese Pérez the Organist",
+   "author": "Gustavo Adolfo Bécquer",
+   "origLang": "es",
+   "recLang": "en",
+   "reader": "David Wales",
+   "librivox": "https://librivox.org/christmas-stories-from-french-and-spanish-writers-by-pedro-antonio-de-alarcon-y-ariza/",
+   "ia": "christmas_stories_from_french_and_spanish_writers_1501_librivox",
+   "iaTitle": "Christmas Stories from French and Spanish Writers",
+   "parts": [
+    {
+     "url": "https://archive.org/download/christmas_stories_from_french_and_spanish_writers_1501_librivox/christmasstories_14_ogden_64kb.mp3",
+     "dur": 2010
+    }
+   ],
+   "duration": 2010,
+   "place": "Seville",
+   "country": "Spain",
+   "lat": 37.3891,
+   "lon": -5.9845,
+   "tz": "Europe/Madrid",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "eerie-but-soft"
+   ],
+   "hook": "Seville's best organist dies, and the organ at midnight mass goes on playing anyway.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "alarcon-captain-veneno",
+   "title": "Captain Veneno's Proposal of Marriage",
+   "author": "Pedro Antonio de Alarcón",
+   "origLang": "es",
+   "recLang": "en",
+   "reader": "Edmund Bloxam",
+   "librivox": "https://librivox.org/first-love-v2-by-various/",
+   "ia": "firstlove_2408_librivox",
+   "iaTitle": "First Love And Other Fascinating Stories of Spanish Life",
+   "parts": [
+    {
+     "url": "https://archive.org/download/firstlove_2408_librivox/firstlove_05_various_64kb.mp3",
+     "dur": 519
+    }
+   ],
+   "duration": 519,
+   "place": "Madrid",
+   "country": "Spain",
+   "lat": 40.4168,
+   "lon": -3.7038,
+   "tz": "Europe/Madrid",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "funny"
+   ],
+   "hook": "A famously bad-tempered captain proposes in the most insulting way he can manage.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "irving-rose-alhambra",
+   "title": "Legend of the Rose of the Alhambra",
+   "author": "Washington Irving",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "David Wales",
+   "librivox": "https://librivox.org/the-alhambra-by-washington-irving/",
+   "ia": "alhambra_dw_librivox",
+   "iaTitle": "The Alhambra: A Series of Tales and Sketches of the Moors and Spaniards",
+   "parts": [
+    {
+     "url": "https://archive.org/download/alhambra_dw_librivox/alhambra_26_irving_64kb.mp3",
+     "dur": 2385
+    }
+   ],
+   "duration": 2385,
+   "place": "Granada",
+   "country": "Spain",
+   "lat": 37.1761,
+   "lon": -3.5881,
+   "tz": "Europe/Madrid",
+   "link": "story is set here",
+   "genre": "legend",
+   "mood": [
+    "calm",
+    "eerie-but-soft"
+   ],
+   "hook": "A page chasing a falcon finds a girl in a locked tower, and an old lute that will only play for her.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "andersen-ugly-duckling",
+   "title": "The Ugly Duckling",
+   "author": "Hans Christian Andersen",
+   "origLang": "da",
+   "recLang": "en",
+   "reader": "Phil Chenevert",
+   "librivox": "https://librivox.org/the-emperors-new-clothes-by-hans-christian-andersen/",
+   "ia": "emperorsnewclothes_1311_librivox",
+   "iaTitle": "The Emperor's New Clothes",
+   "parts": [
+    {
+     "url": "https://archive.org/download/emperorsnewclothes_1311_librivox/emperorsnewclothes_02_andersen_64kb.mp3",
+     "dur": 1485
+    }
+   ],
+   "duration": 1485,
+   "place": "Odense",
+   "country": "Denmark",
+   "lat": 55.4038,
+   "lon": 10.4024,
+   "tz": "Europe/Copenhagen",
+   "link": "author's home city",
+   "genre": "fairy tale",
+   "mood": [
+    "calm",
+    "wistful"
+   ],
+   "hook": "You know how it ends. Andersen takes his time getting there, and the duck yard is funnier than you remember.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "andersen-swineherd",
+   "title": "The Swineherd",
+   "author": "Hans Christian Andersen",
+   "origLang": "da",
+   "recLang": "en",
+   "reader": "Phil Chenevert",
+   "librivox": "https://librivox.org/the-little-match-girl-by-hans-christian-andersen/",
+   "ia": "thelittlematchgirl_1311_librivox",
+   "iaTitle": "The Little Match Girl",
+   "parts": [
+    {
+     "url": "https://archive.org/download/thelittlematchgirl_1311_librivox/thelittlematchgirl_02_andersen_64kb.mp3",
+     "dur": 660
+    }
+   ],
+   "duration": 660,
+   "place": "Copenhagen",
+   "country": "Denmark",
+   "lat": 55.6761,
+   "lon": 12.5683,
+   "tz": "Europe/Copenhagen",
+   "link": "author's home city",
+   "genre": "fairy tale",
+   "mood": [
+    "funny"
+   ],
+   "hook": "A prince in disguise sells a princess a musical saucepan for a hundred kisses.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "swedish-lasse",
+   "title": "Lasse, My Thrall!",
+   "author": "Swedish folk tale (ed. Clara Stroebe)",
+   "origLang": "sv",
+   "recLang": "en",
+   "reader": "Hox",
+   "librivox": "https://librivox.org/the-swedish-fairy-book-by-klara-stroebe/",
+   "ia": "theswedishfairybook_2607_librivox",
+   "iaTitle": "The Swedish Fairy Book",
+   "parts": [
+    {
+     "url": "https://archive.org/download/theswedishfairybook_2607_librivox/theswedishfairybook_02_stroebe_64kb.mp3",
+     "dur": 1825
+    }
+   ],
+   "duration": 1825,
+   "place": "Stockholm",
+   "country": "Sweden",
+   "lat": 59.3293,
+   "lon": 18.0686,
+   "tz": "Europe/Stockholm",
+   "link": "tale from here",
+   "genre": "folk tale",
+   "mood": [
+    "funny"
+   ],
+   "hook": "A poor boy inherits an invisible servant who does anything asked of him and would quite like a day off.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "asgard-thors-journey",
+   "title": "Thor's Wonderful Journey",
+   "author": "Mary H. Foster & Mabel H. Cummings (retelling)",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Julie Yu",
+   "librivox": "https://librivox.org/asgard-stories-tales-from-norse-mythology-by-mary-h-foster/",
+   "ia": "asgardstories_2110_librivox",
+   "iaTitle": "Asgard Stories: Tales from Norse Mythology",
+   "parts": [
+    {
+     "url": "https://archive.org/download/asgardstories_2110_librivox/asgardstories_06_foster_64kb.mp3",
+     "dur": 965
+    }
+   ],
+   "duration": 965,
+   "place": "Reykholt",
+   "country": "Iceland",
+   "lat": 64.6647,
+   "lon": -21.2917,
+   "tz": "Atlantic/Reykjavik",
+   "link": "tale from here",
+   "genre": "myth",
+   "mood": [
+    "funny"
+   ],
+   "hook": "Thor loses a drinking contest, a race and a wrestling match, all to things that are not quite what they look like.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "brinker-holland",
+   "title": "Holland (from Hans Brinker)",
+   "author": "Mary Mapes Dodge",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Mark F. Smith",
+   "librivox": "https://librivox.org/hans-brinker-or-the-silver-skates-by-mary-mapes-dodge",
+   "ia": "hans_brinker_mfs_librivox",
+   "iaTitle": "Hans Brinker",
+   "parts": [
+    {
+     "url": "https://archive.org/download/hans_brinker_mfs_librivox/hans_brinker_02_dodge_64kb.mp3",
+     "dur": 1149
+    }
+   ],
+   "duration": 1149,
+   "place": "Amsterdam",
+   "country": "Netherlands",
+   "lat": 52.3676,
+   "lon": 4.9041,
+   "tz": "Europe/Amsterdam",
+   "link": "story is set here",
+   "genre": "chapter",
+   "mood": [
+    "calm"
+   ],
+   "hook": "An American's tour of a country held together by dykes, windmills and very careful housekeeping.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "joyce-araby",
+   "title": "Araby",
+   "author": "James Joyce",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Tadhg Hynes",
+   "librivox": "https://librivox.org/dubliners-by-james-joyce-2/",
+   "ia": "dubliners_1302_librivox",
+   "iaTitle": "Dubliners",
+   "parts": [
+    {
+     "url": "https://archive.org/download/dubliners_1302_librivox/dubliners_03_joyce_64kb.mp3",
+     "dur": 813
+    }
+   ],
+   "duration": 813,
+   "place": "Dublin",
+   "country": "Ireland",
+   "lat": 53.3498,
+   "lon": -6.2603,
+   "tz": "Europe/Dublin",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "A boy promises to bring a girl something from the bazaar, and his uncle comes home late.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "joyce-clay",
+   "title": "Clay",
+   "author": "James Joyce",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Tadhg Hynes",
+   "librivox": "https://librivox.org/dubliners-by-james-joyce-2/",
+   "ia": "dubliners_1302_librivox",
+   "iaTitle": "Dubliners",
+   "parts": [
+    {
+     "url": "https://archive.org/download/dubliners_1302_librivox/dubliners_10_joyce_64kb.mp3",
+     "dur": 896
+    }
+   ],
+   "duration": 896,
+   "place": "Dublin",
+   "country": "Ireland",
+   "lat": 53.3498,
+   "lon": -6.2603,
+   "tz": "Europe/Dublin",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "Maria crosses Dublin on Halloween with plumcake, and nobody tells her she sang the wrong verse.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "wilde-selfish-giant",
+   "title": "The Selfish Giant",
+   "author": "Oscar Wilde",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Phil Chenevert",
+   "librivox": "https://librivox.org/the-happy-prince-and-other-tales-by-oscar-wilde-2/",
+   "ia": "thehappyprinceandothertales_1411_librivox",
+   "iaTitle": "The Happy Prince and Other Tales",
+   "parts": [
+    {
+     "url": "https://archive.org/download/thehappyprinceandothertales_1411_librivox/thehappyprinceandothertales_03_wilde_64kb.mp3",
+     "dur": 680
+    }
+   ],
+   "duration": 680,
+   "place": "Dublin",
+   "country": "Ireland",
+   "lat": 53.3498,
+   "lon": -6.2603,
+   "tz": "Europe/Dublin",
+   "link": "author's home city",
+   "genre": "fairy tale",
+   "mood": [
+    "calm",
+    "wistful"
+   ],
+   "hook": "A giant walls off his garden from children, and spring declines to come in either.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "grahame-jasper",
+   "title": "Its Walls Were as of Jasper",
+   "author": "Kenneth Grahame",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Catharine Eastman",
+   "librivox": "https://librivox.org/sandpit/librivox_catalog/search.php?title=&author=kenneth+grahame&status=all&action=Search",
+   "ia": "dream_days_librivox",
+   "iaTitle": "Dream Days",
+   "parts": [
+    {
+     "url": "https://archive.org/download/dream_days_librivox/dream_days_5_grahame_64kb.mp3",
+     "dur": 1914
+    }
+   ],
+   "duration": 1914,
+   "place": "Cookham Dean",
+   "country": "United Kingdom",
+   "lat": 51.5487,
+   "lon": -0.7451,
+   "tz": "Europe/London",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "calm",
+    "wistful"
+   ],
+   "hook": "A small boy on a dull visit finds an illuminated book and walks into the walled city in its pictures.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "scottish-habetrot",
+   "title": "Habetrot the Spinstress",
+   "author": "Scottish folk tale (ed. Elizabeth W. Grierson)",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Nan Dodge",
+   "librivox": "https://librivox.org/the-scottish-fairy-book-by-elizabeth-w-grierson/",
+   "ia": "the_scottish_fairy_book_1812_librivox",
+   "iaTitle": "The Scottish Fairy Book",
+   "parts": [
+    {
+     "url": "https://archive.org/download/the_scottish_fairy_book_1812_librivox/scottishfairybook_11_grierson_64kb.mp3",
+     "dur": 1223
+    }
+   ],
+   "duration": 1223,
+   "place": "Selkirk",
+   "country": "United Kingdom",
+   "lat": 55.5486,
+   "lon": -2.8399,
+   "tz": "Europe/London",
+   "link": "tale from here",
+   "genre": "folk tale",
+   "mood": [
+    "funny"
+   ],
+   "hook": "A lazy girl, seven heads of lint, and a fairy spinster whose lips are worn flat from the thread.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "scottish-seal-catcher",
+   "title": "The Seal Catcher and the Merman",
+   "author": "Scottish folk tale (ed. Elizabeth W. Grierson)",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Nan Dodge",
+   "librivox": "https://librivox.org/the-scottish-fairy-book-by-elizabeth-w-grierson/",
+   "ia": "the_scottish_fairy_book_1812_librivox",
+   "iaTitle": "The Scottish Fairy Book",
+   "parts": [
+    {
+     "url": "https://archive.org/download/the_scottish_fairy_book_1812_librivox/scottishfairybook_05_grierson_64kb.mp3",
+     "dur": 747
+    }
+   ],
+   "duration": 747,
+   "place": "John o' Groats",
+   "country": "United Kingdom",
+   "lat": 58.6373,
+   "lon": -3.0689,
+   "tz": "Europe/London",
+   "link": "tale from here",
+   "genre": "folk tale",
+   "mood": [
+    "calm",
+    "eerie-but-soft"
+   ],
+   "hook": "A seal hunter on the far north coast is taken under the sea to meet the seal he wounded.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "mowatt-bridges-florence",
+   "title": "The Bridges of Florence",
+   "author": "Anna Cora Mowatt",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Kelly S. Taylor",
+   "librivox": "https://librivox.org/italian-life-and-legends-by-anna-cora-mowatt-ritchie/",
+   "ia": "italian_life_and_legends_2008_librivox",
+   "iaTitle": "Italian Life and Legends",
+   "parts": [
+    {
+     "url": "https://archive.org/download/italian_life_and_legends_2008_librivox/italianlife_06_mowatt_64kb.mp3",
+     "dur": 1159
+    }
+   ],
+   "duration": 1159,
+   "place": "Florence",
+   "country": "Italy",
+   "lat": 43.7696,
+   "lon": 11.2558,
+   "tz": "Europe/Rome",
+   "link": "story is set here",
+   "genre": "sketch",
+   "mood": [
+    "calm"
+   ],
+   "hook": "An American actress walks the bridges of Florence in the 1850s and tells their histories.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "egypt-shipwrecked-sailor",
+   "title": "The Shipwrecked Sailor",
+   "author": "Ancient Egyptian tale (tr. W. M. Flinders Petrie)",
+   "origLang": "egy",
+   "recLang": "en",
+   "reader": "Timothy Ferguson",
+   "librivox": "https://librivox.org/egyptian-tales-translated-from-the-papyri-series-one-by-w-m-flinders-petrie/",
+   "ia": "egyptian_tales_one_0904_librivox",
+   "iaTitle": "Egyptian Tales, translated from the Papyri, Series One",
+   "parts": [
+    {
+     "url": "https://archive.org/download/egyptian_tales_one_0904_librivox/egyptiantalesone_03_petrie_64kb.mp3",
+     "dur": 790
+    }
+   ],
+   "duration": 790,
+   "place": "Luxor",
+   "country": "Egypt",
+   "lat": 25.6872,
+   "lon": 32.6396,
+   "tz": "Africa/Cairo",
+   "link": "tale from here",
+   "genre": "folk tale",
+   "mood": [
+    "calm"
+   ],
+   "hook": "Four thousand years old: a sailor washed up on an island ruled by a kindly, very large golden serpent.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "johnson-rasselas",
+   "title": "Rasselas, Chapters I–IV: The Happy Valley",
+   "author": "Samuel Johnson",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Martin Geeson",
+   "librivox": "https://librivox.org/rasselas-prince-of-abyssinia-by-samuel-johnson/",
+   "ia": "rasselas_prince_abyssinia_0909_librivox",
+   "iaTitle": "Rasselas, Prince of Abyssinia",
+   "parts": [
+    {
+     "url": "https://archive.org/download/rasselas_prince_abyssinia_0909_librivox/rasselas_01_johnson_64kb.mp3",
+     "dur": 1795
+    }
+   ],
+   "duration": 1795,
+   "place": "Gondar",
+   "country": "Ethiopia",
+   "lat": 12.603,
+   "lon": 37.4521,
+   "tz": "Africa/Addis_Ababa",
+   "link": "story is set here",
+   "genre": "chapter",
+   "mood": [
+    "calm"
+   ],
+   "hook": "A prince lives in a valley where every wish is met, and finds that this is the problem.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "schreiner-lost-joy",
+   "title": "The Lost Joy",
+   "author": "Olive Schreiner",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "NoelBadrian",
+   "librivox": "https://librivox.org/dreams-by-olive-schreiner/",
+   "ia": "dreams_1809_librivox",
+   "iaTitle": "Dreams",
+   "parts": [
+    {
+     "url": "https://archive.org/download/dreams_1809_librivox/dreams_01_schreiner_64kb.mp3",
+     "dur": 599
+    }
+   ],
+   "duration": 599,
+   "place": "Cradock",
+   "country": "South Africa",
+   "lat": -32.1643,
+   "lon": 25.6192,
+   "tz": "Africa/Johannesburg",
+   "link": "author's home city",
+   "genre": "allegory",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "Ten minutes of allegory about Love, Joy and what comes after them, written on a Karoo farm.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "outakarel-jakhals",
+   "title": "How Jakhals Fed Oom Leeuw",
+   "author": "Sanni Metelerkamp",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "NoelBadrian",
+   "librivox": "https://librivox.org/outa-karels-stories-south-african-folk-lore-tales-by-sanni-metelerkamp/",
+   "ia": "outa_karels_stories_1809_librivox",
+   "iaTitle": "Outa Karel’s Stories: South African Folk-Lore Tales",
+   "parts": [
+    {
+     "url": "https://archive.org/download/outa_karels_stories_1809_librivox/outakarelsstories_02_metelerkamp_64kb.mp3",
+     "dur": 1267
+    }
+   ],
+   "duration": 1267,
+   "place": "Beaufort West",
+   "country": "South Africa",
+   "lat": -32.3567,
+   "lon": 22.583,
+   "tz": "Africa/Johannesburg",
+   "link": "tale from here",
+   "genre": "folk tale",
+   "mood": [
+    "funny"
+   ],
+   "hook": "Jackal and Uncle Lion, as told by Outa Karel on a Karoo farm.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "kipling-elephants-child",
+   "title": "The Elephant's Child",
+   "author": "Rudyard Kipling",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Tim Bulkeley",
+   "librivox": "https://librivox.org/just-so-stories-version-4-by-rudyard-kipling/",
+   "ia": "just_so_stories_1004_librivox",
+   "iaTitle": "Just So Stories",
+   "parts": [
+    {
+     "url": "https://archive.org/download/just_so_stories_1004_librivox/justsostories_05_kipling_64kb.mp3",
+     "dur": 1071
+    }
+   ],
+   "duration": 1071,
+   "place": "Musina, on the Limpopo",
+   "country": "South Africa",
+   "lat": -22.3488,
+   "lon": 30.041,
+   "tz": "Africa/Johannesburg",
+   "link": "story is set here",
+   "genre": "fable",
+   "mood": [
+    "funny"
+   ],
+   "hook": "An elephant with satiable curtiosity goes to the great grey-green, greasy Limpopo River to ask what the Crocodile has for dinner.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "gibran-coming-ship",
+   "title": "The Coming of the Ship",
+   "author": "Kahlil Gibran",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Phil Chenevert",
+   "librivox": "https://librivox.org/the-prophet-by-kahlil-gibran-2/",
+   "ia": "the_prophet_2109_librivox",
+   "iaTitle": "The Prophet (version 4)",
+   "parts": [
+    {
+     "url": "https://archive.org/download/the_prophet_2109_librivox/theprophet_01_gibran_64kb.mp3",
+     "dur": 484
+    }
+   ],
+   "duration": 484,
+   "place": "Bsharri",
+   "country": "Lebanon",
+   "lat": 34.2508,
+   "lon": 36.0109,
+   "tz": "Asia/Beirut",
+   "link": "author's home city",
+   "genre": "prose poem",
+   "mood": [
+    "calm"
+   ],
+   "hook": "The opening of The Prophet: twelve years waiting, then a ship in the harbour and a town that does not want him to go.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "tagore-cabuliwallah",
+   "title": "The Cabuliwallah",
+   "author": "Rabindranath Tagore",
+   "origLang": "bn",
+   "recLang": "en",
+   "reader": "Shashank Jakhmola",
+   "librivox": "https://librivox.org/stories-from-tagore-by-rabindranath-tagore/",
+   "ia": "stories_from_tagore_1911_librivox",
+   "iaTitle": "Stories from Tagore",
+   "parts": [
+    {
+     "url": "https://archive.org/download/stories_from_tagore_1911_librivox/storiesfromtagore_01_tagore_64kb.mp3",
+     "dur": 1146
+    }
+   ],
+   "duration": 1146,
+   "place": "Kolkata",
+   "country": "India",
+   "lat": 22.5726,
+   "lon": 88.3639,
+   "tz": "Asia/Kolkata",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "A five-year-old in Calcutta befriends an Afghan fruit-seller with a bag of raisins and a daughter at home.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "kipling-camel",
+   "title": "How the Camel Got His Hump",
+   "author": "Rudyard Kipling",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Tim Bulkeley",
+   "librivox": "https://librivox.org/just-so-stories-version-4-by-rudyard-kipling/",
+   "ia": "just_so_stories_1004_librivox",
+   "iaTitle": "Just So Stories",
+   "parts": [
+    {
+     "url": "https://archive.org/download/just_so_stories_1004_librivox/justsostories_02_kipling_64kb.mp3",
+     "dur": 555
+    }
+   ],
+   "duration": 555,
+   "place": "Mumbai",
+   "country": "India",
+   "lat": 19.076,
+   "lon": 72.8777,
+   "tz": "Asia/Kolkata",
+   "link": "author's home city",
+   "genre": "fable",
+   "mood": [
+    "funny"
+   ],
+   "hook": "The Camel says 'Humph' once too often, and a Djinn has had enough.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "carpenter-bangkok",
+   "title": "In Bangkok",
+   "author": "Frank G. Carpenter",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "BettyB",
+   "librivox": "https://librivox.org/from-bangkok-to-bombay-by-frank-g-carpenter/",
+   "ia": "frombangkoktobombay_2102_librivox",
+   "iaTitle": "From Bangkok to Bombay (Siam, French Indo-China, Burma and Hindustan)",
+   "parts": [
+    {
+     "url": "https://archive.org/download/frombangkoktobombay_2102_librivox/frombangkoktobombay_02_carpenter_64kb.mp3",
+     "dur": 1208
+    }
+   ],
+   "duration": 1208,
+   "place": "Bangkok",
+   "country": "Thailand",
+   "lat": 13.7563,
+   "lon": 100.5018,
+   "tz": "Asia/Bangkok",
+   "link": "story is set here",
+   "genre": "travel",
+   "mood": [
+    "calm"
+   ],
+   "hook": "A 1920s American travel writer's first impressions of Bangkok. Period attitudes included.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "carpenter-golden-pagoda",
+   "title": "The Golden Pagoda",
+   "author": "Frank G. Carpenter",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "BettyB",
+   "librivox": "https://librivox.org/from-bangkok-to-bombay-by-frank-g-carpenter/",
+   "ia": "frombangkoktobombay_2102_librivox",
+   "iaTitle": "From Bangkok to Bombay (Siam, French Indo-China, Burma and Hindustan)",
+   "parts": [
+    {
+     "url": "https://archive.org/download/frombangkoktobombay_2102_librivox/frombangkoktobombay_07_carpenter_64kb.mp3",
+     "dur": 1201
+    }
+   ],
+   "duration": 1201,
+   "place": "Yangon",
+   "country": "Myanmar",
+   "lat": 16.8661,
+   "lon": 96.1951,
+   "tz": "Asia/Yangon",
+   "link": "story is set here",
+   "genre": "travel",
+   "mood": [
+    "calm"
+   ],
+   "hook": "The Shwedagon in Rangoon, described by a 1920s American visitor.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "carpenter-baguio",
+   "title": "Baguio",
+   "author": "Frank G. Carpenter",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "BettyB",
+   "librivox": "https://librivox.org/through-the-philippines-by-frank-g-carpenter/",
+   "ia": "throughthephilippines_2505_librivox",
+   "iaTitle": "Through the Philippines and Hawaii",
+   "parts": [
+    {
+     "url": "https://archive.org/download/throughthephilippines_2505_librivox/throughthephilippines_09_carpenter_64kb.mp3",
+     "dur": 1307
+    }
+   ],
+   "duration": 1307,
+   "place": "Baguio",
+   "country": "Philippines",
+   "lat": 16.4023,
+   "lon": 120.596,
+   "tz": "Asia/Manila",
+   "link": "story is set here",
+   "genre": "travel",
+   "mood": [
+    "calm"
+   ],
+   "hook": "The pine-covered hill station above Manila, seen by a 1920s American visitor, with the attitudes of his time.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "giles-chinese-new-year",
+   "title": "Celebration of the New Year",
+   "author": "Herbert A. Giles",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "MaryAnn Spiegel",
+   "librivox": "https://librivox.org/chinese-sketches-by-herbert-allen-giles/",
+   "ia": "chinesesketches_1507_librivox",
+   "iaTitle": "Chinese Sketches",
+   "parts": [
+    {
+     "url": "https://archive.org/download/chinesesketches_1507_librivox/chinesesketches_23_giles_64kb.mp3",
+     "dur": 464
+    }
+   ],
+   "duration": 464,
+   "place": "Beijing",
+   "country": "China",
+   "lat": 39.9042,
+   "lon": 116.4074,
+   "tz": "Asia/Shanghai",
+   "link": "story is set here",
+   "genre": "sketch",
+   "mood": [
+    "calm"
+   ],
+   "hook": "A British consul's short 1870s notes on how China saw in the New Year.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "korea-sky-bridge",
+   "title": "The Sky Bridge of Birds",
+   "author": "Korean folk tale (ed. William Elliot Griffis)",
+   "origLang": "ko",
+   "recLang": "en",
+   "reader": "NoelBadrian",
+   "librivox": "https://librivox.org/korean-fairy-tales-by-william-elliot-griffis/",
+   "ia": "koreanfairytales_1906_librivox",
+   "iaTitle": "Korean Fairy Tales",
+   "parts": [
+    {
+     "url": "https://archive.org/download/koreanfairytales_1906_librivox/koreanfairytales_20_griffis_64kb.mp3",
+     "dur": 638
+    }
+   ],
+   "duration": 638,
+   "place": "Seoul",
+   "country": "South Korea",
+   "lat": 37.5665,
+   "lon": 126.978,
+   "tz": "Asia/Seoul",
+   "link": "tale from here",
+   "genre": "folk tale",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "A herdsman and a weaver in the sky, kept apart by a river of stars, meet once a year on a bridge of magpies.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "korea-woodman-fairies",
+   "title": "The Woodman and the Mountain Fairies",
+   "author": "Korean folk tale (ed. William Elliot Griffis)",
+   "origLang": "ko",
+   "recLang": "en",
+   "reader": "NoelBadrian",
+   "librivox": "https://librivox.org/korean-fairy-tales-by-william-elliot-griffis/",
+   "ia": "koreanfairytales_1906_librivox",
+   "iaTitle": "Korean Fairy Tales",
+   "parts": [
+    {
+     "url": "https://archive.org/download/koreanfairytales_1906_librivox/koreanfairytales_26_griffis_64kb.mp3",
+     "dur": 995
+    }
+   ],
+   "duration": 995,
+   "place": "Seoul",
+   "country": "South Korea",
+   "lat": 37.5665,
+   "lon": 126.978,
+   "tz": "Asia/Seoul",
+   "link": "tale from here",
+   "genre": "folk tale",
+   "mood": [
+    "calm",
+    "eerie-but-soft"
+   ],
+   "hook": "A woodcutter wanders into the mountains and meets the fairies who live there.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "hearn-bon-odori",
+   "title": "Bon-Odori",
+   "author": "Lafcadio Hearn",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "mlcui",
+   "librivox": "https://librivox.org/glimpses-of-unfamiliar-japan-first-series-by-lafcadio-hearn/",
+   "ia": "unfamiliar_japan_2009_librivox",
+   "iaTitle": "Glimpses of Unfamiliar Japan: First Series",
+   "parts": [
+    {
+     "url": "https://archive.org/download/unfamiliar_japan_2009_librivox/glimpsesjapanfirst_10_hearn_64kb.mp3",
+     "dur": 2433
+    }
+   ],
+   "duration": 2433,
+   "place": "Tottori",
+   "country": "Japan",
+   "lat": 35.5011,
+   "lon": 134.2351,
+   "tz": "Asia/Tokyo",
+   "link": "story is set here",
+   "genre": "travel",
+   "mood": [
+    "calm",
+    "eerie-but-soft"
+   ],
+   "hook": "Hearn rides into a village in summer and watches the dance for the returning dead go on by lantern light until very late.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "ogai-pier",
+   "title": "The Pier",
+   "author": "Mori Ōgai",
+   "origLang": "ja",
+   "recLang": "en",
+   "reader": "Availle",
+   "librivox": "https://librivox.org/paulownia-by-torao-taketomo",
+   "ia": "paulownia_1410_librivox",
+   "iaTitle": "Paulownia: Seven Stories from Contemporary Japanese Writers",
+   "parts": [
+    {
+     "url": "https://archive.org/download/paulownia_1410_librivox/paulownia_3_taketomo_64kb.mp3",
+     "dur": 735
+    }
+   ],
+   "duration": 735,
+   "place": "Yokohama",
+   "country": "Japan",
+   "lat": 35.4437,
+   "lon": 139.638,
+   "tz": "Asia/Tokyo",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "A young wife on the Yokohama pier, seeing her husband off.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "kafu-ukiyoe",
+   "title": "Ukiyoe",
+   "author": "Nagai Kafū",
+   "origLang": "ja",
+   "recLang": "en",
+   "reader": "Availle",
+   "librivox": "https://librivox.org/paulownia-by-torao-taketomo",
+   "ia": "paulownia_1410_librivox",
+   "iaTitle": "Paulownia: Seven Stories from Contemporary Japanese Writers",
+   "parts": [
+    {
+     "url": "https://archive.org/download/paulownia_1410_librivox/paulownia_5_taketomo_64kb.mp3",
+     "dur": 568
+    }
+   ],
+   "duration": 568,
+   "place": "Tokyo",
+   "country": "Japan",
+   "lat": 35.6762,
+   "lon": 139.6503,
+   "tz": "Asia/Tokyo",
+   "link": "author's home city",
+   "genre": "essay",
+   "mood": [
+    "calm",
+    "wistful"
+   ],
+   "hook": "Kafū on old woodblock prints of Edo and the city they recorded.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "japan-tea-kettle",
+   "title": "The Wonderful Tea-Kettle",
+   "author": "Japanese folk tale (ed. William Elliot Griffis)",
+   "origLang": "ja",
+   "recLang": "en",
+   "reader": "NoelBadrian",
+   "librivox": "https://librivox.org/japanese-fairy-world-by-william-elliot-griffis/",
+   "ia": "japanese_fairy_world_2008_librivox",
+   "iaTitle": "Japanese Fairy World: Stories from the Wonder-Lore of Japan",
+   "parts": [
+    {
+     "url": "https://archive.org/download/japanese_fairy_world_2008_librivox/japanesefairyworld_07_griffis_64kb.mp3",
+     "dur": 480
+    }
+   ],
+   "duration": 480,
+   "place": "Tatebayashi",
+   "country": "Japan",
+   "lat": 36.2449,
+   "lon": 139.542,
+   "tz": "Asia/Tokyo",
+   "link": "tale from here",
+   "genre": "folk tale",
+   "mood": [
+    "funny"
+   ],
+   "hook": "A priest's kettle grows a badger's tail when it is put on the fire, and turns out to have a stage career in it.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "mansfield-voyage",
+   "title": "The Voyage",
+   "author": "Katherine Mansfield",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Peter Dann",
+   "librivox": "https://librivox.org/the-garden-party-and-other-stories-by-katherine-mansfield/",
+   "ia": "garden_party_2308_librivox",
+   "iaTitle": "The Garden Party, and Other Stories version 2",
+   "parts": [
+    {
+     "url": "https://archive.org/download/garden_party_2308_librivox/gardenparty_09_mansfield_64kb.mp3",
+     "dur": 1147
+    }
+   ],
+   "duration": 1147,
+   "place": "Picton",
+   "country": "New Zealand",
+   "lat": -41.2906,
+   "lon": 174.001,
+   "tz": "Pacific/Auckland",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "calm",
+    "wistful"
+   ],
+   "hook": "A girl and her grandmother take the night ferry from Wellington to Picton. Swan umbrella, cabin, and a cup of tea.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "mansfield-first-ball",
+   "title": "Her First Ball",
+   "author": "Katherine Mansfield",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Peter Dann",
+   "librivox": "https://librivox.org/the-garden-party-and-other-stories-by-katherine-mansfield/",
+   "ia": "garden_party_2308_librivox",
+   "iaTitle": "The Garden Party, and Other Stories version 2",
+   "parts": [
+    {
+     "url": "https://archive.org/download/garden_party_2308_librivox/gardenparty_11_mansfield_64kb.mp3",
+     "dur": 931
+    }
+   ],
+   "duration": 931,
+   "place": "Wellington",
+   "country": "New Zealand",
+   "lat": -41.2865,
+   "lon": 174.7762,
+   "tz": "Pacific/Auckland",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "Leila's first dance card, and one fat old partner who tells her exactly how this will end.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "maori-little-people",
+   "title": "Hills of Faery: The Little People of the Mist",
+   "author": "James Cowan",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Beeswaxcandle",
+   "librivox": "https://librivox.org/maori-folk-tales-by-james-cowan/",
+   "ia": "maorifolktales_2512_librivox",
+   "iaTitle": "Maori Folk-Tales of the Port Hills",
+   "parts": [
+    {
+     "url": "https://archive.org/download/maorifolktales_2512_librivox/maorifolktalesoftheporthills_6_cowan_64kb.mp3",
+     "dur": 1093
+    }
+   ],
+   "duration": 1093,
+   "place": "Christchurch",
+   "country": "New Zealand",
+   "lat": -43.5321,
+   "lon": 172.6362,
+   "tz": "Pacific/Auckland",
+   "link": "tale from here",
+   "genre": "folk tale",
+   "mood": [
+    "eerie-but-soft"
+   ],
+   "hook": "The patupaiarehe, the fairy people said to live in the mist on the Port Hills above Christchurch.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "lawson-bush-undertaker",
+   "title": "The Bush Undertaker",
+   "author": "Henry Lawson",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Chris Greaves",
+   "librivox": "https://librivox.org/short-stories-in-prose-and-verse-by-henry-lawson/",
+   "ia": "short_stories_prose_verse_2202_librivox",
+   "iaTitle": "Short Stories in Prose and Verse",
+   "parts": [
+    {
+     "url": "https://archive.org/download/short_stories_prose_verse_2202_librivox/storiesproseverse_10_lawson_64kb.mp3",
+     "dur": 1124
+    }
+   ],
+   "duration": 1124,
+   "place": "Sydney",
+   "country": "Australia",
+   "lat": -33.8688,
+   "lon": 151.2093,
+   "tz": "Australia/Sydney",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "funny",
+    "eerie-but-soft"
+   ],
+   "hook": "An old shepherd alone with his dog on Christmas Day finds an old mate and gives him a ceremony. Dry, odd and a little macabre: vet this one.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "twain-hawaii-lodging",
+   "title": "Letter #5: Board and Lodging Secured",
+   "author": "Mark Twain",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "John Greenman",
+   "librivox": "https://librivox.org/mark-twains-letters-from-hawaii-by-mark-twain/",
+   "ia": "lettersfromhawaii_2202_librivox",
+   "iaTitle": "Mark Twain's Letters from Hawaii",
+   "parts": [
+    {
+     "url": "https://archive.org/download/lettersfromhawaii_2202_librivox/lettersfromhawaii_05_twain_64kb.mp3",
+     "dur": 867
+    }
+   ],
+   "duration": 867,
+   "place": "Honolulu",
+   "country": "United States",
+   "lat": 21.3069,
+   "lon": -157.8583,
+   "tz": "Pacific/Honolulu",
+   "link": "story is set here",
+   "genre": "travel letter",
+   "mood": [
+    "funny"
+   ],
+   "hook": "Twain, 1866, settles into lodgings in Honolulu and files his report to a Sacramento paper.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "twain-jumping-frog",
+   "title": "The Jumping Frog",
+   "author": "Mark Twain",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "John Greenman",
+   "librivox": "https://librivox.org/sketches-new-and-old-by-mark-twain/",
+   "ia": "sketches_newandold_0912_librivox",
+   "iaTitle": "Sketches New and Old",
+   "parts": [
+    {
+     "url": "https://archive.org/download/sketches_newandold_0912_librivox/sketches_03_twain_64kb.mp3",
+     "dur": 2587
+    }
+   ],
+   "duration": 2587,
+   "place": "Angels Camp",
+   "country": "United States",
+   "lat": 38.068,
+   "lon": -120.5396,
+   "tz": "America/Los_Angeles",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "funny"
+   ],
+   "hook": "The frog story, then a French translation of it, then Twain translating the French back into English.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "ohenry-ransom-red-chief",
+   "title": "The Ransom of Red Chief",
+   "author": "O. Henry",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Richard Kilmer",
+   "librivox": "https://librivox.org/whirligigs-by-o-henry/",
+   "ia": "whirligigs_1405_librivox",
+   "iaTitle": "Whirligigs",
+   "parts": [
+    {
+     "url": "https://archive.org/download/whirligigs_1405_librivox/whirligigs_08_henry_64kb.mp3",
+     "dur": 1521
+    }
+   ],
+   "duration": 1521,
+   "place": "Northern Alabama",
+   "country": "United States",
+   "lat": 33.9465,
+   "lon": -86.4728,
+   "tz": "America/Chicago",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "funny"
+   ],
+   "hook": "Two kidnappers take a ten-year-old and then try to pay his father to take him back.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "ohenry-gift-magi",
+   "title": "The Gift of the Magi",
+   "author": "O. Henry",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "valroth",
+   "librivox": "https://librivox.org/four-million-version-3-by-o-henry/",
+   "ia": "fourmillion_2603_librivox",
+   "iaTitle": "The Four Million (Version 3)",
+   "parts": [
+    {
+     "url": "https://archive.org/download/fourmillion_2603_librivox/fourmillion_02_henry_64kb.mp3",
+     "dur": 833
+    }
+   ],
+   "duration": 833,
+   "place": "New York",
+   "country": "United States",
+   "lat": 40.7128,
+   "lon": -74.006,
+   "tz": "America/New_York",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "One dollar and eighty-seven cents in an eight-dollar flat, the day before Christmas.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "jewett-green-island",
+   "title": "Green Island",
+   "author": "Sarah Orne Jewett",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "PhyllisV",
+   "librivox": "https://librivox.org/the-country-of-the-pointed-firs-by-sarah-orne-jewett/",
+   "ia": "countryofpointedfirs_2312_librivox",
+   "iaTitle": "The Country of the Pointed Firs",
+   "parts": [
+    {
+     "url": "https://archive.org/download/countryofpointedfirs_2312_librivox/countryofpointedfirs_08_jewett_64kb.mp3",
+     "dur": 1830
+    }
+   ],
+   "duration": 1830,
+   "place": "Tenants Harbor, Maine",
+   "country": "United States",
+   "lat": 43.9645,
+   "lon": -69.2156,
+   "tz": "America/New_York",
+   "link": "story is set here",
+   "genre": "chapter",
+   "mood": [
+    "calm"
+   ],
+   "hook": "Mrs Todd rows the narrator out to the island where her mother lives.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "leacock-whirlwind",
+   "title": "The Whirlwind Campaign in Mariposa",
+   "author": "Stephen Leacock",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Dick Bourgeois-Doyle",
+   "librivox": "https://librivox.org/sunshine-sketches-3-by-stephen-leacock/",
+   "ia": "sunshinesketches_2101_librivox",
+   "iaTitle": "Sunshine Sketches of a Little Town (version 3)",
+   "parts": [
+    {
+     "url": "https://archive.org/download/sunshinesketches_2101_librivox/sunshinesketches_05_leacock_64kb.mp3",
+     "dur": 1052
+    }
+   ],
+   "duration": 1052,
+   "place": "Orillia",
+   "country": "Canada",
+   "lat": 44.6082,
+   "lon": -79.4197,
+   "tz": "America/Toronto",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "funny"
+   ],
+   "hook": "Mariposa tries to raise money for the church in one week of organised enthusiasm.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "leacock-train-mariposa",
+   "title": "L'Envoi: The Train to Mariposa",
+   "author": "Stephen Leacock",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Dick Bourgeois-Doyle",
+   "librivox": "https://librivox.org/sunshine-sketches-3-by-stephen-leacock/",
+   "ia": "sunshinesketches_2101_librivox",
+   "iaTitle": "Sunshine Sketches of a Little Town (version 3)",
+   "parts": [
+    {
+     "url": "https://archive.org/download/sunshinesketches_2101_librivox/sunshinesketches_12_leacock_64kb.mp3",
+     "dur": 809
+    }
+   ],
+   "duration": 809,
+   "place": "Montreal",
+   "country": "Canada",
+   "lat": 45.5017,
+   "lon": -73.5673,
+   "tz": "America/Toronto",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "Rich men in a city club, and the evening train that would take them back to the small town they came from.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "montgomery-ludovic",
+   "title": "Hurrying Ludovic",
+   "author": "L. M. Montgomery",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "Sibella Denton",
+   "librivox": "https://librivox.org/chronicles-of-avonlea-by-lucy-maud-montgomery/",
+   "ia": "chronicles_of_avonlea_librivox",
+   "iaTitle": "Chronicles of Avonlea",
+   "parts": [
+    {
+     "url": "https://archive.org/download/chronicles_of_avonlea_librivox/chroniclesofavonlea_01_montgomery_64kb.mp3",
+     "dur": 1152
+    }
+   ],
+   "duration": 1152,
+   "place": "Cavendish, Prince Edward Island",
+   "country": "Canada",
+   "lat": 46.4923,
+   "lon": -63.3815,
+   "tz": "America/Halifax",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "funny"
+   ],
+   "hook": "Ludovic Speed has been courting Theodora Dix for years. Anne decides it is time he got on with it.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "bly-floating-gardens",
+   "title": "The Floating Gardens",
+   "author": "Nellie Bly",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "James K. White",
+   "librivox": "https://librivox.org/six-months-in-mexico-by-nellie-bly/",
+   "ia": "sixmonthsinmexico_1605_librivox",
+   "iaTitle": "Six Months In Mexico",
+   "parts": [
+    {
+     "url": "https://archive.org/download/sixmonthsinmexico_1605_librivox/sixmonthsinmexico_14_bly_64kb.mp3",
+     "dur": 936
+    }
+   ],
+   "duration": 936,
+   "place": "Mexico City",
+   "country": "Mexico",
+   "lat": 19.4326,
+   "lon": -99.1332,
+   "tz": "America/Mexico_City",
+   "link": "story is set here",
+   "genre": "travel",
+   "mood": [
+    "calm"
+   ],
+   "hook": "Nellie Bly, 1886, out on the canals at the edge of Mexico City.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "hudson-buenos-ayres",
+   "title": "My First Visit to Buenos Ayres",
+   "author": "W. H. Hudson",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "John Greenman",
+   "librivox": "https://librivox.org/far-away-and-long-ago-ver2-by-w-h-hudson/",
+   "ia": "farawayandlongagover2_2402_librivox",
+   "iaTitle": "Far Away and Long Ago - A History of My Early Life (Version 2)",
+   "parts": [
+    {
+     "url": "https://archive.org/download/farawayandlongagover2_2402_librivox/farawayandlongago2_07_hudson_64kb.mp3",
+     "dur": 1751
+    }
+   ],
+   "duration": 1751,
+   "place": "Buenos Aires",
+   "country": "Argentina",
+   "lat": -34.6037,
+   "lon": -58.3816,
+   "tz": "America/Argentina/Buenos_Aires",
+   "link": "story is set here",
+   "genre": "memoir",
+   "mood": [
+    "calm",
+    "wistful"
+   ],
+   "hook": "A boy from the pampas sees Buenos Aires for the first time.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "hudson-aspects-plain",
+   "title": "Aspects of the Plain",
+   "author": "W. H. Hudson",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "John Greenman",
+   "librivox": "https://librivox.org/far-away-and-long-ago-ver2-by-w-h-hudson/",
+   "ia": "farawayandlongagover2_2402_librivox",
+   "iaTitle": "Far Away and Long Ago - A History of My Early Life (Version 2)",
+   "parts": [
+    {
+     "url": "https://archive.org/download/farawayandlongagover2_2402_librivox/farawayandlongago2_05_hudson_64kb.mp3",
+     "dur": 1600
+    }
+   ],
+   "duration": 1600,
+   "place": "Quilmes",
+   "country": "Argentina",
+   "lat": -34.7206,
+   "lon": -58.2546,
+   "tz": "America/Argentina/Buenos_Aires",
+   "link": "author's home city",
+   "genre": "memoir",
+   "mood": [
+    "calm"
+   ],
+   "hook": "The flat grass country of Hudson's childhood, and the sky above it.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "machado-life",
+   "title": "Life!",
+   "author": "Machado de Assis",
+   "origLang": "pt",
+   "recLang": "en",
+   "reader": "Leni Ribeiro",
+   "librivox": "https://librivox.org/brazilian-tales-by-various/",
+   "ia": "brazilian_tales_0812_librivox",
+   "iaTitle": "Brazilian Tales",
+   "parts": [
+    {
+     "url": "https://archive.org/download/brazilian_tales_0812_librivox/braziliantales_3_life_64kb.mp3",
+     "dur": 1376
+    }
+   ],
+   "duration": 1376,
+   "place": "Rio de Janeiro",
+   "country": "Brazil",
+   "lat": -22.9068,
+   "lon": -43.1729,
+   "tz": "America/Sao_Paulo",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "calm"
+   ],
+   "hook": "At the end of time the Wandering Jew talks with Prometheus about whether he would do it all again.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  },
+  {
+   "id": "fraser-babylon",
+   "title": "Babylon",
+   "author": "Louisa Jebb",
+   "origLang": "en",
+   "recLang": "en",
+   "reader": "PaulW",
+   "librivox": "https://librivox.org/by-desert-ways-to-baghdad-by-louisa-jebb-wilkins/",
+   "ia": "bydesertwaystobaghdad_2506_librivox",
+   "iaTitle": "By Desert Ways to Baghdad",
+   "parts": [
+    {
+     "url": "https://archive.org/download/bydesertwaystobaghdad_2506_librivox/bydesertwaystobaghdad_19_wilkins_64kb.mp3",
+     "dur": 1144
+    }
+   ],
+   "duration": 1144,
+   "place": "Hillah",
+   "country": "Iraq",
+   "lat": 32.4637,
+   "lon": 44.4196,
+   "tz": "Asia/Baghdad",
+   "link": "story is set here",
+   "genre": "travel",
+   "mood": [
+    "calm",
+    "wistful"
+   ],
+   "hook": "Two Englishwomen reach the ruins of Babylon in 1908.",
+   "status": "unvetted",
+   "note": "",
+   "alternates": []
+  }
+ ]
+}
