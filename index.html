@@ -75,6 +75,12 @@ main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:4v
 #play{width:96px;height:96px;border-radius:50%;border:1px solid var(--amber-faint);display:flex;align-items:center;justify-content:center;color:var(--amber);background:radial-gradient(circle at 50% 50%,rgba(200,146,74,.07),rgba(200,146,74,0) 70%)}
 #play svg{width:40px;height:40px}
 #play:active{background:rgba(200,146,74,.1)}
+.controls2{display:flex;justify-content:center;gap:12px;margin:.2rem 0 .4rem}
+.ctl2{min-height:52px;min-width:120px;padding:0 1rem;display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line);border-radius:26px;color:var(--text-dim);font-size:.85rem;letter-spacing:.04em}
+.ctl2 svg{width:20px;height:20px}
+.ctl2 small{color:var(--text-faint);font-size:.75rem}
+.ctl2.on{border-color:var(--amber-faint);color:var(--amber-dim)}
+.ctl2:active{background:rgba(200,146,74,.06)}
 .progress{margin:1.1rem 0 0;display:flex;align-items:center;gap:12px;color:var(--text-faint);font-size:.8rem;font-variant-numeric:tabular-nums}
 .bar{flex:1;height:3px;background:var(--line);border-radius:2px;position:relative;overflow:hidden}
 .bar i{position:absolute;inset:0 auto 0 0;width:0;background:var(--amber-faint)}
@@ -180,9 +186,15 @@ body.review #sky,body.review #stars{display:none}
         <svg id="icoPlay" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l10.5-6.5z"/></svg>
         <svg id="icoPause" class="hidden" viewBox="0 0 24 24" fill="currentColor"><rect x="7" y="5.5" width="3.2" height="13" rx="1"/><rect x="13.8" y="5.5" width="3.2" height="13" rx="1"/></svg>
       </button>
-      <button class="ctl" id="btnTimer" aria-label="Sleep timer">
+      <button class="ctl" id="btnFwd" aria-label="Forward 10 seconds">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3"/><path d="M20 3.5v4h-4"/></svg>10s
+      </button>
+    </div>
+    <div class="controls2">
+      <button class="ctl2" id="btnTimer" aria-label="Sleep timer">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M19 14.5A8 8 0 1 1 9.5 5a6.5 6.5 0 0 0 9.5 9.5z"/></svg><span id="timerLabel">Timer off</span>
       </button>
+      <button class="ctl2" id="btnSpeed" aria-label="Playback speed"><span id="speedLabel">1×</span><small>speed</small></button>
     </div>
     <div class="progress"><span id="tCur">0:00</span><div class="bar"><i id="barFill"></i></div><span id="tDur">0:00</span></div>
     <div class="volume" id="volRow">
@@ -248,7 +260,7 @@ let CAT = null;         // catalogue
 let current = null;     // what is loaded in the player (story or foreign piece)
 const tonight = { story: null, foreign: null, fallback: false };
 let partIdx = 0;
-let settings = Object.assign({ lang: 'en', includeUnvetted: null, continue: false, dim: true, iosFade: false, volume: 0.8 }, store.get('settings', {}));
+let settings = Object.assign({ lang: 'en', includeUnvetted: null, continue: false, dim: true, iosFade: false, volume: 0.8, speed: 1 }, store.get('settings', {}));
 const saveSettings = () => store.set('settings', settings);
 let history = store.get('history', {}); // id -> last played ms
 
@@ -426,6 +438,7 @@ function load(s, { part = 0, at = 0, autoplay = false, keepPair = false } = {}) 
   if (!REVIEW) renderStory(s); else { $('tDur').textContent = fmt(s.duration); }
   audio.src = s.parts[partIdx].url;
   audio.dataset.seek = at || 0;
+  applySpeed();
   fade = 1; applyGain();
   setMediaSession(s);
   if (!REVIEW) { if (tonight.story) store.set('current', { id: tonight.story.id, night: nightIndex() }); renderAlt(); }
@@ -437,7 +450,7 @@ function play() {
   const p = audio.play();
   if (p && p.catch) p.catch((e) => status('Tap play to start (' + e.name + ').'));
 }
-audio.addEventListener('loadedmetadata', () => { const t = +audio.dataset.seek || 0; if (t > 0) { try { audio.currentTime = t; } catch {} } audio.dataset.seek = 0; });
+audio.addEventListener('loadedmetadata', () => { applySpeed(); const t = +audio.dataset.seek || 0; if (t > 0) { try { audio.currentTime = t; } catch {} } audio.dataset.seek = 0; });
 audio.addEventListener('play', () => { setPlaying(true); status(''); });
 audio.addEventListener('pause', () => { setPlaying(false); saveResume(); });
 audio.addEventListener('waiting', () => status('Loading…'));
@@ -465,7 +478,7 @@ function onTime() {
   updatePosition();
 }
 function onEnded() {
-  if (current && partIdx < current.parts.length - 1) { partIdx++; audio.src = current.parts[partIdx].url; play(); return; }
+  if (current && partIdx < current.parts.length - 1) { partIdx++; audio.src = current.parts[partIdx].url; applySpeed(); play(); return; }
   store.del('resume');
   if (timer.mode === 'end') { stopForSleep(); return; }
   if (settings.continue && (timer.mode === 'off' || timer.deadline > Date.now() + 120000)) {
@@ -541,15 +554,26 @@ function setMediaSession(s) {
     navigator.mediaSession.setActionHandler('play', () => play());
     navigator.mediaSession.setActionHandler('pause', () => audio.pause());
     navigator.mediaSession.setActionHandler('seekbackward', (d) => back((d && d.seekOffset) || 30));
-    try { navigator.mediaSession.setActionHandler('seekforward', null); } catch {}
+    navigator.mediaSession.setActionHandler('seekforward', (d) => forward((d && d.seekOffset) || 10));
     try { navigator.mediaSession.setActionHandler('previoustrack', null); navigator.mediaSession.setActionHandler('nexttrack', null); } catch {}
   } catch {}
 }
 function updatePosition() {
   if (!('mediaSession' in navigator) || !navigator.mediaSession.setPositionState || !isFinite(audio.duration)) return;
-  try { navigator.mediaSession.setPositionState({ duration: audio.duration, position: Math.min(audio.currentTime, audio.duration), playbackRate: 1 }); } catch {}
+  try { navigator.mediaSession.setPositionState({ duration: audio.duration, position: Math.min(audio.currentTime, audio.duration), playbackRate: audio.playbackRate || 1 }); } catch {}
 }
 function back(sec) { audio.currentTime = Math.max(0, audio.currentTime - sec); updatePosition(); }
+function forward(sec) {
+  const d = audio.duration;
+  if (!isFinite(d)) return;
+  audio.currentTime = Math.min(d - 0.5, audio.currentTime + sec); updatePosition();
+}
+function applySpeed() {
+  const r = settings.speed === 1.5 ? 1.5 : 1;
+  audio.defaultPlaybackRate = r; audio.playbackRate = r;
+  try { audio.preservesPitch = true; audio.webkitPreservesPitch = true; } catch {}
+  const l = $('speedLabel'); if (l) { l.textContent = r === 1.5 ? '1.5×' : '1×'; $('btnSpeed').classList.toggle('on', r !== 1); }
+}
 
 /* ---------- ambient sky ---------- */
 function sunAltitude(date, lat, lon) {
@@ -621,6 +645,9 @@ function renderTravel() {
 function wireMain() {
   $('play').onclick = () => { if (!current) return; if (audio.paused) play(); else audio.pause(); };
   $('btnBack').onclick = () => back(30);
+  $('btnFwd').onclick = () => forward(10);
+  $('btnSpeed').onclick = () => { settings.speed = settings.speed === 1.5 ? 1 : 1.5; saveSettings(); applySpeed(); updatePosition(); };
+  applySpeed();
   $('btnTimer').onclick = () => { const i = TIMER_STEPS.indexOf(timer.mode); setTimerMode(TIMER_STEPS[(i + 1) % TIMER_STEPS.length]); };
   $('btnAnother').onclick = () => { const wasPlaying = !audio.paused; listened = 0; lastT = 0; load(anotherPick(), { autoplay: wasPlaying }); };
   const renderCont = () => { $('btnContinue').classList.toggle('on', settings.continue); $('btnContinue').setAttribute('aria-pressed', String(settings.continue)); $('tgContinue').setAttribute('aria-checked', String(settings.continue)); };
@@ -666,7 +693,7 @@ function reviewMode() {
     <div class="actions" style="margin:0 0 1rem"><button class="pill" id="rvExport">Export patch</button><button class="pill" id="rvCopy">Copy patch</button><button class="pill" id="rvClear">Clear local marks</button></div>
     <p class="status" id="rvMsg"></p>
     <div id="rvList"></div>
-    <div class="progress" style="position:sticky;bottom:0;background:var(--ink);padding:.6rem 0 calc(var(--sab) + .6rem)"><button class="pill" id="rvPlay">Play</button><span id="tCur">0:00</span><div class="bar"><i id="barFill"></i></div><span id="tDur">0:00</span><button class="pill" id="rvBack">−30s</button></div>
+    <div class="progress" style="position:sticky;bottom:0;background:var(--ink);padding:.6rem 0 calc(var(--sab) + .6rem)"><button class="pill" id="rvPlay">Play</button><span id="tCur">0:00</span><div class="bar"><i id="barFill"></i></div><span id="tDur">0:00</span><button class="pill" id="rvBack">−30s</button><button class="pill" id="rvFwd">+10s</button></div>
   </div>`;
   const cov = Array.from({ length: 24 }, (_, h) => CAT.stories.filter((s) => statusOf(s) !== 'drop' && evening(s, h)).length);
   $('rvCov').innerHTML = cov.map((n, h) => `<span class="${n < 2 ? 'low' : ''}" title="${n} stories in late evening at ${h}:30 UTC">${String(h).padStart(2, '0')}<br>${n}</span>`).join('');
@@ -707,6 +734,7 @@ function reviewMode() {
   $('rvClear').onclick = () => { for (const k in marks) delete marks[k]; saveMarks(); render(); };
   $('rvPlay').onclick = () => { if (!current) return; if (audio.paused) play(); else audio.pause(); };
   $('rvBack').onclick = () => back(30);
+  $('rvFwd').onclick = () => forward(10);
   audio.addEventListener('play', () => $('rvPlay').textContent = 'Pause');
   audio.addEventListener('pause', () => $('rvPlay').textContent = 'Play');
   render();
