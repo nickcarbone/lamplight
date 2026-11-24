@@ -25,6 +25,10 @@ Each night (rolling over at 05:00 your time) the page goes to one country. Count
 
 Only stories marked **keep** play, plus **unvetted** and **fix** ones while *Include unvetted* is on (it stays on automatically until you have kept 10). **drop** never plays.
 
+## The foreign-language card
+
+Under tonight's story is a second card: a short piece (7–45 min) read in that country's own language, for the sound of the place. `langByCountry` in `data/sources.json` lists each country's languages in order of preference; pieces from the same country come first. If LibriVox has no solo recording in any of those languages, the card offers the nearest foreign piece by distance and labels it "Nearest available". Pieces live in the `foreign` list in `data/sources.json` and follow the same vetting rules as stories.
+
 ## Vetting from your phone
 
 1. Open `?review`, play a story, tap Keep / Drop / Fix and add a note.

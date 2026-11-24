@@ -1176,5 +1176,514 @@
    ],
    "hook": "Two Englishwomen reach the ruins of Babylon in 1908."
   }
- ]
+ ],
+ "foreign": [
+  {
+   "key": "fr-daudet-etoiles",
+   "ia": "lettres_de_mon_moulin_naf_0901_librivox",
+   "match": "^05 - Les etoiles",
+   "title": "Les Étoiles",
+   "titleEn": "The Stars",
+   "author": "Alphonse Daudet",
+   "lang": "fr",
+   "place": "Luberon",
+   "country": "France",
+   "lat": 43.81,
+   "lon": 5.39,
+   "tz": "Europe/Paris",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "calm"
+   ],
+   "hook": "A shepherd on the Luberon and the farm's daughter, stranded overnight by a flood, name the stars until she falls asleep."
+  },
+  {
+   "key": "fr-daudet-cornille",
+   "ia": "lettres_de_mon_moulin_naf_0901_librivox",
+   "match": "^03 - Le secret de maitre Cornille",
+   "title": "Le Secret de maître Cornille",
+   "titleEn": "Master Cornille's Secret",
+   "author": "Alphonse Daudet",
+   "lang": "fr",
+   "place": "Fontvieille",
+   "country": "France",
+   "lat": 43.7247,
+   "lon": 4.7105,
+   "tz": "Europe/Paris",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "The last windmill near Fontvieille keeps turning after the steam mills arrive, and the miller keeps a secret about why."
+  },
+  {
+   "key": "fr-hemon-chapdelaine",
+   "ia": "maria_chapdelaine_jcg_0810_librivox",
+   "match": "^Chapitre 01$",
+   "title": "Maria Chapdelaine, chapitre 1",
+   "titleEn": "Maria Chapdelaine, chapter 1",
+   "author": "Louis Hémon",
+   "lang": "fr",
+   "place": "Péribonka",
+   "country": "Canada",
+   "lat": 48.7667,
+   "lon": -72.05,
+   "tz": "America/Toronto",
+   "link": "story is set here",
+   "genre": "chapter",
+   "mood": [
+    "calm"
+   ],
+   "hook": "Mass lets out at Péribonka on the edge of the Quebec forest, and the parish stands about in the snow trading news."
+  },
+  {
+   "key": "ru-turgenev-khor",
+   "ia": "zapiskiohotnika_2409_librivox",
+   "match": "Хорь и Калиныч",
+   "title": "Хорь и Калиныч",
+   "titleEn": "Khor and Kalinych",
+   "author": "Ivan Turgenev",
+   "lang": "ru",
+   "place": "Kaluga",
+   "country": "Russia",
+   "lat": 54.5293,
+   "lon": 36.2754,
+   "tz": "Europe/Moscow",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "calm"
+   ],
+   "hook": "The first of the Sportsman's Sketches: a hunter stays with two peasant friends, one shrewd and one dreamy."
+  },
+  {
+   "key": "ru-pushkin-metel",
+   "ia": "belkintales_1406_librivox",
+   "match": "МЕТЕЛЬ",
+   "title": "Метель",
+   "titleEn": "The Blizzard",
+   "author": "Alexander Pushkin",
+   "lang": "ru",
+   "place": "Moscow",
+   "country": "Russia",
+   "lat": 55.7558,
+   "lon": 37.6173,
+   "tz": "Europe/Moscow",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "wistful",
+    "funny"
+   ],
+   "hook": "A secret elopement, a snowstorm that scatters everyone, and a wedding that turns out not to be the one anybody planned."
+  },
+  {
+   "key": "es-becquer-celda",
+   "ia": "desde_mi_celda_1902_librivox",
+   "match": "^01 - Primera",
+   "title": "Desde mi celda: Carta primera",
+   "titleEn": "From My Cell: First Letter",
+   "author": "Gustavo Adolfo Bécquer",
+   "lang": "es",
+   "place": "Veruela",
+   "country": "Spain",
+   "lat": 41.8139,
+   "lon": -1.6478,
+   "tz": "Europe/Madrid",
+   "link": "story is set here",
+   "genre": "letter",
+   "mood": [
+    "calm"
+   ],
+   "hook": "Bécquer writes to Madrid from a Cistercian monastery below the Moncayo, where he has gone for his health."
+  },
+  {
+   "key": "es-alarcon-buenaventura",
+   "ia": "novelas_cortas_krs_librivox",
+   "match": "La Buenaventura",
+   "title": "La Buenaventura",
+   "titleEn": "The Fortune",
+   "author": "Pedro Antonio de Alarcón",
+   "lang": "es",
+   "place": "Granada",
+   "country": "Spain",
+   "lat": 37.1761,
+   "lon": -3.5881,
+   "tz": "Europe/Madrid",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "funny"
+   ],
+   "hook": "Alarcón's comic tale of a Granada fortune-teller, in three short parts."
+  },
+  {
+   "key": "es-nervo-donador",
+   "ia": "eldonadordealmas_2411_librivox",
+   "match": "^01 - ",
+   "title": "El donador de almas, I",
+   "titleEn": "The Giver of Souls, part 1",
+   "author": "Amado Nervo",
+   "lang": "es",
+   "place": "Mexico City",
+   "country": "Mexico",
+   "lat": 19.4326,
+   "lon": -99.1332,
+   "tz": "America/Mexico_City",
+   "link": "author's home city",
+   "genre": "chapter",
+   "mood": [
+    "calm"
+   ],
+   "hook": "The opening of Nervo's 1899 fantasy novella, in which a doctor is given a soul as a present."
+  },
+  {
+   "key": "it-collodi-pinocchio",
+   "ia": "avventure_pinocchio_librivox",
+   "match": "ch_0[123]$",
+   "title": "Le avventure di Pinocchio, capitoli 1–3",
+   "titleEn": "The Adventures of Pinocchio, chapters 1–3",
+   "author": "Carlo Collodi",
+   "lang": "it",
+   "place": "Florence",
+   "country": "Italy",
+   "lat": 43.7696,
+   "lon": 11.2558,
+   "tz": "Europe/Rome",
+   "link": "author's home city",
+   "genre": "chapter",
+   "mood": [
+    "funny"
+   ],
+   "hook": "A log that talks, two old carpenters who come to blows, and Geppetto starting on a puppet."
+  },
+  {
+   "key": "pt-machado-missa",
+   "ia": "paginasrecolhidas_1805_librivox",
+   "match": "Missa do Galo",
+   "title": "Missa do Galo",
+   "titleEn": "Midnight Mass",
+   "author": "Machado de Assis",
+   "lang": "pt",
+   "place": "Rio de Janeiro",
+   "country": "Brazil",
+   "lat": -22.9068,
+   "lon": -43.1729,
+   "tz": "America/Sao_Paulo",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "A young man waits up on Christmas Eve to go to midnight mass, and talks late into the night with his host's wife."
+  },
+  {
+   "key": "ja-basho-oku",
+   "ia": "oku_no_hosomichi_librivox",
+   "match": "^Chapters 01-09",
+   "title": "奥の細道 (一〜九)",
+   "titleEn": "The Narrow Road to the Deep North, sections 1–9",
+   "author": "Matsuo Bashō",
+   "lang": "ja",
+   "place": "Tokyo (Fukagawa)",
+   "country": "Japan",
+   "lat": 35.6815,
+   "lon": 139.7996,
+   "tz": "Asia/Tokyo",
+   "link": "story is set here",
+   "genre": "travel",
+   "mood": [
+    "calm"
+   ],
+   "hook": "Bashō gives up his hut in Edo in the spring of 1689 and sets off north on foot."
+  },
+  {
+   "key": "ja-soseki-kusamakura",
+   "ia": "kusamakura_1311_librivox",
+   "match": "^︰1 - ",
+   "title": "草枕 (一)",
+   "titleEn": "Kusamakura (The Grass Pillow), chapter 1",
+   "author": "Natsume Sōseki",
+   "lang": "ja",
+   "place": "Tamana, Kumamoto",
+   "country": "Japan",
+   "lat": 32.9356,
+   "lon": 130.5631,
+   "tz": "Asia/Tokyo",
+   "link": "story is set here",
+   "genre": "chapter",
+   "mood": [
+    "calm"
+   ],
+   "hook": "A painter climbs a mountain path thinking about art and people. Some of the best-known opening lines in Japanese."
+  },
+  {
+   "key": "zh-luxun-achang",
+   "ia": "chao_hua_si_she_jl_librivox",
+   "match": "a chang yu shan hai jing",
+   "title": "阿长与山海经",
+   "titleEn": "Ah Chang and the Book of Hills and Seas",
+   "author": "Lu Xun",
+   "lang": "zh",
+   "place": "Shaoxing",
+   "country": "China",
+   "lat": 30.0,
+   "lon": 120.58,
+   "tz": "Asia/Shanghai",
+   "link": "story is set here",
+   "genre": "memoir",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "Lu Xun remembers his childhood nurse, her superstitions, and the illustrated book she found for him."
+  },
+  {
+   "key": "ko-hyun-binche",
+   "ia": "short_stories_hyun_1411_librivox",
+   "match": "빈처",
+   "title": "빈처",
+   "titleEn": "A Poor Man's Wife",
+   "author": "Hyun Jin-geon",
+   "lang": "ko",
+   "place": "Seoul",
+   "country": "South Korea",
+   "lat": 37.5665,
+   "lon": 126.978,
+   "tz": "Asia/Seoul",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "A struggling writer in 1920s Seoul and the wife who keeps believing in him."
+  },
+  {
+   "key": "tl-medrano-bata",
+   "ia": "nang_bata_pa_kami_1501_librivox",
+   "match": "Kabanata 1-3",
+   "title": "Nang Bata Pa Kami, kabanata 1–3",
+   "titleEn": "When We Were Young, chapters 1–3",
+   "author": "Pura L. Medrano",
+   "lang": "tl",
+   "place": "Manila",
+   "country": "Philippines",
+   "lat": 14.5995,
+   "lon": 120.9842,
+   "tz": "Asia/Manila",
+   "link": "language of this place",
+   "genre": "chapter",
+   "mood": [
+    "calm"
+   ],
+   "hook": "The opening chapters of a Tagalog book about childhood."
+  },
+  {
+   "key": "hi-premchand-sakhiyan",
+   "ia": "dosakhiyan_2512_librivox",
+   "match": "^0[12] - Part",
+   "title": "दो सखियाँ (१–२)",
+   "titleEn": "Two Friends, letters 1–2",
+   "author": "Premchand",
+   "lang": "hi",
+   "place": "Varanasi",
+   "country": "India",
+   "lat": 25.3176,
+   "lon": 82.9739,
+   "tz": "Asia/Kolkata",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "The first letters between two friends, in Premchand's story told entirely in letters."
+  },
+  {
+   "key": "sv-lagerlof-brollop",
+   "ia": "valda_berattelser_2304_librivox",
+   "match": "Bröllopsmarschen",
+   "title": "Bröllopsmarschen",
+   "titleEn": "The Wedding March",
+   "author": "Selma Lagerlöf",
+   "lang": "sv",
+   "place": "Mårbacka, Värmland",
+   "country": "Sweden",
+   "lat": 59.7569,
+   "lon": 13.2347,
+   "tz": "Europe/Stockholm",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "calm",
+    "wistful"
+   ],
+   "hook": "A short story by Selma Lagerlöf, from a selection of her tales read in Swedish."
+  },
+  {
+   "key": "nl-multatuli-havelaar",
+   "ia": "max_havelaar_as_librivox",
+   "match": "^01 - Eerste hoofdstuk",
+   "title": "Max Havelaar, eerste hoofdstuk",
+   "titleEn": "Max Havelaar, chapter 1",
+   "author": "Multatuli",
+   "lang": "nl",
+   "place": "Amsterdam",
+   "country": "Netherlands",
+   "lat": 52.3676,
+   "lon": 4.9041,
+   "tz": "Europe/Amsterdam",
+   "link": "story is set here",
+   "genre": "chapter",
+   "mood": [
+    "funny"
+   ],
+   "hook": "Batavus Droogstoppel, coffee broker of the Lauriergracht, explains why he disapproves of poetry."
+  },
+  {
+   "key": "ga-hyde-sagart",
+   "ia": "ansgealuidhegaedhealach_2406_librivox",
+   "match": "An Sagart agus an t-Easbog",
+   "title": "An Sagart agus an t-Easbog",
+   "titleEn": "The Priest and the Bishop",
+   "author": "Douglas Hyde (collector)",
+   "lang": "ga",
+   "place": "Connacht",
+   "country": "Ireland",
+   "lat": 53.87,
+   "lon": -8.4,
+   "tz": "Europe/Dublin",
+   "link": "tale from here",
+   "genre": "folk tale",
+   "mood": [],
+   "hook": "A Connacht folk tale Douglas Hyde collected in the 1880s and 1890s. I haven't been able to check its content: vet before relying on it."
+  },
+  {
+   "key": "da-grimm-bord",
+   "ia": "grimms_eventyr_kh_librivox",
+   "match": "Bord daek dig",
+   "title": "Bord, dæk dig",
+   "titleEn": "Table, Be Set",
+   "author": "Brothers Grimm (Danish translation)",
+   "lang": "da",
+   "place": "Copenhagen",
+   "country": "Denmark",
+   "lat": 55.6761,
+   "lon": 12.5683,
+   "tz": "Europe/Copenhagen",
+   "link": "language of this place",
+   "genre": "fairy tale",
+   "mood": [
+    "funny"
+   ],
+   "hook": "Grimm, read in Danish: three brothers, three magic gifts and a dishonest innkeeper."
+  }
+ ],
+ "languages": {
+  "fr": "French",
+  "ru": "Russian",
+  "es": "Spanish",
+  "it": "Italian",
+  "pt": "Portuguese",
+  "ja": "Japanese",
+  "zh": "Chinese",
+  "ko": "Korean",
+  "tl": "Tagalog",
+  "hi": "Hindi",
+  "sv": "Swedish",
+  "nl": "Dutch",
+  "ga": "Irish",
+  "da": "Danish"
+ },
+ "langByCountry": {
+  "Russia": [
+   "ru"
+  ],
+  "France": [
+   "fr"
+  ],
+  "Spain": [
+   "es"
+  ],
+  "Japan": [
+   "ja"
+  ],
+  "Denmark": [
+   "da"
+  ],
+  "Sweden": [
+   "sv"
+  ],
+  "Iceland": [
+   "is"
+  ],
+  "Netherlands": [
+   "nl"
+  ],
+  "Ireland": [
+   "ga"
+  ],
+  "United Kingdom": [
+   "cy",
+   "gd"
+  ],
+  "Italy": [
+   "it"
+  ],
+  "Egypt": [
+   "ar"
+  ],
+  "Iraq": [
+   "ar"
+  ],
+  "Lebanon": [
+   "ar"
+  ],
+  "Ethiopia": [
+   "am"
+  ],
+  "South Africa": [
+   "af",
+   "nl"
+  ],
+  "India": [
+   "hi",
+   "bn"
+  ],
+  "Thailand": [
+   "th"
+  ],
+  "Myanmar": [
+   "my"
+  ],
+  "Philippines": [
+   "tl"
+  ],
+  "China": [
+   "zh"
+  ],
+  "South Korea": [
+   "ko"
+  ],
+  "New Zealand": [
+   "mi"
+  ],
+  "Australia": [],
+  "United States": [
+   "es"
+  ],
+  "Canada": [
+   "fr"
+  ],
+  "Mexico": [
+   "es"
+  ],
+  "Argentina": [
+   "es"
+  ],
+  "Brazil": [
+   "pt"
+  ]
+ },
+ "_about_foreign": "'foreign' entries are short pieces read in a place's own language, shown as a second card under tonight's story. langByCountry lists each country's languages in order of preference; where none has a recording, the page uses the nearest foreign entry by distance and says so."
 }

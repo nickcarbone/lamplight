@@ -1,11 +1,12 @@
 {
- "version": 1,
- "generated": "2026-11-24T03:55:38.670Z",
+ "version": 2,
+ "generated": "2026-11-24T04:43:44.279Z",
  "resolvedAt": "2026-11-24T04:10:00Z",
  "count": 61,
  "stories": [
   {
    "id": "chekhov-darling",
+   "kind": "story",
    "title": "The Darling",
    "author": "Anton Chekhov",
    "origLang": "ru",
@@ -39,6 +40,7 @@
   },
   {
    "id": "chekhov-bet",
+   "kind": "story",
    "title": "The Bet",
    "author": "Anton Chekhov",
    "origLang": "ru",
@@ -71,6 +73,7 @@
   },
   {
    "id": "tolstoy-three-questions",
+   "kind": "story",
    "title": "Three Questions",
    "author": "Leo Tolstoy",
    "origLang": "ru",
@@ -103,6 +106,7 @@
   },
   {
    "id": "turgenev-tryst",
+   "kind": "story",
    "title": "The Tryst",
    "author": "Ivan Turgenev",
    "origLang": "ru",
@@ -135,6 +139,7 @@
   },
   {
    "id": "maupassant-moonlight",
+   "kind": "story",
    "title": "Moonlight",
    "author": "Guy de Maupassant",
    "origLang": "fr",
@@ -168,6 +173,7 @@
   },
   {
    "id": "maupassant-uncle-jules",
+   "kind": "story",
    "title": "My Uncle Jules",
    "author": "Guy de Maupassant",
    "origLang": "fr",
@@ -200,6 +206,7 @@
   },
   {
    "id": "maupassant-umbrella",
+   "kind": "story",
    "title": "The Umbrella",
    "author": "Guy de Maupassant",
    "origLang": "fr",
@@ -232,6 +239,7 @@
   },
   {
    "id": "daudet-three-low-masses",
+   "kind": "story",
    "title": "The Three Low Masses",
    "author": "Alphonse Daudet",
    "origLang": "fr",
@@ -265,6 +273,7 @@
   },
   {
    "id": "coppee-louis-dor",
+   "kind": "story",
    "title": "The Louis d'Or",
    "author": "François Coppée",
    "origLang": "fr",
@@ -298,6 +307,7 @@
   },
   {
    "id": "theuriet-christmas-forest",
+   "kind": "story",
    "title": "A Christmas in the Forest",
    "author": "André Theuriet",
    "origLang": "fr",
@@ -330,6 +340,7 @@
   },
   {
    "id": "alarcon-poets-christmas",
+   "kind": "story",
    "title": "The Poet's Christmas Eve",
    "author": "Pedro Antonio de Alarcón",
    "origLang": "es",
@@ -362,6 +373,7 @@
   },
   {
    "id": "becquer-maese-perez",
+   "kind": "story",
    "title": "Maese Pérez the Organist",
    "author": "Gustavo Adolfo Bécquer",
    "origLang": "es",
@@ -394,6 +406,7 @@
   },
   {
    "id": "alarcon-captain-veneno",
+   "kind": "story",
    "title": "Captain Veneno's Proposal of Marriage",
    "author": "Pedro Antonio de Alarcón",
    "origLang": "es",
@@ -426,6 +439,7 @@
   },
   {
    "id": "irving-rose-alhambra",
+   "kind": "story",
    "title": "Legend of the Rose of the Alhambra",
    "author": "Washington Irving",
    "origLang": "en",
@@ -459,6 +473,7 @@
   },
   {
    "id": "andersen-ugly-duckling",
+   "kind": "story",
    "title": "The Ugly Duckling",
    "author": "Hans Christian Andersen",
    "origLang": "da",
@@ -492,6 +507,7 @@
   },
   {
    "id": "andersen-swineherd",
+   "kind": "story",
    "title": "The Swineherd",
    "author": "Hans Christian Andersen",
    "origLang": "da",
@@ -524,6 +540,7 @@
   },
   {
    "id": "swedish-lasse",
+   "kind": "story",
    "title": "Lasse, My Thrall!",
    "author": "Swedish folk tale (ed. Clara Stroebe)",
    "origLang": "sv",
@@ -556,6 +573,7 @@
   },
   {
    "id": "asgard-thors-journey",
+   "kind": "story",
    "title": "Thor's Wonderful Journey",
    "author": "Mary H. Foster & Mabel H. Cummings (retelling)",
    "origLang": "en",
@@ -588,6 +606,7 @@
   },
   {
    "id": "brinker-holland",
+   "kind": "story",
    "title": "Holland (from Hans Brinker)",
    "author": "Mary Mapes Dodge",
    "origLang": "en",
@@ -620,6 +639,7 @@
   },
   {
    "id": "joyce-araby",
+   "kind": "story",
    "title": "Araby",
    "author": "James Joyce",
    "origLang": "en",
@@ -652,6 +672,7 @@
   },
   {
    "id": "joyce-clay",
+   "kind": "story",
    "title": "Clay",
    "author": "James Joyce",
    "origLang": "en",
@@ -684,6 +705,7 @@
   },
   {
    "id": "wilde-selfish-giant",
+   "kind": "story",
    "title": "The Selfish Giant",
    "author": "Oscar Wilde",
    "origLang": "en",
@@ -717,6 +739,7 @@
   },
   {
    "id": "grahame-jasper",
+   "kind": "story",
    "title": "Its Walls Were as of Jasper",
    "author": "Kenneth Grahame",
    "origLang": "en",
@@ -750,6 +773,7 @@
   },
   {
    "id": "scottish-habetrot",
+   "kind": "story",
    "title": "Habetrot the Spinstress",
    "author": "Scottish folk tale (ed. Elizabeth W. Grierson)",
    "origLang": "en",
@@ -782,6 +806,7 @@
   },
   {
    "id": "scottish-seal-catcher",
+   "kind": "story",
    "title": "The Seal Catcher and the Merman",
    "author": "Scottish folk tale (ed. Elizabeth W. Grierson)",
    "origLang": "en",
@@ -815,6 +840,7 @@
   },
   {
    "id": "mowatt-bridges-florence",
+   "kind": "story",
    "title": "The Bridges of Florence",
    "author": "Anna Cora Mowatt",
    "origLang": "en",
@@ -847,6 +873,7 @@
   },
   {
    "id": "egypt-shipwrecked-sailor",
+   "kind": "story",
    "title": "The Shipwrecked Sailor",
    "author": "Ancient Egyptian tale (tr. W. M. Flinders Petrie)",
    "origLang": "egy",
@@ -879,6 +906,7 @@
   },
   {
    "id": "johnson-rasselas",
+   "kind": "story",
    "title": "Rasselas, Chapters I–IV: The Happy Valley",
    "author": "Samuel Johnson",
    "origLang": "en",
@@ -911,6 +939,7 @@
   },
   {
    "id": "schreiner-lost-joy",
+   "kind": "story",
    "title": "The Lost Joy",
    "author": "Olive Schreiner",
    "origLang": "en",
@@ -943,6 +972,7 @@
   },
   {
    "id": "outakarel-jakhals",
+   "kind": "story",
    "title": "How Jakhals Fed Oom Leeuw",
    "author": "Sanni Metelerkamp",
    "origLang": "en",
@@ -975,6 +1005,7 @@
   },
   {
    "id": "kipling-elephants-child",
+   "kind": "story",
    "title": "The Elephant's Child",
    "author": "Rudyard Kipling",
    "origLang": "en",
@@ -1007,6 +1038,7 @@
   },
   {
    "id": "gibran-coming-ship",
+   "kind": "story",
    "title": "The Coming of the Ship",
    "author": "Kahlil Gibran",
    "origLang": "en",
@@ -1039,6 +1071,7 @@
   },
   {
    "id": "tagore-cabuliwallah",
+   "kind": "story",
    "title": "The Cabuliwallah",
    "author": "Rabindranath Tagore",
    "origLang": "bn",
@@ -1071,6 +1104,7 @@
   },
   {
    "id": "kipling-camel",
+   "kind": "story",
    "title": "How the Camel Got His Hump",
    "author": "Rudyard Kipling",
    "origLang": "en",
@@ -1103,6 +1137,7 @@
   },
   {
    "id": "carpenter-bangkok",
+   "kind": "story",
    "title": "In Bangkok",
    "author": "Frank G. Carpenter",
    "origLang": "en",
@@ -1135,6 +1170,7 @@
   },
   {
    "id": "carpenter-golden-pagoda",
+   "kind": "story",
    "title": "The Golden Pagoda",
    "author": "Frank G. Carpenter",
    "origLang": "en",
@@ -1167,6 +1203,7 @@
   },
   {
    "id": "carpenter-baguio",
+   "kind": "story",
    "title": "Baguio",
    "author": "Frank G. Carpenter",
    "origLang": "en",
@@ -1199,6 +1236,7 @@
   },
   {
    "id": "giles-chinese-new-year",
+   "kind": "story",
    "title": "Celebration of the New Year",
    "author": "Herbert A. Giles",
    "origLang": "en",
@@ -1231,6 +1269,7 @@
   },
   {
    "id": "korea-sky-bridge",
+   "kind": "story",
    "title": "The Sky Bridge of Birds",
    "author": "Korean folk tale (ed. William Elliot Griffis)",
    "origLang": "ko",
@@ -1263,6 +1302,7 @@
   },
   {
    "id": "korea-woodman-fairies",
+   "kind": "story",
    "title": "The Woodman and the Mountain Fairies",
    "author": "Korean folk tale (ed. William Elliot Griffis)",
    "origLang": "ko",
@@ -1296,6 +1336,7 @@
   },
   {
    "id": "hearn-bon-odori",
+   "kind": "story",
    "title": "Bon-Odori",
    "author": "Lafcadio Hearn",
    "origLang": "en",
@@ -1329,6 +1370,7 @@
   },
   {
    "id": "ogai-pier",
+   "kind": "story",
    "title": "The Pier",
    "author": "Mori Ōgai",
    "origLang": "ja",
@@ -1361,6 +1403,7 @@
   },
   {
    "id": "kafu-ukiyoe",
+   "kind": "story",
    "title": "Ukiyoe",
    "author": "Nagai Kafū",
    "origLang": "ja",
@@ -1394,6 +1437,7 @@
   },
   {
    "id": "japan-tea-kettle",
+   "kind": "story",
    "title": "The Wonderful Tea-Kettle",
    "author": "Japanese folk tale (ed. William Elliot Griffis)",
    "origLang": "ja",
@@ -1426,6 +1470,7 @@
   },
   {
    "id": "mansfield-voyage",
+   "kind": "story",
    "title": "The Voyage",
    "author": "Katherine Mansfield",
    "origLang": "en",
@@ -1459,6 +1504,7 @@
   },
   {
    "id": "mansfield-first-ball",
+   "kind": "story",
    "title": "Her First Ball",
    "author": "Katherine Mansfield",
    "origLang": "en",
@@ -1491,6 +1537,7 @@
   },
   {
    "id": "maori-little-people",
+   "kind": "story",
    "title": "Hills of Faery: The Little People of the Mist",
    "author": "James Cowan",
    "origLang": "en",
@@ -1523,6 +1570,7 @@
   },
   {
    "id": "lawson-bush-undertaker",
+   "kind": "story",
    "title": "The Bush Undertaker",
    "author": "Henry Lawson",
    "origLang": "en",
@@ -1556,6 +1604,7 @@
   },
   {
    "id": "twain-hawaii-lodging",
+   "kind": "story",
    "title": "Letter #5: Board and Lodging Secured",
    "author": "Mark Twain",
    "origLang": "en",
@@ -1588,6 +1637,7 @@
   },
   {
    "id": "twain-jumping-frog",
+   "kind": "story",
    "title": "The Jumping Frog",
    "author": "Mark Twain",
    "origLang": "en",
@@ -1620,6 +1670,7 @@
   },
   {
    "id": "ohenry-ransom-red-chief",
+   "kind": "story",
    "title": "The Ransom of Red Chief",
    "author": "O. Henry",
    "origLang": "en",
@@ -1652,6 +1703,7 @@
   },
   {
    "id": "ohenry-gift-magi",
+   "kind": "story",
    "title": "The Gift of the Magi",
    "author": "O. Henry",
    "origLang": "en",
@@ -1684,6 +1736,7 @@
   },
   {
    "id": "jewett-green-island",
+   "kind": "story",
    "title": "Green Island",
    "author": "Sarah Orne Jewett",
    "origLang": "en",
@@ -1716,6 +1769,7 @@
   },
   {
    "id": "leacock-whirlwind",
+   "kind": "story",
    "title": "The Whirlwind Campaign in Mariposa",
    "author": "Stephen Leacock",
    "origLang": "en",
@@ -1748,6 +1802,7 @@
   },
   {
    "id": "leacock-train-mariposa",
+   "kind": "story",
    "title": "L'Envoi: The Train to Mariposa",
    "author": "Stephen Leacock",
    "origLang": "en",
@@ -1780,6 +1835,7 @@
   },
   {
    "id": "montgomery-ludovic",
+   "kind": "story",
    "title": "Hurrying Ludovic",
    "author": "L. M. Montgomery",
    "origLang": "en",
@@ -1812,6 +1868,7 @@
   },
   {
    "id": "bly-floating-gardens",
+   "kind": "story",
    "title": "The Floating Gardens",
    "author": "Nellie Bly",
    "origLang": "en",
@@ -1844,6 +1901,7 @@
   },
   {
    "id": "hudson-buenos-ayres",
+   "kind": "story",
    "title": "My First Visit to Buenos Ayres",
    "author": "W. H. Hudson",
    "origLang": "en",
@@ -1877,6 +1935,7 @@
   },
   {
    "id": "hudson-aspects-plain",
+   "kind": "story",
    "title": "Aspects of the Plain",
    "author": "W. H. Hudson",
    "origLang": "en",
@@ -1909,6 +1968,7 @@
   },
   {
    "id": "machado-life",
+   "kind": "story",
    "title": "Life!",
    "author": "Machado de Assis",
    "origLang": "pt",
@@ -1941,6 +2001,7 @@
   },
   {
    "id": "fraser-babylon",
+   "kind": "story",
    "title": "Babylon",
    "author": "Louisa Jebb",
    "origLang": "en",
@@ -1972,5 +2033,837 @@
    "note": "",
    "alternates": []
   }
- ]
+ ],
+ "foreign": [
+  {
+   "id": "fr-daudet-etoiles",
+   "kind": "foreign",
+   "title": "Les Étoiles",
+   "author": "Alphonse Daudet",
+   "origLang": "fr",
+   "recLang": "fr",
+   "reader": "Naf",
+   "librivox": "https://librivox.org/lettres-de-mon-moulin-by-alphonse-daudet-0901/",
+   "ia": "lettres_de_mon_moulin_naf_0901_librivox",
+   "iaTitle": "Lettres de mon moulin",
+   "parts": [
+    {
+     "url": "https://archive.org/download/lettres_de_mon_moulin_naf_0901_librivox/lettresdemonmoulin_05_daudet_64kb.mp3",
+     "dur": 713
+    }
+   ],
+   "duration": 713,
+   "place": "Luberon",
+   "country": "France",
+   "lat": 43.81,
+   "lon": 5.39,
+   "tz": "Europe/Paris",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "calm"
+   ],
+   "hook": "A shepherd on the Luberon and the farm's daughter, stranded overnight by a flood, name the stars until she falls asleep.",
+   "status": "unvetted",
+   "note": "",
+   "titleEn": "The Stars",
+   "lang": "fr",
+   "langName": "French"
+  },
+  {
+   "id": "fr-daudet-cornille",
+   "kind": "foreign",
+   "title": "Le Secret de maître Cornille",
+   "author": "Alphonse Daudet",
+   "origLang": "fr",
+   "recLang": "fr",
+   "reader": "Naf",
+   "librivox": "https://librivox.org/lettres-de-mon-moulin-by-alphonse-daudet-0901/",
+   "ia": "lettres_de_mon_moulin_naf_0901_librivox",
+   "iaTitle": "Lettres de mon moulin",
+   "parts": [
+    {
+     "url": "https://archive.org/download/lettres_de_mon_moulin_naf_0901_librivox/lettresdemonmoulin_03_daudet_64kb.mp3",
+     "dur": 640
+    }
+   ],
+   "duration": 640,
+   "place": "Fontvieille",
+   "country": "France",
+   "lat": 43.7247,
+   "lon": 4.7105,
+   "tz": "Europe/Paris",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "The last windmill near Fontvieille keeps turning after the steam mills arrive, and the miller keeps a secret about why.",
+   "status": "unvetted",
+   "note": "",
+   "titleEn": "Master Cornille's Secret",
+   "lang": "fr",
+   "langName": "French"
+  },
+  {
+   "id": "fr-hemon-chapdelaine",
+   "kind": "foreign",
+   "title": "Maria Chapdelaine, chapitre 1",
+   "author": "Louis Hémon",
+   "origLang": "fr",
+   "recLang": "fr",
+   "reader": "Jc Guan",
+   "librivox": "https://librivox.org/maria-chapdelaine-by-louis-hemon/",
+   "ia": "maria_chapdelaine_jcg_0810_librivox",
+   "iaTitle": "Maria Chapdelaine",
+   "parts": [
+    {
+     "url": "https://archive.org/download/maria_chapdelaine_jcg_0810_librivox/mariachapdelaine_fr_01_hemon_64kb.mp3",
+     "dur": 1686
+    }
+   ],
+   "duration": 1686,
+   "place": "Péribonka",
+   "country": "Canada",
+   "lat": 48.7667,
+   "lon": -72.05,
+   "tz": "America/Toronto",
+   "link": "story is set here",
+   "genre": "chapter",
+   "mood": [
+    "calm"
+   ],
+   "hook": "Mass lets out at Péribonka on the edge of the Quebec forest, and the parish stands about in the snow trading news.",
+   "status": "unvetted",
+   "note": "",
+   "titleEn": "Maria Chapdelaine, chapter 1",
+   "lang": "fr",
+   "langName": "French"
+  },
+  {
+   "id": "ru-turgenev-khor",
+   "kind": "foreign",
+   "title": "Хорь и Калиныч",
+   "author": "Ivan Turgenev",
+   "origLang": "ru",
+   "recLang": "ru",
+   "reader": "tovarisch",
+   "librivox": "https://librivox.org/Zapiski-ohotnika-by-ivan-turgenev/",
+   "ia": "zapiskiohotnika_2409_librivox",
+   "iaTitle": "Записки охотника (Zapiski Okhotnika)",
+   "parts": [
+    {
+     "url": "https://archive.org/download/zapiskiohotnika_2409_librivox/zapiskiohotnika_01_turgenev_64kb.mp3",
+     "dur": 1576
+    }
+   ],
+   "duration": 1576,
+   "place": "Kaluga",
+   "country": "Russia",
+   "lat": 54.5293,
+   "lon": 36.2754,
+   "tz": "Europe/Moscow",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "calm"
+   ],
+   "hook": "The first of the Sportsman's Sketches: a hunter stays with two peasant friends, one shrewd and one dreamy.",
+   "status": "unvetted",
+   "note": "",
+   "titleEn": "Khor and Kalinych",
+   "lang": "ru",
+   "langName": "Russian"
+  },
+  {
+   "id": "ru-pushkin-metel",
+   "kind": "foreign",
+   "title": "Метель",
+   "author": "Alexander Pushkin",
+   "origLang": "ru",
+   "recLang": "ru",
+   "reader": "Xenium5",
+   "librivox": "https://librivox.org/belkin-tales-by-alexander-pushkin/",
+   "ia": "belkintales_1406_librivox",
+   "iaTitle": "Повести покойного Ивана Петровича Белкина",
+   "parts": [
+    {
+     "url": "https://archive.org/download/belkintales_1406_librivox/belkintales_02_pushkin_64kb.mp3",
+     "dur": 1620
+    }
+   ],
+   "duration": 1620,
+   "place": "Moscow",
+   "country": "Russia",
+   "lat": 55.7558,
+   "lon": 37.6173,
+   "tz": "Europe/Moscow",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "wistful",
+    "funny"
+   ],
+   "hook": "A secret elopement, a snowstorm that scatters everyone, and a wedding that turns out not to be the one anybody planned.",
+   "status": "unvetted",
+   "note": "",
+   "titleEn": "The Blizzard",
+   "lang": "ru",
+   "langName": "Russian"
+  },
+  {
+   "id": "es-becquer-celda",
+   "kind": "foreign",
+   "title": "Desde mi celda: Carta primera",
+   "author": "Gustavo Adolfo Bécquer",
+   "origLang": "es",
+   "recLang": "es",
+   "reader": "KendalRigans",
+   "librivox": "https://librivox.org/desde-mi-celda-cartas-literarias-by-gustavo-adolfo-becquer/",
+   "ia": "desde_mi_celda_1902_librivox",
+   "iaTitle": "Desde mi celda - cartas literarias",
+   "parts": [
+    {
+     "url": "https://archive.org/download/desde_mi_celda_1902_librivox/cartasliterarias_01_becquer_64kb.mp3",
+     "dur": 1950
+    }
+   ],
+   "duration": 1950,
+   "place": "Veruela",
+   "country": "Spain",
+   "lat": 41.8139,
+   "lon": -1.6478,
+   "tz": "Europe/Madrid",
+   "link": "story is set here",
+   "genre": "letter",
+   "mood": [
+    "calm"
+   ],
+   "hook": "Bécquer writes to Madrid from a Cistercian monastery below the Moncayo, where he has gone for his health.",
+   "status": "unvetted",
+   "note": "",
+   "titleEn": "From My Cell: First Letter",
+   "lang": "es",
+   "langName": "Spanish"
+  },
+  {
+   "id": "es-alarcon-buenaventura",
+   "kind": "foreign",
+   "title": "La Buenaventura",
+   "author": "Pedro Antonio de Alarcón",
+   "origLang": "es",
+   "recLang": "es",
+   "reader": "Karen Savage",
+   "librivox": "https://librivox.org/novelas-cortas-by-pedro-antonio-de-alarcon/",
+   "ia": "novelas_cortas_krs_librivox",
+   "iaTitle": "Novelas Cortas",
+   "parts": [
+    {
+     "url": "https://archive.org/download/novelas_cortas_krs_librivox/novelascortas_01_alarcon_64kb.mp3",
+     "dur": 467
+    },
+    {
+     "url": "https://archive.org/download/novelas_cortas_krs_librivox/novelascortas_02_alarcon_64kb.mp3",
+     "dur": 468
+    },
+    {
+     "url": "https://archive.org/download/novelas_cortas_krs_librivox/novelascortas_03_alarcon_64kb.mp3",
+     "dur": 331
+    }
+   ],
+   "duration": 1266,
+   "place": "Granada",
+   "country": "Spain",
+   "lat": 37.1761,
+   "lon": -3.5881,
+   "tz": "Europe/Madrid",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "funny"
+   ],
+   "hook": "Alarcón's comic tale of a Granada fortune-teller, in three short parts.",
+   "status": "unvetted",
+   "note": "",
+   "titleEn": "The Fortune",
+   "lang": "es",
+   "langName": "Spanish"
+  },
+  {
+   "id": "es-nervo-donador",
+   "kind": "foreign",
+   "title": "El donador de almas, I",
+   "author": "Amado Nervo",
+   "origLang": "es",
+   "recLang": "es",
+   "reader": "Mario Pineda",
+   "librivox": "https://librivox.org/el-donador-de-almas-by-amado-nervo/",
+   "ia": "eldonadordealmas_2411_librivox",
+   "iaTitle": "El Donador de Almas",
+   "parts": [
+    {
+     "url": "https://archive.org/download/eldonadordealmas_2411_librivox/donadoralmas_01_nervo_64kb.mp3",
+     "dur": 1080
+    }
+   ],
+   "duration": 1080,
+   "place": "Mexico City",
+   "country": "Mexico",
+   "lat": 19.4326,
+   "lon": -99.1332,
+   "tz": "America/Mexico_City",
+   "link": "author's home city",
+   "genre": "chapter",
+   "mood": [
+    "calm"
+   ],
+   "hook": "The opening of Nervo's 1899 fantasy novella, in which a doctor is given a soul as a present.",
+   "status": "unvetted",
+   "note": "",
+   "titleEn": "The Giver of Souls, part 1",
+   "lang": "es",
+   "langName": "Spanish"
+  },
+  {
+   "id": "it-collodi-pinocchio",
+   "kind": "foreign",
+   "title": "Le avventure di Pinocchio, capitoli 1–3",
+   "author": "Carlo Collodi",
+   "origLang": "it",
+   "recLang": "it",
+   "reader": "Simona",
+   "librivox": "https://librivox.org/le-avventure-di-pinocchio-by-c-collodi/",
+   "ia": "avventure_pinocchio_librivox",
+   "iaTitle": "Le avventure di Pinocchio",
+   "parts": [
+    {
+     "url": "https://archive.org/download/avventure_pinocchio_librivox/avventurepinocchio_01_collodi_64kb.mp3",
+     "dur": 335
+    },
+    {
+     "url": "https://archive.org/download/avventure_pinocchio_librivox/avventurepinocchio_02_collodi_64kb.mp3",
+     "dur": 332
+    },
+    {
+     "url": "https://archive.org/download/avventure_pinocchio_librivox/avventurepinocchio_03_collodi_64kb.mp3",
+     "dur": 441
+    }
+   ],
+   "duration": 1108,
+   "place": "Florence",
+   "country": "Italy",
+   "lat": 43.7696,
+   "lon": 11.2558,
+   "tz": "Europe/Rome",
+   "link": "author's home city",
+   "genre": "chapter",
+   "mood": [
+    "funny"
+   ],
+   "hook": "A log that talks, two old carpenters who come to blows, and Geppetto starting on a puppet.",
+   "status": "unvetted",
+   "note": "",
+   "titleEn": "The Adventures of Pinocchio, chapters 1–3",
+   "lang": "it",
+   "langName": "Italian"
+  },
+  {
+   "id": "pt-machado-missa",
+   "kind": "foreign",
+   "title": "Missa do Galo",
+   "author": "Machado de Assis",
+   "origLang": "pt",
+   "recLang": "pt",
+   "reader": "RogerioM",
+   "librivox": "https://librivox.org/paginas-recolhidas-by-joaquim-maria-machado-de-assis/",
+   "ia": "paginasrecolhidas_1805_librivox",
+   "iaTitle": "Páginas Recolhidas",
+   "parts": [
+    {
+     "url": "https://archive.org/download/paginasrecolhidas_1805_librivox/paginasrecolhidas_05_assis_64kb.mp3",
+     "dur": 1309
+    }
+   ],
+   "duration": 1309,
+   "place": "Rio de Janeiro",
+   "country": "Brazil",
+   "lat": -22.9068,
+   "lon": -43.1729,
+   "tz": "America/Sao_Paulo",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "A young man waits up on Christmas Eve to go to midnight mass, and talks late into the night with his host's wife.",
+   "status": "unvetted",
+   "note": "",
+   "titleEn": "Midnight Mass",
+   "lang": "pt",
+   "langName": "Portuguese"
+  },
+  {
+   "id": "ja-basho-oku",
+   "kind": "foreign",
+   "title": "奥の細道 (一〜九)",
+   "author": "Matsuo Bashō",
+   "origLang": "ja",
+   "recLang": "ja",
+   "reader": "kaseumin",
+   "librivox": "https://librivox.org/oku-no-hosomichi-by-matsuo-basho/",
+   "ia": "oku_no_hosomichi_librivox",
+   "iaTitle": "Oku no Hosomichi",
+   "parts": [
+    {
+     "url": "https://archive.org/download/oku_no_hosomichi_librivox/okunohosomichi_01-09_basho_64kb.mp3",
+     "dur": 740
+    }
+   ],
+   "duration": 740,
+   "place": "Tokyo (Fukagawa)",
+   "country": "Japan",
+   "lat": 35.6815,
+   "lon": 139.7996,
+   "tz": "Asia/Tokyo",
+   "link": "story is set here",
+   "genre": "travel",
+   "mood": [
+    "calm"
+   ],
+   "hook": "Bashō gives up his hut in Edo in the spring of 1689 and sets off north on foot.",
+   "status": "unvetted",
+   "note": "",
+   "titleEn": "The Narrow Road to the Deep North, sections 1–9",
+   "lang": "ja",
+   "langName": "Japanese"
+  },
+  {
+   "id": "ja-soseki-kusamakura",
+   "kind": "foreign",
+   "title": "草枕 (一)",
+   "author": "Natsume Sōseki",
+   "origLang": "ja",
+   "recLang": "ja",
+   "reader": "ekzemplaro",
+   "librivox": "https://librivox.org/kusamakura-by-soseki-natsume/",
+   "ia": "kusamakura_1311_librivox",
+   "iaTitle": "草枕 (Kusamakura)",
+   "parts": [
+    {
+     "url": "https://archive.org/download/kusamakura_1311_librivox/kusamakura_01_natsume_64kb.mp3",
+     "dur": 1391
+    }
+   ],
+   "duration": 1391,
+   "place": "Tamana, Kumamoto",
+   "country": "Japan",
+   "lat": 32.9356,
+   "lon": 130.5631,
+   "tz": "Asia/Tokyo",
+   "link": "story is set here",
+   "genre": "chapter",
+   "mood": [
+    "calm"
+   ],
+   "hook": "A painter climbs a mountain path thinking about art and people. Some of the best-known opening lines in Japanese.",
+   "status": "unvetted",
+   "note": "",
+   "titleEn": "Kusamakura (The Grass Pillow), chapter 1",
+   "lang": "ja",
+   "langName": "Japanese"
+  },
+  {
+   "id": "zh-luxun-achang",
+   "kind": "foreign",
+   "title": "阿长与山海经",
+   "author": "Lu Xun",
+   "origLang": "zh",
+   "recLang": "zh",
+   "reader": "Jing Li",
+   "librivox": "https://librivox.org/chao-hua-si-she-by-lu-xun/",
+   "ia": "chao_hua_si_she_jl_librivox",
+   "iaTitle": "朝花夕拾 - Chao hua si she",
+   "parts": [
+    {
+     "url": "https://archive.org/download/chao_hua_si_she_jl_librivox/chaohuasishe_02_lu_64kb.mp3",
+     "dur": 756
+    }
+   ],
+   "duration": 756,
+   "place": "Shaoxing",
+   "country": "China",
+   "lat": 30,
+   "lon": 120.58,
+   "tz": "Asia/Shanghai",
+   "link": "story is set here",
+   "genre": "memoir",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "Lu Xun remembers his childhood nurse, her superstitions, and the illustrated book she found for him.",
+   "status": "unvetted",
+   "note": "",
+   "titleEn": "Ah Chang and the Book of Hills and Seas",
+   "lang": "zh",
+   "langName": "Chinese"
+  },
+  {
+   "id": "ko-hyun-binche",
+   "kind": "foreign",
+   "title": "빈처",
+   "author": "Hyun Jin-geon",
+   "origLang": "ko",
+   "recLang": "ko",
+   "reader": "Jessie Yun",
+   "librivox": "https://librivox.org/short-stories-by-jin-geon-hyun/",
+   "ia": "short_stories_hyun_1411_librivox",
+   "iaTitle": "단편 소설 (Short Stories)",
+   "parts": [
+    {
+     "url": "https://archive.org/download/short_stories_hyun_1411_librivox/short_stories_04_hyun_64kb.mp3",
+     "dur": 1219
+    },
+    {
+     "url": "https://archive.org/download/short_stories_hyun_1411_librivox/short_stories_05_hyun_64kb.mp3",
+     "dur": 972
+    }
+   ],
+   "duration": 2191,
+   "place": "Seoul",
+   "country": "South Korea",
+   "lat": 37.5665,
+   "lon": 126.978,
+   "tz": "Asia/Seoul",
+   "link": "story is set here",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "A struggling writer in 1920s Seoul and the wife who keeps believing in him.",
+   "status": "unvetted",
+   "note": "",
+   "titleEn": "A Poor Man's Wife",
+   "lang": "ko",
+   "langName": "Korean"
+  },
+  {
+   "id": "tl-medrano-bata",
+   "kind": "foreign",
+   "title": "Nang Bata Pa Kami, kabanata 1–3",
+   "author": "Pura L. Medrano",
+   "origLang": "tl",
+   "recLang": "tl",
+   "reader": "mlcui",
+   "librivox": "https://librivox.org/nang-bata-pa-kami-by-pura-l-medrano/",
+   "ia": "nang_bata_pa_kami_1501_librivox",
+   "iaTitle": "Nang Bata Pa Kami",
+   "parts": [
+    {
+     "url": "https://archive.org/download/nang_bata_pa_kami_1501_librivox/nangbatapakami_01_medrano_64kb.mp3",
+     "dur": 610
+    }
+   ],
+   "duration": 610,
+   "place": "Manila",
+   "country": "Philippines",
+   "lat": 14.5995,
+   "lon": 120.9842,
+   "tz": "Asia/Manila",
+   "link": "language of this place",
+   "genre": "chapter",
+   "mood": [
+    "calm"
+   ],
+   "hook": "The opening chapters of a Tagalog book about childhood.",
+   "status": "unvetted",
+   "note": "",
+   "titleEn": "When We Were Young, chapters 1–3",
+   "lang": "tl",
+   "langName": "Tagalog"
+  },
+  {
+   "id": "hi-premchand-sakhiyan",
+   "kind": "foreign",
+   "title": "दो सखियाँ (१–२)",
+   "author": "Premchand",
+   "origLang": "hi",
+   "recLang": "hi",
+   "reader": "Sonali Ekka",
+   "librivox": "https://librivox.org/do-sakhiyan-by-premchand/",
+   "ia": "dosakhiyan_2512_librivox",
+   "iaTitle": "Do Sakhiyan",
+   "parts": [
+    {
+     "url": "https://archive.org/download/dosakhiyan_2512_librivox/dosakhiyan_01_premchand_64kb.mp3",
+     "dur": 352
+    },
+    {
+     "url": "https://archive.org/download/dosakhiyan_2512_librivox/dosakhiyan_02_premchand_64kb.mp3",
+     "dur": 291
+    }
+   ],
+   "duration": 643,
+   "place": "Varanasi",
+   "country": "India",
+   "lat": 25.3176,
+   "lon": 82.9739,
+   "tz": "Asia/Kolkata",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "wistful"
+   ],
+   "hook": "The first letters between two friends, in Premchand's story told entirely in letters.",
+   "status": "unvetted",
+   "note": "",
+   "titleEn": "Two Friends, letters 1–2",
+   "lang": "hi",
+   "langName": "Hindi"
+  },
+  {
+   "id": "sv-lagerlof-brollop",
+   "kind": "foreign",
+   "title": "Bröllopsmarschen",
+   "author": "Selma Lagerlöf",
+   "origLang": "sv",
+   "recLang": "sv",
+   "reader": "Anna Sofia Andersson",
+   "librivox": "https://librivox.org/valda-beraettelser-by-selma-lagerloef/",
+   "ia": "valda_berattelser_2304_librivox",
+   "iaTitle": "Valda berättelser",
+   "parts": [
+    {
+     "url": "https://archive.org/download/valda_berattelser_2304_librivox/valdaberattelser_02_lagerlof_64kb.mp3",
+     "dur": 746
+    }
+   ],
+   "duration": 746,
+   "place": "Mårbacka, Värmland",
+   "country": "Sweden",
+   "lat": 59.7569,
+   "lon": 13.2347,
+   "tz": "Europe/Stockholm",
+   "link": "author's home city",
+   "genre": "short story",
+   "mood": [
+    "calm",
+    "wistful"
+   ],
+   "hook": "A short story by Selma Lagerlöf, from a selection of her tales read in Swedish.",
+   "status": "unvetted",
+   "note": "",
+   "titleEn": "The Wedding March",
+   "lang": "sv",
+   "langName": "Swedish"
+  },
+  {
+   "id": "nl-multatuli-havelaar",
+   "kind": "foreign",
+   "title": "Max Havelaar, eerste hoofdstuk",
+   "author": "Multatuli",
+   "origLang": "nl",
+   "recLang": "nl",
+   "reader": "Anna Simon",
+   "librivox": "https://librivox.org/max-havelaar-of-de-koffij-veilingen-der-nederlandsche-handel-maatschappij/",
+   "ia": "max_havelaar_as_librivox",
+   "iaTitle": "Max Havelaar, of de koffij-veilingen der Nederlandsche Handel-Maatschappij",
+   "parts": [
+    {
+     "url": "https://archive.org/download/max_havelaar_as_librivox/maxhavelaar_01_multatuli_64kb.mp3",
+     "dur": 1031
+    }
+   ],
+   "duration": 1031,
+   "place": "Amsterdam",
+   "country": "Netherlands",
+   "lat": 52.3676,
+   "lon": 4.9041,
+   "tz": "Europe/Amsterdam",
+   "link": "story is set here",
+   "genre": "chapter",
+   "mood": [
+    "funny"
+   ],
+   "hook": "Batavus Droogstoppel, coffee broker of the Lauriergracht, explains why he disapproves of poetry.",
+   "status": "unvetted",
+   "note": "",
+   "titleEn": "Max Havelaar, chapter 1",
+   "lang": "nl",
+   "langName": "Dutch"
+  },
+  {
+   "id": "ga-hyde-sagart",
+   "kind": "foreign",
+   "title": "An Sagart agus an t-Easbog",
+   "author": "Douglas Hyde (collector)",
+   "origLang": "ga",
+   "recLang": "ga",
+   "reader": "Brian Ó Broin",
+   "librivox": "https://librivox.org/an-sgealuidhe-gaedhealach-by-douglas-hyde/",
+   "ia": "ansgealuidhegaedhealach_2406_librivox",
+   "iaTitle": "An Sgéaluidhe Gaedhealach",
+   "parts": [
+    {
+     "url": "https://archive.org/download/ansgealuidhegaedhealach_2406_librivox/sgealuidhegaedhealach_01_dehide_64kb.mp3",
+     "dur": 976
+    }
+   ],
+   "duration": 976,
+   "place": "Connacht",
+   "country": "Ireland",
+   "lat": 53.87,
+   "lon": -8.4,
+   "tz": "Europe/Dublin",
+   "link": "tale from here",
+   "genre": "folk tale",
+   "mood": [],
+   "hook": "A Connacht folk tale Douglas Hyde collected in the 1880s and 1890s. I haven't been able to check its content: vet before relying on it.",
+   "status": "unvetted",
+   "note": "",
+   "titleEn": "The Priest and the Bishop",
+   "lang": "ga",
+   "langName": "Irish"
+  },
+  {
+   "id": "da-grimm-bord",
+   "kind": "foreign",
+   "title": "Bord, dæk dig",
+   "author": "Brothers Grimm (Danish translation)",
+   "origLang": "da",
+   "recLang": "da",
+   "reader": "Kristoffer Hunsdahl",
+   "librivox": "https://librivox.org/grimms-eventyr-i-udvalg-by-jacob-wilhelm-grimm/",
+   "ia": "grimms_eventyr_kh_librivox",
+   "iaTitle": "Grimms eventyr I udvalg",
+   "parts": [
+    {
+     "url": "https://archive.org/download/grimms_eventyr_kh_librivox/eventyr_04_grimm_64kb.mp3",
+     "dur": 1101
+    }
+   ],
+   "duration": 1101,
+   "place": "Copenhagen",
+   "country": "Denmark",
+   "lat": 55.6761,
+   "lon": 12.5683,
+   "tz": "Europe/Copenhagen",
+   "link": "language of this place",
+   "genre": "fairy tale",
+   "mood": [
+    "funny"
+   ],
+   "hook": "Grimm, read in Danish: three brothers, three magic gifts and a dishonest innkeeper.",
+   "status": "unvetted",
+   "note": "",
+   "titleEn": "Table, Be Set",
+   "lang": "da",
+   "langName": "Danish"
+  }
+ ],
+ "languages": {
+  "fr": "French",
+  "ru": "Russian",
+  "es": "Spanish",
+  "it": "Italian",
+  "pt": "Portuguese",
+  "ja": "Japanese",
+  "zh": "Chinese",
+  "ko": "Korean",
+  "tl": "Tagalog",
+  "hi": "Hindi",
+  "sv": "Swedish",
+  "nl": "Dutch",
+  "ga": "Irish",
+  "da": "Danish"
+ },
+ "langByCountry": {
+  "Russia": [
+   "ru"
+  ],
+  "France": [
+   "fr"
+  ],
+  "Spain": [
+   "es"
+  ],
+  "Japan": [
+   "ja"
+  ],
+  "Denmark": [
+   "da"
+  ],
+  "Sweden": [
+   "sv"
+  ],
+  "Iceland": [
+   "is"
+  ],
+  "Netherlands": [
+   "nl"
+  ],
+  "Ireland": [
+   "ga"
+  ],
+  "United Kingdom": [
+   "cy",
+   "gd"
+  ],
+  "Italy": [
+   "it"
+  ],
+  "Egypt": [
+   "ar"
+  ],
+  "Iraq": [
+   "ar"
+  ],
+  "Lebanon": [
+   "ar"
+  ],
+  "Ethiopia": [
+   "am"
+  ],
+  "South Africa": [
+   "af",
+   "nl"
+  ],
+  "India": [
+   "hi",
+   "bn"
+  ],
+  "Thailand": [
+   "th"
+  ],
+  "Myanmar": [
+   "my"
+  ],
+  "Philippines": [
+   "tl"
+  ],
+  "China": [
+   "zh"
+  ],
+  "South Korea": [
+   "ko"
+  ],
+  "New Zealand": [
+   "mi"
+  ],
+  "Australia": [],
+  "United States": [
+   "es"
+  ],
+  "Canada": [
+   "fr"
+  ],
+  "Mexico": [
+   "es"
+  ],
+  "Argentina": [
+   "es"
+  ],
+  "Brazil": [
+   "pt"
+  ]
+ }
 }

@@ -90,6 +90,12 @@ input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;bac
 .pill.on{border-color:var(--amber-faint);color:var(--amber-dim)}
 #resume{display:none;margin:0 0 1.6rem;padding:.8rem 1rem;border:1px solid var(--amber-faint);border-radius:14px;color:var(--amber-dim);text-align:left;width:100%;min-height:56px}
 #resume small{display:block;color:var(--text-faint);font-size:.82rem}
+.alt{margin:1.8rem 0 0;border:1px solid var(--line);border-radius:16px;padding:.9rem 1rem .95rem;background:rgba(18,15,11,.55)}
+.alt .k{display:block;color:var(--text-faint);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+.alt .t{display:block;font-family:var(--serif-display);font-size:1.25rem;line-height:1.2;color:var(--text);margin:.25rem 0 0}
+.alt .e{display:block;font-style:italic;color:var(--text-dim);font-size:.92rem}
+.alt .m{display:block;color:var(--text-faint);font-size:.82rem;margin:.3rem 0 .7rem}
+.alt .pill{min-height:44px}
 .status{color:var(--text-faint);font-size:.85rem;min-height:1.3em;margin:.8rem 0 0}
 footer{color:var(--text-faint);font-size:.8rem;line-height:1.45;padding-top:1rem;border-top:1px solid rgba(42,33,23,.6)}
 footer a{color:var(--text-dim);border-color:var(--line)}
@@ -182,6 +188,7 @@ body.review #sky,body.review #stars{display:none}
     <div class="volume" id="volRow">
       <span>Vol</span><input type="range" id="vol" min="0" max="1" step="0.01" value="0.8" aria-label="Volume">
     </div>
+    <div class="alt hidden" id="alt"></div>
     <div class="actions">
       <button class="pill" id="btnAnother">Another story</button>
       <button class="pill" id="btnContinue" aria-pressed="false">Continue the night</button>
@@ -195,7 +202,7 @@ body.review #sky,body.review #stars{display:none}
 <!-- Settings -->
 <div class="sheet" id="sheetSettings" role="dialog" aria-label="Settings"><div class="panel">
   <h2>Settings</h2>
-  <div class="row"><p>Language<small>Original-language recordings are not in the catalogue yet; English plays meanwhile.</small></p>
+  <div class="row"><p>Language<small>Original-language versions of the same stories aren't in yet. Meanwhile the card under tonight's story offers a piece read in the local language.</small></p>
     <div class="seg" id="segLang"><button data-v="en" aria-pressed="true">English</button><button data-v="orig" aria-pressed="false">Original</button></div></div>
   <div class="row"><p>Include unvetted stories<small id="unvettedNote">Stories you haven't marked Keep in review.</small></p><button class="toggle" id="tgUnvetted" role="switch" aria-checked="false" aria-label="Include unvetted"></button></div>
   <div class="row"><p>Continue the night<small>When a story ends, the next follows the evening west, until the sleep timer.</small></p><button class="toggle" id="tgContinue" role="switch" aria-checked="false" aria-label="Continue the night"></button></div>
@@ -238,7 +245,8 @@ const params = new URLSearchParams(location.search);
 const REVIEW = params.has('review');
 
 let CAT = null;         // catalogue
-let current = null;     // story
+let current = null;     // what is loaded in the player (story or foreign piece)
+const tonight = { story: null, foreign: null, fallback: false };
 let partIdx = 0;
 let settings = Object.assign({ lang: 'en', includeUnvetted: null, continue: false, dim: true, iosFade: false, volume: 0.8 }, store.get('settings', {}));
 const saveSettings = () => store.set('settings', settings);
@@ -301,7 +309,7 @@ function tonightPick(avoid = []) {
   return list.filter((s) => !avoid.includes(s.id)).sort((a, b) => (history[a.id] || 0) - (history[b.id] || 0))[0] || list[0];
 }
 function anotherPick() {
-  const list = eligible(); if (!current) return tonightPick();
+  const list = eligible(); const current = tonight.story; if (!current) return tonightPick();
   const same = pickFrom(list.filter((s) => s.country === current.country), [current.id]);
   if (same) return same;
   // nearest neighbours by time-zone offset
@@ -320,6 +328,50 @@ function tzOffset(tz, d = new Date()) {
   const p = new Intl.DateTimeFormat('en-US', { timeZone: tz, hourCycle: 'h23', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' }).formatToParts(d);
   const g = (t) => +p.find((x) => x.type === t).value;
   return (Date.UTC(g('year'), g('month') - 1, g('day'), g('hour'), g('minute')) - Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate(), d.getUTCHours(), d.getUTCMinutes())) / 60000;
+}
+
+/* ---------- the foreign-language card ----------
+   Each story is paired with a short piece read in its country's language
+   (langByCountry, in order of preference). If LibriVox has nothing in that
+   language, the nearest foreign piece by distance is used and the card says so. */
+function eligibleForeign() {
+  const unv = includeUnvetted();
+  return (CAT.foreign || []).filter((s) => s.status === 'keep' || (unv && (s.status === 'unvetted' || s.status === 'fix')));
+}
+function distKm(a, b) {
+  const r = Math.PI / 180, dLat = (b.lat - a.lat) * r, dLon = (b.lon - a.lon) * r;
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(a.lat * r) * Math.cos(b.lat * r) * Math.sin(dLon / 2) ** 2;
+  return 12742 * Math.asin(Math.sqrt(h));
+}
+function foreignFor(story) {
+  const pool = eligibleForeign(); if (!story || !pool.length) return { piece: null, fallback: false };
+  const langs = (CAT.langByCountry || {})[story.country] || [];
+  const rank = (f) => (recentlyPlayed(f) ? 2 : 0) + (f.country === story.country ? 0 : 1);
+  const own = pool.filter((f) => langs.includes(f.lang));
+  if (own.length) {
+    const best = Math.min(...own.map(rank));
+    return { piece: shuffle(own.filter((f) => rank(f) === best))[0], fallback: false };
+  }
+  const near = pool.slice().sort((a, b) => ((recentlyPlayed(a) ? 1e5 : 0) + distKm(story, a)) - ((recentlyPlayed(b) ? 1e5 : 0) + distKm(story, b)));
+  return { piece: near[0], fallback: true };
+}
+function renderAlt() {
+  const box = $('alt'); if (!box) return;
+  const showingForeign = current && current.kind === 'foreign';
+  if (showingForeign && tonight.story) {
+    const s = tonight.story;
+    box.innerHTML = `<span class="k">Tonight's story</span><span class="t">${esc(s.title)}</span><span class="m">${esc(s.author)} · ${esc(s.place)} · ${mins(s.duration)}</span><button class="pill" id="altGo">Back to the story</button>`;
+  } else if (tonight.foreign) {
+    const f = tonight.foreign;
+    const where = tonight.fallback ? `Nearest available: ${esc(f.langName)}, from ${esc(f.place)}, ${esc(f.country)}` : `In ${esc(f.langName)}`;
+    box.innerHTML = `<span class="k">${where}</span><span class="t" lang="${esc(f.lang)}">${esc(f.title)}</span><span class="e">${esc(f.titleEn)}</span><span class="m">${esc(f.author)} · read by ${esc(f.reader)} · ${mins(f.duration)}</span><button class="pill" id="altGo">Listen in ${esc(f.langName)}</button>`;
+  } else { box.classList.add('hidden'); return; }
+  box.classList.remove('hidden');
+  $('altGo').onclick = () => {
+    const wasPlaying = !audio.paused; listened = 0; lastT = 0;
+    if (showingForeign) load(tonight.story, { keepPair: true, autoplay: wasPlaying });
+    else load(tonight.foreign, { keepPair: true, autoplay: true });
+  };
 }
 
 /* ---------- audio path: element volume, or Web Audio gain on iPhone ---------- */
@@ -354,26 +406,29 @@ function applyGain() {
 /* ---------- show / load a story ---------- */
 function renderStory(s) {
   $('place').innerHTML = `${esc(s.place)}, <span class="time" id="ltime">${localTime(s.tz)}</span>`;
-  $('placesub').textContent = `${s.country} · ${s.link}`;
+  const foreign = s.kind === 'foreign';
+  $('placesub').textContent = foreign ? `${s.country} · in ${s.langName}` : `${s.country} · ${s.link}`;
   $('title').textContent = s.title;
+  $('title').lang = foreign ? s.lang : 'en';
   $('byline').innerHTML = `${esc(s.author)} · <em>read by ${esc(s.reader)}</em>`;
-  $('hook').textContent = s.hook;
+  $('hook').textContent = foreign ? `${s.titleEn}. ${s.hook}` : s.hook;
   $('meta').innerHTML = `${mins(s.duration)} · ${esc((s.mood || []).join(', '))}${s.status !== 'keep' ? `<span class="badge">${esc(s.status)}</span>` : ''}`;
-  $('credit').innerHTML = `${esc(s.title)} by ${esc(s.author)}. Read by ${esc(s.reader)}. LibriVox, public domain. ` +
+  $('credit').innerHTML = `${esc(s.title)} by ${esc(s.author)}. Read by ${esc(s.reader)}${s.kind === 'foreign' ? ' in ' + esc(s.langName) : ''}. LibriVox, public domain. ` +
     (s.librivox ? `<a href="${esc(s.librivox)}" target="_blank" rel="noopener">LibriVox project</a> · ` : '') +
     `<a href="https://archive.org/details/${esc(s.ia)}" target="_blank" rel="noopener">archive.org</a>`;
   $('tDur').textContent = fmt(s.duration);
   paintSky(s);
 }
-function load(s, { part = 0, at = 0, autoplay = false } = {}) {
+function load(s, { part = 0, at = 0, autoplay = false, keepPair = false } = {}) {
   if (!s) { $('title').textContent = 'No stories to play'; $('hook').textContent = 'Turn on "Include unvetted stories" in Settings, or mark some Keep in review.'; return; }
   current = s; partIdx = part; current._marked = false;
+  if (!keepPair && s.kind !== 'foreign') { tonight.story = s; const fp = foreignFor(s); tonight.foreign = fp.piece; tonight.fallback = fp.fallback; }
   if (!REVIEW) renderStory(s); else { $('tDur').textContent = fmt(s.duration); }
   audio.src = s.parts[partIdx].url;
   audio.dataset.seek = at || 0;
   fade = 1; applyGain();
   setMediaSession(s);
-  if (!REVIEW) store.set('current', { id: s.id, night: nightIndex() });
+  if (!REVIEW) { if (tonight.story) store.set('current', { id: tonight.story.id, night: nightIndex() }); renderAlt(); }
   if (autoplay) play();
 }
 function play() {
@@ -430,13 +485,13 @@ function saveResume() {
 function offerResume() {
   const r = store.get('resume', null);
   if (!r) return false;
-  const s = CAT.stories.find((x) => x.id === r.id);
+  const s = CAT.stories.concat(CAT.foreign || []).find((x) => x.id === r.id);
   if (!s || Date.now() - r.at > 21 * DAY || (r.t < 20 && !r.part)) return false;
   const btn = $('resume');
   const pos = s.parts.slice(0, r.part).reduce((a, p) => a + p.dur, 0) + r.t;
   btn.innerHTML = `Pick up where you drifted off<small>${esc(s.title)}, ${esc(s.place)} · ${fmt(pos)} in</small>`;
   btn.style.display = 'block';
-  btn.onclick = () => { btn.style.display = 'none'; listened = 0; lastT = r.t; load(s, { part: r.part, at: Math.max(0, r.t - 15), autoplay: true }); };
+  btn.onclick = () => { btn.style.display = 'none'; listened = 0; lastT = r.t; if (s.kind === 'foreign' && !tonight.story) { tonight.story = tonightPick(); tonight.foreign = s; } load(s, { part: r.part, at: Math.max(0, r.t - 15), autoplay: true, keepPair: s.kind === 'foreign' }); };
   return true;
 }
 
@@ -592,8 +647,9 @@ function reviewMode() {
   const saveMarks = () => store.set('review', marks);
   const statusOf = (s) => (marks[s.id] && marks[s.id].status) || s.status;
   const app = $('app');
-  const countries = [...new Set(CAT.stories.map((s) => s.country))].sort();
-  const langs = [...new Set(CAT.stories.map((s) => s.origLang))].sort();
+  const ALL = CAT.stories.concat(CAT.foreign || []);
+  const countries = [...new Set(ALL.map((s) => s.country))].sort();
+  const langs = [...new Set(ALL.map((s) => s.origLang))].sort();
   const evening = (s, utcH) => { const t = new Date(); t.setUTCHours(utcH, 30, 0, 0); const h = +new Intl.DateTimeFormat('en-GB', { timeZone: s.tz, hour: '2-digit', hourCycle: 'h23' }).format(t); return h >= 21 && h <= 23; };
   app.innerHTML = `<div class="rv">
     <header><a href="./" class="wordmark" style="border:0">← Lamplight</a><span class="wordmark">Review</span></header>
@@ -601,6 +657,7 @@ function reviewMode() {
     <p class="status" id="rvSummary"></p>
     <div class="cov" id="rvCov"></div>
     <div class="filters">
+      <select id="fKind"><option value="">Stories and foreign-language</option><option value="story">English stories</option><option value="foreign">Foreign-language pieces</option></select>
       <select id="fStatus"><option value="">All statuses</option><option>unvetted</option><option>keep</option><option>fix</option><option>drop</option></select>
       <select id="fLang"><option value="">All original languages</option>${langs.map((l) => `<option>${esc(l)}</option>`).join('')}</select>
       <select id="fCountry"><option value="">All countries</option>${countries.map((c) => `<option>${esc(c)}</option>`).join('')}</select>
@@ -614,12 +671,12 @@ function reviewMode() {
   const cov = Array.from({ length: 24 }, (_, h) => CAT.stories.filter((s) => statusOf(s) !== 'drop' && evening(s, h)).length);
   $('rvCov').innerHTML = cov.map((n, h) => `<span class="${n < 2 ? 'low' : ''}" title="${n} stories in late evening at ${h}:30 UTC">${String(h).padStart(2, '0')}<br>${n}</span>`).join('');
   const render = () => {
-    const fs = $('fStatus').value, fl = $('fLang').value, fc = $('fCountry').value, fh = $('fHour').value;
-    const list = CAT.stories.filter((s) => (!fs || statusOf(s) === fs) && (!fl || s.origLang === fl) && (!fc || s.country === fc) && (fh === '' || evening(s, +fh)));
-    const counts = {}; CAT.stories.forEach((s) => { const st = statusOf(s); counts[st] = (counts[st] || 0) + 1; });
-    $('rvSummary').textContent = `${CAT.stories.length} stories · ${Object.entries(counts).map(([k, v]) => `${v} ${k}`).join(' · ')} · showing ${list.length}. Coverage by UTC hour (stories in local late evening):`;
+    const fs = $('fStatus').value, fl = $('fLang').value, fc = $('fCountry').value, fh = $('fHour').value, fk = $('fKind').value;
+    const list = ALL.filter((s) => (!fk || s.kind === fk) && (!fs || statusOf(s) === fs) && (!fl || s.origLang === fl) && (!fc || s.country === fc) && (fh === '' || evening(s, +fh)));
+    const counts = {}; ALL.forEach((s) => { const st = statusOf(s); counts[st] = (counts[st] || 0) + 1; });
+    $('rvSummary').textContent = `${CAT.stories.length} stories + ${(CAT.foreign || []).length} foreign-language · ${Object.entries(counts).map(([k, v]) => `${v} ${k}`).join(' · ')} · showing ${list.length}. Coverage by UTC hour (stories in local late evening):`;
     $('rvList').innerHTML = list.map((s) => { const st = statusOf(s), note = (marks[s.id] && marks[s.id].note) || s.note || ''; return `<div class="card" data-id="${esc(s.id)}">
-      <h3>${esc(s.title)}</h3>
+      <h3 lang="${esc(s.kind === 'foreign' ? s.lang : 'en')}">${esc(s.title)}</h3>${s.kind === 'foreign' ? `<p><i>${esc(s.titleEn)}</i> · in ${esc(s.langName)}</p>` : ''}
       <p>${esc(s.author)} · read by <b>${esc(s.reader)}</b> · ${mins(s.duration)} · ${esc(s.genre || '')}</p>
       <p class="k">${esc(s.place)}, ${esc(s.country)} (${esc(s.link)}) · ${esc(s.tz)} · now ${localTime(s.tz)} · ${esc((s.mood || []).join(', '))} · orig. ${esc(s.origLang)}</p>
       <p><i>${esc(s.hook)}</i></p>
@@ -628,7 +685,7 @@ function reviewMode() {
       <input type="text" placeholder="Note (what to fix, why dropped)" value="${esc(note)}" data-a="note" style="margin-top:.5rem">
     </div>`; }).join('');
     $('rvList').querySelectorAll('.card').forEach((card) => {
-      const id = card.dataset.id, s = CAT.stories.find((x) => x.id === id);
+      const id = card.dataset.id, s = ALL.find((x) => x.id === id);
       card.querySelectorAll('button').forEach((b) => b.onclick = () => {
         const a = b.dataset.a;
         if (a === 'play') { listened = 0; lastT = 0; load(s, { autoplay: true }); $('rvMsg').textContent = `Playing: ${s.title} (${s.reader})`; return; }
@@ -637,8 +694,8 @@ function reviewMode() {
       card.querySelector('input').onchange = (e) => { marks[id] = Object.assign(marks[id] || { status: statusOf(s) }, { note: e.target.value }); saveMarks(); };
     });
   };
-  ['fStatus', 'fLang', 'fCountry', 'fHour'].forEach((id) => $(id).onchange = render);
-  const patch = () => { const p = {}; for (const s of CAT.stories) { const m = marks[s.id]; if (m && (m.status !== s.status || (m.note || '') !== (s.note || ''))) p[s.id] = { status: m.status || s.status, note: m.note || s.note || '', reviewed: new Date().toISOString().slice(0, 10) }; } return p; };
+  ['fKind', 'fStatus', 'fLang', 'fCountry', 'fHour'].forEach((id) => $(id).onchange = render);
+  const patch = () => { const p = {}; for (const s of ALL) { const m = marks[s.id]; if (m && (m.status !== s.status || (m.note || '') !== (s.note || ''))) p[s.id] = { status: m.status || s.status, note: m.note || s.note || '', reviewed: new Date().toISOString().slice(0, 10) }; } return p; };
   $('rvExport').onclick = () => {
     const p = patch(); const n = Object.keys(p).length;
     if (!n) { $('rvMsg').textContent = 'Nothing new to export.'; return; }
